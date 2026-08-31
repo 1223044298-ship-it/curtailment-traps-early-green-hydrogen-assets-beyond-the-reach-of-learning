@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "checks": {
+    "inventory_and_set_identity": true,
+    "headline_counts_match_exact_rerun": true,
+    "submission_headline_matches_model": true,
+    "entry_price_grid_is_expanded_and_monotone": true,
+    "spatial_partial_identification_closes_energy": true,
+    "spatial_bounds_and_zero_upgrade_match": true,
+    "learning_anchor_uses_observed_4gw_and_20gw_check": true,
+    "resource_persistence_does_not_upgrade_strict_cohort": true,
+    "minimum_load_uses_common_grid_and_wear_neutral_direction": true,
+    "updated_path_and_cadence_values_match": true,
+    "replacement_access_identity_and_cadence_are_audited": true,
+    "learning_incidence_boundary_matches": true,
+    "component_incidence_and_transfer_boundary_match": true,
+    "unfloored_learning_rate_boundary_matches": true,
+    "financial_delivery_and_buffer_boundaries_match": true,
+    "return_ladder_separates_narrow_and_wide_gaps": true,
+    "main_text_contains_corrected_high_risk_values": true,
+    "main_and_si_have_no_known_stale_values": true,
+    "revised_figures_exist": true,
+    "compiled_pdfs_exist_and_have_pages": true
+  },
+  "verified_headline": {
+    "inventory_records": 10214,
+    "low_return_entry_records": 1809,
+    "six_point_five_records": 1099,
+    "strict_marginal_records": 710,
+    "spatial_low_return_range": [
+      103,
+      2184
+    ],
+    "spatial_strict_range": [
+      4,
+      741
+    ]
+  },
+  "residual_boundaries": [
+    "Unit-level constrained dispatch remains unobserved.",
+    "The 28-CNY entry anchor is a mixed-route producer-side scenario, not a green-hydrogen contract price.",
+    "Off-site transport, storage, endogenous demand and bankability constraints remain outside the production boundary.",
+    "The inventory equals about 72% of the all-wind-plus-centralized-photovoltaic benchmark and 53% of the broader denominator including distributed photovoltaics; neither ratio is a national census."
+  ]
+}

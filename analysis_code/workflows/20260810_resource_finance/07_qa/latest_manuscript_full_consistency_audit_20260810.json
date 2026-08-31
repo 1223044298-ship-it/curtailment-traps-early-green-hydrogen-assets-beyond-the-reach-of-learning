@@ -1,0 +1,132 @@
+{
+  "cashflow_regression": {
+    "sample_size": 256,
+    "all_cashflows_finite": true,
+    "initial_equity_cashflow_nonpositive": true,
+    "price_increase_never_reduces_npv": true,
+    "positive_output_count": 241,
+    "max_npv_reconstruction_error_cny": {
+      "low": 1.1920928955078125e-07,
+      "6p5": 1.1920928955078125e-07,
+      "8": 1.1920928955078125e-07
+    },
+    "npv_reconstruction_pass": true,
+    "base_year_inflation_factor_is_one": true,
+    "grant_financing_identity_max_error_cny": 1.4901161193847656e-08,
+    "grant_initial_cashflow_identity_max_error_cny": 0.0,
+    "newbuild_capex_learning_does_not_retrofit_incumbent_npv": true
+  },
+  "result_consistency": {
+    "scenario_counts": {
+      "curtailment_only": 972,
+      "full_output_upper_bound": 324
+    },
+    "scenario_ids_unique": true,
+    "result_counts_in_0_10214": true,
+    "entry_price_monotonicity": {
+      "curtailment_only": true,
+      "full_output_upper_bound": true
+    },
+    "minimum_capacity_monotonicity": {
+      "curtailment_only": true,
+      "full_output_upper_bound": true
+    },
+    "terminal_price_monotonicity": true,
+    "backloading_never_worse_than_earlier_decline": true,
+    "learning_strength_npv_monotonicity": true,
+    "water_cost_direction": true,
+    "durable_return_sets_nested": true,
+    "robust_durable_return_sets_nested": true,
+    "station_inventory_count": 10214,
+    "station_object_ids_unique": true,
+    "main_scenario_count_by_branch": {
+      "curtailment_only": 1,
+      "full_output_upper_bound": 1
+    },
+    "opex_replacement_accounting_mutually_exclusive": true,
+    "full_output_energy_split_max_error_kwh": 9.5367431640625e-07,
+    "capacity_flexibility_avoided_capex_monotone": true,
+    "targeted_information_structure_labels": [
+      "full_information_cost_per_h2_ranking"
+    ],
+    "targeted_support_cost_nonnegative": true,
+    "information_error_classes": [
+      "Class 2",
+      "Class 3",
+      "Class 4"
+    ],
+    "information_error_scenarios_externally_anchored": true,
+    "information_friction_rows": 24,
+    "information_friction_convergence_rows": 30,
+    "information_friction_max_mean_difference_2000_vs_5000": 0.3168000000000006,
+    "station_inventory_2024H1_scope_matched_coverage_share": 0.7230865502855895,
+    "station_inventory_2024H1_broad_context_coverage_share": 0.5333655182937168,
+    "evidence_files_present": {
+      "Changyuan_investment_rules_2026.pdf": false,
+      "Huadian_investment_hurdles_2023.pdf": false,
+      "IEA_Global_Hydrogen_Review_2025.pdf": false,
+      "DOE_electrolysis_assessment_2024.pdf": false,
+      "WorldBank_electrolyzer_technoeconomics_2026.pdf": false,
+      "NEA_China_Hydrogen_Development_Report_2025.pdf": false,
+      "MOF_hydrogen_application_pilot_2026.html": false,
+      "AACE_18R-97_2020_sample.pdf": false,
+      "NEA_power_statistics_2024H1.html": false,
+      "NEA_power_statistics_2025.html": false
+    },
+    "parameter_provenance_registry_present": true,
+    "minimum_load_levels_present": [
+      0.0,
+      0.1,
+      0.3,
+      0.4
+    ],
+    "critical_prices_within_search_bounds": true,
+    "shapley_max_closure_error": 1.4210854715202004e-14
+  },
+  "prose_consistency": {
+    "manuscript_path": "D:\\Green\\github\\sector-wide-learning-does-not-guarantee-durable-returns-for-early-green-hydrogen-assets\\Main_manuscript\\main_manuscript.tex",
+    "manuscript_sha256": "6802ac1d9e75691197b15935553ac1c1c70e29744bea2aa2ae5cc024bf39da77",
+    "required_snippet_presence": {
+      "inventory": true,
+      "covered_capacity": true,
+      "scope_matched_coverage": true,
+      "broader_coverage_context": true,
+      "low_return_cohort": true,
+      "strict_marginal_cohort": true,
+      "component_incidence": true,
+      "full_transfer_boundary": true,
+      "durable_comparator": true,
+      "nominal_real_consistency": true,
+      "incidence_central_value": true,
+      "incidence_boundary": true
+    },
+    "all_required_headline_values_present": true,
+    "stale_or_prohibited_claims": {
+      "national_statutory_threshold_claim": false,
+      "probabilistic_scenario_frequency_claim": false,
+      "retroactive_newbuild_capex_credit": false,
+      "old_741_main_cohort": false
+    },
+    "no_stale_or_prohibited_claims": true,
+    "required_section_presence": {
+      "Low-opportunity-cost electricity, rather than total renewable output, limits developable supply": true,
+      "A lower return criterion creates a broad but heterogeneous marginal-entry band": true,
+      "Operating learning available to existing assets is too small to close the return gap": true,
+      "Forward screening and pre-investment flexibility move risk ahead of capital lock-in": true,
+      "Discussion": true,
+      "Methods": true
+    },
+    "all_required_sections_present": true,
+    "result_paragraphs_use_claim_led_openings": {
+      "result_1": true,
+      "result_2": true,
+      "result_3": true,
+      "result_4": true
+    },
+    "all_results_use_claim_led_openings": true,
+    "audit_scope": "Canonical English-submission structural and headline-value audit. It checks the current Results and Methods scope statements against generated outputs, but does not claim semantic proof of every sentence.",
+    "r4_unit_basis": "CSV fields ending _100m_cny are numerically equal to CNY 100 million."
+  },
+  "manifest_file_count": 57,
+  "passed": true
+}

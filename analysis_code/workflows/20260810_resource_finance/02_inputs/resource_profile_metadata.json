@@ -1,0 +1,32 @@
+{
+  "station_count": 10214,
+  "hours": 8784,
+  "hours_by_month": [
+    744,
+    696,
+    744,
+    720,
+    744,
+    720,
+    744,
+    744,
+    720,
+    744,
+    720,
+    744
+  ],
+  "meteorological_shape": "2020 weather replay inherited from source study",
+  "raw_timestamp_timezone": "inferred UTC from the solar diurnal phase; the inherited source metadata does not state a timezone",
+  "display_timezone": "China standard time (UTC+8) after an eight-hour cyclic shift",
+  "curtailment_method": "station-day peak-shaving threshold",
+  "annual_calibration": "2025 full-year provincial wind/solar utilization",
+  "utilization_definition": "system-caused curtailment only",
+  "station_inventory": "operating subset of GEM June-2024 wind/solar trackers as processed by source study",
+  "minimum_load_levels": [
+    0.0,
+    0.1,
+    0.3,
+    0.4
+  ],
+  "resource_scope": "modeled station inventory, not national installed-capacity census"
+}

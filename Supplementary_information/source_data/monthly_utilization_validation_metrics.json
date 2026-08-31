@@ -1,0 +1,129 @@
+{
+  "comparison": "2020 meteorological shape calibrated to 2025 annual provincial utilization versus selected public monthly utilization observations in 2025",
+  "scope_warning": "This is a monthly seasonal validation. The public observations do not expose hourly curtailment events, so peak coincidence and duration remain unvalidated.",
+  "source_status": "Monthly tables from the National New Energy Consumption Monitoring and Early-warning Center, republished by the State Energy Group newspaper.",
+  "overall": {
+    "n": 42,
+    "bias_pp": -1.0023813301531779,
+    "mae_pp": 2.016666532209318,
+    "rmse_pp": 2.670651536520644,
+    "generation_weighted_bias_pp": -0.9525923772595803,
+    "generation_weighted_mae_pp": 2.0902624652158757,
+    "pearson_r": 0.87848347452333
+  },
+  "by_technology": {
+    "solar": {
+      "n": 21,
+      "bias_pp": -0.40952457030772144,
+      "mae_pp": 1.6476190040198322,
+      "rmse_pp": 2.1961545957634137,
+      "generation_weighted_bias_pp": -0.39782791587131877,
+      "generation_weighted_mae_pp": 1.614163112628092,
+      "pearson_r": 0.9443792329979501
+    },
+    "wind": {
+      "n": 21,
+      "bias_pp": -1.5952380899986345,
+      "mae_pp": 2.3857140603988034,
+      "rmse_pp": 3.0727291209196084,
+      "generation_weighted_bias_pp": -1.2768072075096648,
+      "generation_weighted_mae_pp": 2.3685039199679547,
+      "pearson_r": 0.4586914842756177
+    }
+  },
+  "by_month": {
+    "8": {
+      "n": 14,
+      "bias_pp": -2.8428575224264323,
+      "mae_pp": 3.0857142010194356,
+      "rmse_pp": 3.594887148991526,
+      "generation_weighted_bias_pp": -2.8265884431193165,
+      "generation_weighted_mae_pp": 3.09477188582739,
+      "pearson_r": 0.9413673199574425
+    },
+    "9": {
+      "n": 14,
+      "bias_pp": -0.875000376856766,
+      "mae_pp": 1.632142388397569,
+      "rmse_pp": 2.3368550159733563,
+      "generation_weighted_bias_pp": -1.165215026343939,
+      "generation_weighted_mae_pp": 1.686599019939314,
+      "pearson_r": 0.9285237075111302
+    },
+    "11": {
+      "n": 14,
+      "bias_pp": 0.7107139088236648,
+      "mae_pp": 1.3321430072109492,
+      "rmse_pp": 1.7358092950828359,
+      "generation_weighted_bias_pp": 1.142512749153288,
+      "generation_weighted_mae_pp": 1.5118080023136513,
+      "pearson_r": 0.9083210578883969
+    }
+  },
+  "worst_absolute_errors": [
+    {
+      "month": 8,
+      "province": "Hebei",
+      "technology": "wind",
+      "observed_utilization": 0.986,
+      "model_utilization": 0.9200000167369955,
+      "error_pp": -6.599998326300449
+    },
+    {
+      "month": 9,
+      "province": "Hebei",
+      "technology": "wind",
+      "observed_utilization": 0.976,
+      "model_utilization": 0.9200000167165467,
+      "error_pp": -5.599998328345324
+    },
+    {
+      "month": 8,
+      "province": "Shanxi",
+      "technology": "wind",
+      "observed_utilization": 0.995,
+      "model_utilization": 0.9440000057538583,
+      "error_pp": -5.0999994246141656
+    },
+    {
+      "month": 9,
+      "province": "Qinghai",
+      "technology": "solar",
+      "observed_utilization": 0.788,
+      "model_utilization": 0.833999991712143,
+      "error_pp": 4.599999171214297
+    },
+    {
+      "month": 8,
+      "province": "Hebei",
+      "technology": "solar",
+      "observed_utilization": 0.989,
+      "model_utilization": 0.94300001861091,
+      "error_pp": -4.599998138909001
+    },
+    {
+      "month": 8,
+      "province": "Heilongjiang",
+      "technology": "wind",
+      "observed_utilization": 0.982,
+      "model_utilization": 0.9380000233937758,
+      "error_pp": -4.399997660622423
+    },
+    {
+      "month": 8,
+      "province": "Gansu",
+      "technology": "wind",
+      "observed_utilization": 0.98,
+      "model_utilization": 0.9369999766570284,
+      "error_pp": -4.30000233429716
+    },
+    {
+      "month": 8,
+      "province": "Heilongjiang",
+      "technology": "solar",
+      "observed_utilization": 0.991,
+      "model_utilization": 0.950999975215473,
+      "error_pp": -4.000002478452702
+    }
+  ]
+}

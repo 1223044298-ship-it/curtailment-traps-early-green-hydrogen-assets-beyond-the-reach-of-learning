@@ -1,0 +1,43 @@
+{
+  "method": {
+    "main_candidates": "128 nested resource-capture candidates plus the exact 1-MW engineering boundary",
+    "continuous_audit": "four adaptive refinements inside the 256-grid optimum bracket plus nearby physical dispatch breakpoints",
+    "audited_npv_window_share_of_capex": 0.1
+  },
+  "counts": {
+    "inventory": 10214,
+    "audited_boundary": 745,
+    "main_low": 1809,
+    "local_low": 1809,
+    "main_high": 1099,
+    "local_high": 1099,
+    "main_strict": 710,
+    "local_strict": 710,
+    "main_low_selected_at_exact_1mw": 312,
+    "main_high_selected_at_exact_1mw": 128
+  },
+  "membership": {
+    "low_changed": 0,
+    "high_changed": 0,
+    "strict_changed": 0,
+    "low_jaccard": 1.0,
+    "high_jaccard": 1.0,
+    "strict_jaccard": 1.0,
+    "low_change_share_of_main": 0.0,
+    "strict_change_share_of_main": 0.0
+  },
+  "selected_capacity_relative_change_on_audited_records": {
+    "low_median": 0.0,
+    "low_p95_absolute": 0.03520162719809494,
+    "high_median": 0.0,
+    "high_p95_absolute": 0.0055850416433342875
+  },
+  "qa": {
+    "all_continuous_changes_within_audited_window": true,
+    "minimum_capacity_respected": true,
+    "low_membership_change_below_1pct": true,
+    "strict_membership_change_below_1pct": true,
+    "strict_jaccard_above_0p99": true,
+    "passed": true
+  }
+}

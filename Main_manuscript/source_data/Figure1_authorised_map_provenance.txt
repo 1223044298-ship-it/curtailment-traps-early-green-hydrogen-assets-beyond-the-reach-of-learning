@@ -1,0 +1,19 @@
+FIGURE=Retired Figure 1a candidate; not used by the current manuscript
+STATUS=retired_reference_only
+VISIBLE_BOUNDARY_SOURCE=Ministry of Natural Resources Standard Map Service System, China boundary map, 1:7,400,000, 2023
+SOURCE_PRODUCT_NUMBER=GS(2023)2767
+SOURCE_PORTAL=http://bzdt.ch.mnr.gov.cn/
+SOURCE_VECTOR=MNR_China_boundary_1_7.4m_GS2023_2767.eps
+SOURCE_ARCHIVE=MNR_China_boundary_1_7.4m_GS2023_2767_original.zip
+SOURCE_VECTOR_SHA256=8709AA9590ACAEF2926FAB9AD6979665C7CAF8469EC7186EA33EDEB9838368CC
+SOURCE_ARCHIVE_SHA256=1C8F7F8B0402D5D3A32A917E16F6347A4220A05D2F56F55D4E473783D3770F40
+DISPLAY_PROJECTION=spherical Albers equal-area fitted to the official linework
+REGISTRATION_DIAGNOSTIC=official_china_basemap/GS2023_2767_registration_diagnostic.png
+REGISTRATION_RMSE=9.8 source-page units, approximately 0.43 percent of map width
+THEMATIC_MASK_SOURCE=OpenStreetMap simplified land polygons derived from natural=coastline
+THEMATIC_MASK_FILE=osm_coastline/osm_land_east_asia_20260825.geojson
+THEMATIC_MASK_SHA256=9F549040B10BF44717CCF32576A3B332964EFD1599C94D192F8181A6E1279B64
+THEMATIC_MASK_LICENCE=ODbL 1.0; copyright OpenStreetMap contributors
+VISIBLE_BOUNDARY_POLICY=Historical provenance only. No current figure layer is read from this source.
+FINAL_MAP_REVIEW_STATUS=not_applicable_to_retired_candidate
+FINAL_MAP_REVIEW_NOTE=The current Figure 1 uses OpenStreetMap geometry documented in Figure1_osm_map_provenance.txt.

@@ -1,0 +1,9 @@
+﻿resource_branch,alk_minimum_load_share,interpretation,low_return_entry_count,colocated_6p5_count,strict_marginal_vs_6p5_count
+curtailment_only,0.0,mathematical_upper_bound,1251,896,355
+curtailment_only,0.1,modern_atmospheric,1886,1163,723
+curtailment_only,0.3,pressurized_main,1889,1148,741
+curtailment_only,0.4,source_study_conservative,1924,1131,793
+full_output_upper_bound,0.0,mathematical_upper_bound,7116,6238,878
+full_output_upper_bound,0.1,modern_atmospheric,7449,6666,783
+full_output_upper_bound,0.3,pressurized_main,7385,6625,760
+full_output_upper_bound,0.4,source_study_conservative,7365,6556,809

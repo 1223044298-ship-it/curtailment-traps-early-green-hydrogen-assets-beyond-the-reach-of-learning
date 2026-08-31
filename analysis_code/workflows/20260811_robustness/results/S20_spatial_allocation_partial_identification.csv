@@ -1,0 +1,4 @@
+﻿allocation_method,low_return_record_count,six_point_five_record_count,strict_marginal_record_count,low_return_capacity_gw,low_return_capex_billion_cny,low_return_h2_mt_per_year,strict_capacity_gw,strict_capex_billion_cny,strict_h2_mt_per_year,maximum_group_energy_relative_error,records_with_nonzero_allocated_energy,strict_retain_low_P22,strict_reach_6p5_P22,strict_retain_low_P18,strict_reach_6p5_P18
+small_record_first,2184,2072,112,14.336477735456187,103.22263969528454,0.7822549299501028,0.12743569837041538,0.9175370282669908,0.004054861686860108,6.452204605215379e-16,2479,74,0,3,0
+uniform_provincial_rate,1889,1148,741,9.623514575512317,69.28930494368869,0.3520031472403494,1.9963625562548546,14.373810405034952,0.05942821337433101,0.0,9697,79,0,0,0
+large_record_first,103,99,4,15.466681392510962,111.36010602607891,0.860681407678052,0.014714930345799498,0.10594749848975639,0.0004461475504164386,4.678553427750878e-16,111,1,0,0,0

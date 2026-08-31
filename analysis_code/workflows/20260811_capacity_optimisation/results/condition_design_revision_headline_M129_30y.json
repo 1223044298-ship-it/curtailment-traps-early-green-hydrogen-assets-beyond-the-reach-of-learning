@@ -1,0 +1,51 @@
+{
+  "primary_operating_years": 30,
+  "primary_end_year": 2055,
+  "static_reference": {
+    "expectation_case": "static_28_no_learning",
+    "terminal_h2_price_2060_real_cny_per_kg": 28.0,
+    "price_path_shape": "flat",
+    "learning_known_at_fid": "none",
+    "operating_years": 30,
+    "project_end_year": 2055,
+    "low_return_qualified_count": 1809,
+    "six_point_five_qualified_count": 1099,
+    "strict_marginal_count": 710,
+    "low_return_capacity_gw": 8.435457194134798,
+    "low_return_capex_100m_cny": 607.3529179777055,
+    "low_return_h2_mt_per_year": 0.31842110355394293
+  },
+  "anticipated_22_linear": {
+    "expectation_case": "anticipated_22_linear",
+    "terminal_h2_price_2060_real_cny_per_kg": 22.0,
+    "price_path_shape": "linear",
+    "learning_known_at_fid": "combined",
+    "operating_years": 30,
+    "project_end_year": 2055,
+    "low_return_qualified_count": 1282,
+    "six_point_five_qualified_count": 971,
+    "strict_marginal_count": 311,
+    "low_return_capacity_gw": 5.889677217341686,
+    "low_return_capex_100m_cny": 424.05675964860137,
+    "low_return_h2_mt_per_year": 0.24428208152931885
+  },
+  "anticipated_18_linear": {
+    "expectation_case": "anticipated_18_linear",
+    "terminal_h2_price_2060_real_cny_per_kg": 18.0,
+    "price_path_shape": "linear",
+    "learning_known_at_fid": "combined",
+    "operating_years": 30,
+    "project_end_year": 2055,
+    "low_return_qualified_count": 1077,
+    "six_point_five_qualified_count": 761,
+    "strict_marginal_count": 316,
+    "low_return_capacity_gw": 4.536776380360574,
+    "low_return_capex_100m_cny": 326.64789938596135,
+    "low_return_h2_mt_per_year": 0.19723200948021222
+  },
+  "interpretation": {
+    "static_reference": "Myopic/static-expectation counterfactual, not a forecast of actual FID decisions.",
+    "anticipated_cases": "FID conditions use the same conditional price and accessible operating-learning path used to value the investment.",
+    "realization_matrix": "Separates information available at FID from the price and learning path subsequently realized."
+  }
+}

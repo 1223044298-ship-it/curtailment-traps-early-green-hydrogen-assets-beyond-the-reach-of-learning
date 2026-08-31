@@ -1,0 +1,8 @@
+{
+  "all_continuous_changes_within_audited_window": true,
+  "minimum_capacity_respected": true,
+  "low_membership_change_below_1pct": true,
+  "strict_membership_change_below_1pct": true,
+  "strict_jaccard_above_0p99": true,
+  "passed": true
+}

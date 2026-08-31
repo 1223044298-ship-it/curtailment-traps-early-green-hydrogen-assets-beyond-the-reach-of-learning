@@ -1,0 +1,7 @@
+﻿resource_branch,technology,pem_case,system_capex_cny_per_kw,allin_non_electric_opex_share,energy_kwh_per_kg_bol,stack_life_hours,degradation_per_1000h,minimum_load_share,explicit_stack_replacement_share,low_return_entry_count,colocated_6p5_independent_optimized_count,independent_h2_8_independent_optimized_count,strict_marginal_vs_6p5_count,parameter_basis
+curtailment_only,PEM,PEM_favourable,7200.0,0.035,53.0,60000.0,0.002,0.1,0.0,3788,1894,1564,1894,"World Bank 2026 Table ES.1; deterministic technology boundary, not probability"
+curtailment_only,PEM,PEM_central,10800.0,0.0425,55.0,50000.0,0.0035,0.1,0.0,888,172,33,716,"World Bank 2026 Table ES.1; deterministic technology boundary, not probability"
+curtailment_only,PEM,PEM_adverse,14400.0,0.05,56.0,40000.0,0.005,0.1,0.0,3,0,0,3,"World Bank 2026 Table ES.1; deterministic technology boundary, not probability"
+full_output_upper_bound,PEM,PEM_favourable,7200.0,0.035,53.0,60000.0,0.002,0.1,0.0,8446,7812,7580,634,"World Bank 2026 Table ES.1; deterministic technology boundary, not probability"
+full_output_upper_bound,PEM,PEM_central,10800.0,0.0425,55.0,50000.0,0.0035,0.1,0.0,5906,4947,4413,959,"World Bank 2026 Table ES.1; deterministic technology boundary, not probability"
+full_output_upper_bound,PEM,PEM_adverse,14400.0,0.05,56.0,40000.0,0.005,0.1,0.0,3311,1328,976,1983,"World Bank 2026 Table ES.1; deterministic technology boundary, not probability"

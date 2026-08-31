@@ -1,0 +1,7 @@
+﻿learning_start_gw,start_anchor_interpretation,terminal_price_cny_per_kg,price_path,strict_record_count,retain_low_count,reach_6p5_count,median_learning_gain_share_of_gap,p95_learning_gain_share_of_gap,stack_cost_factor_2030,stack_cost_factor_2060
+4.0,rounded end-2025 global installed-capacity anchor,28.0,flat,741,741,2,0.062144635214978476,0.32394691501964085,0.55,0.55
+4.0,rounded end-2025 global installed-capacity anchor,22.0,linear,741,79,0,0.062144635214978476,0.32394691501964085,0.55,0.55
+4.0,rounded end-2025 global installed-capacity anchor,18.0,linear,741,0,0,0.062144635214978476,0.32394691501964085,0.55,0.55
+20.0,conservative conditional learning normalizer,28.0,flat,741,741,2,0.062144635214978476,0.32187266624722427,0.6764085306570988,0.55
+20.0,conservative conditional learning normalizer,22.0,linear,741,79,0,0.062144635214978476,0.32187266624722427,0.6764085306570988,0.55
+20.0,conservative conditional learning normalizer,18.0,linear,741,0,0,0.062144635214978476,0.32187266624722427,0.6764085306570988,0.55

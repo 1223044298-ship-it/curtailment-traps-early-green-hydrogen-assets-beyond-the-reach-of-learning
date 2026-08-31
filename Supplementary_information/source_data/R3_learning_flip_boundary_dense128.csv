@@ -1,0 +1,711 @@
+﻿ObjectId,province,technology,critical_combined_learning_multiple,right_censored_at_20
+10956,Tibet,solar PV,1.1,False
+11041,Tibet,solar PV,,True
+11990,Tibet,solar PV,4.3,False
+1798,Qinghai,solar PV,,True
+1800,Qinghai,solar PV,,True
+4006,Qinghai,solar PV,,True
+4040,Qinghai,solar PV,,True
+4117,Qinghai,solar PV,,True
+4126,Qinghai,solar PV,,True
+4127,Qinghai,solar PV,,True
+4128,Qinghai,solar PV,,True
+4129,Qinghai,solar PV,,True
+4130,Qinghai,solar PV,,True
+4132,Qinghai,solar PV,,True
+4133,Qinghai,solar PV,,True
+4134,Qinghai,solar PV,,True
+4135,Qinghai,solar PV,,True
+4136,Qinghai,solar PV,,True
+4137,Qinghai,solar PV,,True
+4138,Qinghai,solar PV,,True
+4139,Qinghai,solar PV,,True
+4140,Qinghai,solar PV,,True
+4141,Qinghai,solar PV,,True
+4143,Qinghai,solar PV,,True
+4144,Qinghai,solar PV,,True
+4145,Qinghai,solar PV,,True
+4146,Qinghai,solar PV,,True
+4147,Qinghai,solar PV,,True
+4148,Qinghai,solar PV,,True
+4149,Qinghai,solar PV,,True
+4151,Qinghai,solar PV,,True
+4153,Qinghai,solar PV,,True
+4154,Qinghai,solar PV,,True
+4155,Qinghai,solar PV,,True
+4156,Qinghai,solar PV,,True
+4157,Qinghai,solar PV,,True
+4159,Qinghai,solar PV,,True
+4160,Qinghai,solar PV,,True
+4161,Qinghai,solar PV,,True
+4163,Qinghai,solar PV,,True
+4165,Qinghai,solar PV,,True
+4167,Qinghai,solar PV,,True
+4173,Qinghai,solar PV,,True
+4176,Qinghai,solar PV,,True
+4179,Qinghai,solar PV,,True
+4180,Qinghai,solar PV,,True
+4182,Qinghai,solar PV,,True
+4189,Qinghai,solar PV,,True
+4190,Qinghai,solar PV,,True
+4192,Qinghai,solar PV,,True
+4197,Qinghai,solar PV,,True
+4204,Qinghai,solar PV,,True
+4205,Qinghai,solar PV,,True
+4208,Qinghai,solar PV,,True
+4225,Qinghai,solar PV,,True
+4228,Qinghai,solar PV,,True
+4233,Qinghai,solar PV,,True
+4242,Qinghai,solar PV,,True
+4250,Qinghai,solar PV,,True
+4256,Qinghai,solar PV,,True
+4263,Qinghai,solar PV,,True
+4268,Qinghai,solar PV,,True
+4274,Qinghai,solar PV,,True
+4283,Qinghai,solar PV,,True
+4288,Qinghai,solar PV,,True
+4291,Qinghai,solar PV,,True
+4298,Qinghai,solar PV,,True
+4301,Qinghai,solar PV,,True
+4309,Qinghai,solar PV,,True
+4317,Qinghai,solar PV,,True
+4320,Qinghai,solar PV,,True
+4326,Qinghai,solar PV,,True
+4420,Qinghai,solar PV,,True
+4434,Qinghai,solar PV,,True
+4440,Qinghai,solar PV,,True
+4446,Qinghai,solar PV,,True
+4452,Qinghai,solar PV,,True
+4456,Qinghai,solar PV,,True
+4463,Qinghai,solar PV,,True
+4479,Qinghai,solar PV,,True
+4490,Qinghai,solar PV,,True
+4510,Qinghai,solar PV,,True
+4516,Qinghai,solar PV,,True
+4522,Qinghai,solar PV,,True
+4535,Qinghai,solar PV,,True
+4541,Qinghai,solar PV,,True
+4543,Qinghai,solar PV,,True
+4603,Qinghai,solar PV,,True
+4609,Qinghai,solar PV,,True
+4615,Qinghai,solar PV,,True
+4622,Qinghai,solar PV,,True
+4631,Qinghai,solar PV,,True
+4641,Qinghai,solar PV,,True
+4642,Qinghai,solar PV,,True
+4647,Qinghai,solar PV,,True
+4648,Qinghai,solar PV,,True
+4654,Qinghai,solar PV,,True
+4682,Qinghai,solar PV,,True
+4690,Qinghai,solar PV,,True
+4693,Qinghai,solar PV,,True
+4705,Qinghai,solar PV,,True
+4710,Qinghai,solar PV,,True
+4712,Qinghai,solar PV,,True
+4716,Qinghai,solar PV,,True
+4718,Qinghai,solar PV,,True
+4722,Qinghai,solar PV,,True
+4724,Qinghai,solar PV,,True
+4726,Qinghai,solar PV,,True
+4744,Qinghai,solar PV,,True
+4746,Qinghai,solar PV,,True
+4752,Qinghai,solar PV,,True
+4756,Qinghai,solar PV,,True
+4757,Qinghai,solar PV,,True
+4767,Qinghai,solar PV,,True
+4795,Qinghai,solar PV,,True
+4804,Qinghai,solar PV,,True
+4811,Qinghai,solar PV,,True
+4817,Qinghai,solar PV,,True
+4824,Qinghai,solar PV,,True
+4850,Qinghai,solar PV,,True
+4854,Qinghai,solar PV,,True
+4857,Qinghai,solar PV,,True
+4863,Qinghai,solar PV,,True
+4865,Qinghai,solar PV,,True
+4868,Qinghai,solar PV,,True
+4874,Qinghai,solar PV,,True
+4879,Qinghai,solar PV,,True
+4882,Qinghai,solar PV,,True
+4889,Qinghai,solar PV,,True
+4891,Qinghai,solar PV,,True
+4897,Qinghai,solar PV,,True
+4899,Qinghai,solar PV,,True
+4903,Qinghai,solar PV,,True
+4905,Qinghai,solar PV,,True
+4911,Qinghai,solar PV,,True
+4916,Qinghai,solar PV,,True
+4928,Qinghai,solar PV,,True
+4931,Qinghai,solar PV,,True
+4932,Qinghai,solar PV,,True
+4933,Qinghai,solar PV,,True
+4943,Qinghai,solar PV,,True
+4944,Qinghai,solar PV,,True
+4952,Qinghai,solar PV,,True
+4956,Qinghai,solar PV,,True
+4957,Qinghai,solar PV,,True
+4960,Qinghai,solar PV,,True
+4966,Qinghai,solar PV,,True
+4977,Qinghai,solar PV,,True
+4992,Qinghai,solar PV,,True
+4994,Qinghai,solar PV,,True
+4997,Qinghai,solar PV,,True
+4998,Qinghai,solar PV,,True
+6017,Xinjiang,solar PV,,True
+6030,Xinjiang,solar PV,,True
+6031,Xinjiang,solar PV,,True
+6032,Xinjiang,solar PV,,True
+6036,Xinjiang,solar PV,,True
+6037,Xinjiang,solar PV,,True
+6057,Xinjiang,solar PV,,True
+6059,Xinjiang,solar PV,,True
+6060,Xinjiang,solar PV,,True
+6061,Xinjiang,solar PV,,True
+6063,Xinjiang,solar PV,,True
+6066,Xinjiang,solar PV,,True
+6067,Xinjiang,solar PV,,True
+6068,Xinjiang,solar PV,,True
+6069,Xinjiang,solar PV,,True
+6070,Xinjiang,solar PV,,True
+6076,Xinjiang,solar PV,,True
+6082,Xinjiang,solar PV,,True
+6083,Xinjiang,solar PV,,True
+6086,Xinjiang,solar PV,,True
+6089,Xinjiang,solar PV,,True
+6098,Xinjiang,solar PV,,True
+6101,Xinjiang,solar PV,,True
+6102,Xinjiang,solar PV,,True
+6104,Xinjiang,solar PV,,True
+6111,Xinjiang,solar PV,,True
+6112,Xinjiang,solar PV,,True
+6114,Xinjiang,solar PV,,True
+6120,Xinjiang,solar PV,,True
+6123,Xinjiang,solar PV,,True
+6124,Xinjiang,solar PV,,True
+6129,Xinjiang,solar PV,,True
+6131,Xinjiang,solar PV,,True
+6133,Xinjiang,solar PV,,True
+6140,Xinjiang,solar PV,,True
+6143,Xinjiang,solar PV,,True
+6149,Xinjiang,solar PV,,True
+6159,Xinjiang,solar PV,,True
+6160,Xinjiang,solar PV,,True
+6165,Xinjiang,solar PV,,True
+6178,Xinjiang,solar PV,,True
+6183,Xinjiang,solar PV,,True
+6189,Xinjiang,solar PV,,True
+6190,Xinjiang,solar PV,,True
+6191,Xinjiang,solar PV,,True
+6197,Xinjiang,solar PV,,True
+6199,Xinjiang,solar PV,,True
+6214,Xinjiang,solar PV,,True
+6215,Xinjiang,solar PV,,True
+6219,Xinjiang,solar PV,,True
+6224,Xinjiang,solar PV,,True
+6230,Xinjiang,solar PV,,True
+6247,Xinjiang,solar PV,,True
+6253,Xinjiang,solar PV,,True
+6259,Xinjiang,solar PV,,True
+6268,Xinjiang,solar PV,,True
+6270,Xinjiang,solar PV,,True
+6276,Xinjiang,solar PV,,True
+6288,Xinjiang,solar PV,,True
+6290,Xinjiang,solar PV,,True
+6294,Xinjiang,solar PV,,True
+6295,Xinjiang,solar PV,,True
+6321,Xinjiang,solar PV,,True
+6322,Xinjiang,solar PV,,True
+6323,Xinjiang,solar PV,,True
+6328,Xinjiang,solar PV,,True
+6358,Xinjiang,solar PV,,True
+6360,Xinjiang,solar PV,,True
+6361,Xinjiang,solar PV,,True
+6362,Xinjiang,solar PV,,True
+6365,Xinjiang,solar PV,,True
+6380,Xinjiang,solar PV,,True
+6387,Xinjiang,solar PV,,True
+6388,Xinjiang,solar PV,,True
+6389,Xinjiang,solar PV,,True
+6394,Xinjiang,solar PV,,True
+6405,Xinjiang,solar PV,,True
+6415,Xinjiang,solar PV,,True
+6428,Xinjiang,solar PV,,True
+6435,Xinjiang,solar PV,,True
+6443,Xinjiang,solar PV,,True
+6447,Xinjiang,solar PV,,True
+6451,Xinjiang,solar PV,,True
+6465,Xinjiang,solar PV,,True
+6467,Xinjiang,solar PV,,True
+6468,Xinjiang,solar PV,,True
+6475,Xinjiang,solar PV,,True
+6476,Xinjiang,solar PV,,True
+6485,Xinjiang,solar PV,,True
+6528,Xinjiang,solar PV,,True
+6536,Xinjiang,solar PV,,True
+6538,Xinjiang,solar PV,,True
+6548,Xinjiang,solar PV,,True
+6559,Xinjiang,solar PV,,True
+6564,Xinjiang,solar PV,,True
+6565,Xinjiang,solar PV,,True
+6566,Xinjiang,solar PV,,True
+6574,Xinjiang,solar PV,,True
+6576,Xinjiang,solar PV,,True
+6579,Xinjiang,solar PV,,True
+6582,Xinjiang,solar PV,,True
+6590,Xinjiang,solar PV,,True
+6598,Xinjiang,solar PV,,True
+6602,Xinjiang,solar PV,,True
+6607,Xinjiang,solar PV,,True
+6609,Xinjiang,solar PV,,True
+6625,Xinjiang,solar PV,,True
+6628,Xinjiang,solar PV,,True
+6634,Xinjiang,solar PV,,True
+6638,Xinjiang,solar PV,,True
+6644,Xinjiang,solar PV,,True
+6659,Xinjiang,solar PV,,True
+6669,Xinjiang,solar PV,,True
+6672,Xinjiang,solar PV,,True
+6675,Xinjiang,solar PV,,True
+6707,Xinjiang,solar PV,,True
+6720,Xinjiang,solar PV,,True
+6731,Xinjiang,solar PV,,True
+6739,Xinjiang,solar PV,,True
+6740,Xinjiang,solar PV,,True
+6745,Xinjiang,solar PV,,True
+6747,Xinjiang,solar PV,,True
+6753,Xinjiang,solar PV,,True
+6755,Xinjiang,solar PV,,True
+6760,Xinjiang,solar PV,,True
+6764,Xinjiang,solar PV,,True
+6766,Xinjiang,solar PV,,True
+6777,Xinjiang,solar PV,,True
+6790,Xinjiang,solar PV,,True
+6793,Xinjiang,solar PV,,True
+6799,Xinjiang,solar PV,,True
+6802,Xinjiang,solar PV,,True
+6804,Xinjiang,solar PV,,True
+6806,Xinjiang,solar PV,,True
+6812,Xinjiang,solar PV,,True
+6815,Xinjiang,solar PV,,True
+6819,Xinjiang,solar PV,,True
+6824,Xinjiang,solar PV,,True
+6827,Xinjiang,solar PV,,True
+6831,Xinjiang,solar PV,,True
+6839,Xinjiang,solar PV,,True
+6845,Xinjiang,solar PV,,True
+6852,Xinjiang,solar PV,,True
+6854,Xinjiang,solar PV,,True
+6867,Xinjiang,solar PV,,True
+6883,Xinjiang,solar PV,,True
+6885,Xinjiang,solar PV,,True
+6895,Xinjiang,solar PV,,True
+6898,Xinjiang,solar PV,,True
+6907,Xinjiang,solar PV,,True
+6913,Xinjiang,solar PV,,True
+6916,Xinjiang,solar PV,,True
+6918,Xinjiang,solar PV,,True
+6928,Xinjiang,solar PV,,True
+6938,Xinjiang,solar PV,,True
+6959,Xinjiang,solar PV,,True
+6963,Xinjiang,solar PV,,True
+697,Gansu,solar PV,,True
+6981,Xinjiang,solar PV,,True
+7325,Xinjiang,solar PV,,True
+7332,Xinjiang,solar PV,,True
+W100,Gansu,wind,,True
+W1057,Guangxi,wind,,True
+W1069,Guangxi,wind,,True
+W1073,Guangxi,wind,,True
+W1083,Guangxi,wind,,True
+W1130,Hebei,wind,,True
+W1134,Hebei,wind,,True
+W124,Gansu,wind,,True
+W125,Gansu,wind,,True
+W1273,Guangxi,wind,,True
+W1280,Hebei,wind,,True
+W1284,Hebei,wind,,True
+W130,Gansu,wind,,True
+W1340,Hebei,wind,,True
+W1356,Hebei,wind,,True
+W1358,Hebei,wind,,True
+W136,Gansu,wind,,True
+W1360,Hebei,wind,,True
+W1362,Hebei,wind,,True
+W1374,Hebei,wind,,True
+W1376,Hebei,wind,,True
+W138,Gansu,wind,,True
+W1387,Hebei,wind,,True
+W1389,Hebei,wind,,True
+W139,Gansu,wind,,True
+W140,Gansu,wind,,True
+W141,Gansu,wind,,True
+W1482,Hainan,wind,,True
+W1483,Hainan,wind,,True
+W1502,Hebei,wind,,True
+W1509,Hebei,wind,,True
+W1529,Hebei,wind,,True
+W1612,Hebei,wind,,True
+W1769,Guangxi,wind,,True
+W1774,Guangxi,wind,,True
+W178,Beijing,wind,,True
+W180,Beijing,wind,,True
+W181,Beijing,wind,,True
+W1866,Hebei,wind,,True
+W1875,Hebei,wind,,True
+W1883,Hebei,wind,,True
+W1887,Hebei,wind,,True
+W1892,Hebei,wind,,True
+W2206,Heilongjiang,wind,,True
+W2208,Heilongjiang,wind,,True
+W2214,Heilongjiang,wind,,True
+W2237,Heilongjiang,wind,,True
+W2263,Hebei,wind,,True
+W2266,Hebei,wind,,True
+W2269,Heilongjiang,wind,,True
+W2282,Heilongjiang,wind,,True
+W2377,Hebei,wind,,True
+W2379,Heilongjiang,wind,,True
+W2383,Heilongjiang,wind,,True
+W2404,Heilongjiang,wind,,True
+W2420,Heilongjiang,wind,,True
+W2423,Hebei,wind,,True
+W2431,Hebei,wind,,True
+W2436,Hebei,wind,,True
+W2441,Hebei,wind,,True
+W2447,Hebei,wind,,True
+W2455,Hebei,wind,,True
+W2456,Heilongjiang,wind,,True
+W2461,Hebei,wind,,True
+W2465,Hebei,wind,,True
+W2466,Heilongjiang,wind,,True
+W2468,Hebei,wind,,True
+W2471,Heilongjiang,wind,,True
+W2475,Heilongjiang,wind,,True
+W2476,Hebei,wind,,True
+W2477,Hebei,wind,,True
+W2482,Hebei,wind,,True
+W2488,Hebei,wind,,True
+W2495,Heilongjiang,wind,,True
+W2497,Heilongjiang,wind,,True
+W2504,Heilongjiang,wind,,True
+W2507,Hebei,wind,,True
+W2515,Hebei,wind,,True
+W2519,Hebei,wind,,True
+W2524,Heilongjiang,wind,,True
+W2525,Hebei,wind,,True
+W2553,Heilongjiang,wind,,True
+W2567,Heilongjiang,wind,,True
+W2577,Heilongjiang,wind,,True
+W2590,Heilongjiang,wind,,True
+W2604,Heilongjiang,wind,,True
+W2610,Heilongjiang,wind,,True
+W2622,Heilongjiang,wind,,True
+W2626,Heilongjiang,wind,,True
+W2638,Heilongjiang,wind,,True
+W2648,Heilongjiang,wind,,True
+W2655,Heilongjiang,wind,,True
+W2665,Heilongjiang,wind,,True
+W2679,Heilongjiang,wind,,True
+W2693,Heilongjiang,wind,,True
+W2703,Heilongjiang,wind,,True
+W2708,Heilongjiang,wind,,True
+W2710,Heilongjiang,wind,,True
+W2713,Heilongjiang,wind,,True
+W2720,Heilongjiang,wind,,True
+W2724,Heilongjiang,wind,,True
+W2734,Heilongjiang,wind,,True
+W2736,Heilongjiang,wind,,True
+W2751,Heilongjiang,wind,,True
+W2766,Heilongjiang,wind,,True
+W2767,Heilongjiang,wind,,True
+W2778,Heilongjiang,wind,,True
+W2780,Hebei,wind,,True
+W2781,Heilongjiang,wind,,True
+W2786,Hebei,wind,,True
+W2790,Heilongjiang,wind,,True
+W2792,Hebei,wind,,True
+W2794,Heilongjiang,wind,,True
+W2797,Hebei,wind,,True
+W2803,Heilongjiang,wind,,True
+W2812,Heilongjiang,wind,,True
+W2813,Heilongjiang,wind,,True
+W2820,Heilongjiang,wind,,True
+W2822,Heilongjiang,wind,,True
+W2824,Heilongjiang,wind,,True
+W2827,Heilongjiang,wind,,True
+W2833,Heilongjiang,wind,,True
+W2837,Heilongjiang,wind,,True
+W2843,Heilongjiang,wind,,True
+W2845,Heilongjiang,wind,,True
+W2853,Heilongjiang,wind,,True
+W2866,Heilongjiang,wind,,True
+W2868,Heilongjiang,wind,,True
+W2869,Heilongjiang,wind,,True
+W2877,Heilongjiang,wind,,True
+W2880,Heilongjiang,wind,,True
+W2887,Heilongjiang,wind,,True
+W2892,Heilongjiang,wind,,True
+W2907,Heilongjiang,wind,,True
+W2911,Heilongjiang,wind,,True
+W2919,Heilongjiang,wind,,True
+W2924,Heilongjiang,wind,,True
+W2934,Heilongjiang,wind,,True
+W2966,Heilongjiang,wind,,True
+W3095,Hunan,wind,,True
+W3102,Hunan,wind,,True
+W3107,Hunan,wind,,True
+W3191,Inner Mongolia,wind,,True
+W3243,Hunan,wind,,True
+W3274,Inner Mongolia,wind,,True
+W3282,Inner Mongolia,wind,,True
+W3338,Hunan,wind,,True
+W3351,Hunan,wind,,True
+W3358,Hunan,wind,,True
+W3384,Hunan,wind,,True
+W3410,Hunan,wind,,True
+W3413,Hunan,wind,,True
+W3447,Hunan,wind,,True
+W3449,Hunan,wind,,True
+W3459,Hunan,wind,,True
+W3463,Hunan,wind,,True
+W3472,Hunan,wind,,True
+W3572,Hunan,wind,,True
+W3610,Hunan,wind,,True
+W3973,Hunan,wind,,True
+W3983,Hunan,wind,,True
+W4016,Inner Mongolia,wind,,True
+W4047,Inner Mongolia,wind,,True
+W4050,Inner Mongolia,wind,,True
+W4054,Inner Mongolia,wind,,True
+W4062,Inner Mongolia,wind,,True
+W4090,Inner Mongolia,wind,,True
+W4101,Inner Mongolia,wind,,True
+W4230,Inner Mongolia,wind,,True
+W4253,Inner Mongolia,wind,,True
+W4259,Inner Mongolia,wind,,True
+W4268,Inner Mongolia,wind,,True
+W4304,Inner Mongolia,wind,,True
+W4313,Inner Mongolia,wind,,True
+W4347,Inner Mongolia,wind,,True
+W4386,Inner Mongolia,wind,,True
+W4416,Inner Mongolia,wind,,True
+W4461,Inner Mongolia,wind,,True
+W4475,Inner Mongolia,wind,,True
+W4484,Inner Mongolia,wind,,True
+W4505,Inner Mongolia,wind,,True
+W4506,Inner Mongolia,wind,,True
+W4510,Inner Mongolia,wind,,True
+W4517,Inner Mongolia,wind,,True
+W4522,Inner Mongolia,wind,,True
+W4533,Inner Mongolia,wind,,True
+W4534,Inner Mongolia,wind,1.0,False
+W4539,Inner Mongolia,wind,,True
+W4548,Inner Mongolia,wind,,True
+W4551,Inner Mongolia,wind,,True
+W4588,Inner Mongolia,wind,,True
+W4603,Inner Mongolia,wind,,True
+W4611,Inner Mongolia,wind,,True
+W4626,Inner Mongolia,wind,,True
+W4690,Inner Mongolia,wind,,True
+W4736,Inner Mongolia,wind,,True
+W4753,Inner Mongolia,wind,,True
+W4783,Inner Mongolia,wind,,True
+W4791,Inner Mongolia,wind,,True
+W4807,Inner Mongolia,wind,,True
+W4808,Inner Mongolia,wind,,True
+W4814,Inner Mongolia,wind,,True
+W4815,Inner Mongolia,wind,,True
+W4832,Inner Mongolia,wind,,True
+W4837,Inner Mongolia,wind,,True
+W4852,Inner Mongolia,wind,,True
+W4875,Inner Mongolia,wind,,True
+W4888,Inner Mongolia,wind,,True
+W4964,Inner Mongolia,wind,,True
+W4968,Inner Mongolia,wind,,True
+W4991,Inner Mongolia,wind,,True
+W5005,Qinghai,wind,,True
+W5007,Qinghai,wind,,True
+W5009,Qinghai,wind,,True
+W5010,Qinghai,wind,,True
+W5014,Qinghai,wind,,True
+W5019,Qinghai,wind,,True
+W5021,Qinghai,wind,,True
+W5022,Qinghai,wind,,True
+W5025,Qinghai,wind,,True
+W5112,Liaoning,wind,2.9,False
+W5243,Liaoning,wind,,True
+W5305,Liaoning,wind,,True
+W5342,Liaoning,wind,1.0,False
+W5379,Liaoning,wind,0.9,False
+W5423,Liaoning,wind,,True
+W5501,Shandong,wind,,True
+W5754,Qinghai,wind,,True
+W5824,Jilin,wind,,True
+W583,Gansu,wind,,True
+W584,Gansu,wind,,True
+W585,Gansu,wind,,True
+W5940,Qinghai,wind,,True
+W5948,Jilin,wind,,True
+W5967,Liaoning,wind,,True
+W6268,Shanxi,wind,,True
+W6270,Shanxi,wind,,True
+W6271,Shanxi,wind,,True
+W629,Gansu,wind,,True
+W6339,Shandong,wind,,True
+W6352,Shandong,wind,,True
+W6360,Shandong,wind,,True
+W6375,Shandong,wind,,True
+W6384,Shandong,wind,,True
+W6386,Shandong,wind,,True
+W6452,Shanxi,wind,,True
+W6550,Shanxi,wind,,True
+W6723,Shanxi,wind,,True
+W6866,Shanxi,wind,,True
+W6906,Shanxi,wind,,True
+W6910,Shandong,wind,,True
+W6915,Shanxi,wind,,True
+W6918,Shandong,wind,,True
+W6931,Shandong,wind,,True
+W6937,Shandong,wind,,True
+W6954,Shandong,wind,,True
+W6956,Shandong,wind,,True
+W7010,Xinjiang,wind,,True
+W7013,Xinjiang,wind,,True
+W7016,Xinjiang,wind,,True
+W7019,Shanxi,wind,,True
+W7029,Shanxi,wind,,True
+W7080,Shanxi,wind,,True
+W7124,Shanxi,wind,,True
+W7125,Shanxi,wind,,True
+W7127,Shanxi,wind,,True
+W7177,Shanxi,wind,,True
+W7183,Shanxi,wind,,True
+W7194,Xinjiang,wind,,True
+W7196,Shanxi,wind,,True
+W7213,Xinjiang,wind,,True
+W7224,Xinjiang,wind,,True
+W7233,Xinjiang,wind,,True
+W7243,Xinjiang,wind,,True
+W7248,Shanxi,wind,,True
+W7253,Shanxi,wind,,True
+W7256,Xinjiang,wind,,True
+W7258,Xinjiang,wind,,True
+W7260,Shanxi,wind,,True
+W7268,Xinjiang,wind,,True
+W7269,Shanxi,wind,,True
+W7273,Xinjiang,wind,,True
+W7276,Xinjiang,wind,,True
+W7277,Shanxi,wind,,True
+W7281,Xinjiang,wind,,True
+W7285,Xinjiang,wind,,True
+W7371,Shanxi,wind,,True
+W7380,Xinjiang,wind,,True
+W7382,Shanxi,wind,,True
+W7383,Xinjiang,wind,,True
+W7399,Xinjiang,wind,,True
+W7408,Shanxi,wind,,True
+W7410,Xinjiang,wind,,True
+W7421,Xinjiang,wind,,True
+W7424,Xinjiang,wind,,True
+W7431,Xinjiang,wind,,True
+W7439,Xinjiang,wind,,True
+W7447,Xinjiang,wind,,True
+W7460,Xinjiang,wind,,True
+W7468,Xinjiang,wind,,True
+W7470,Xinjiang,wind,,True
+W7474,Shanxi,wind,,True
+W7477,Xinjiang,wind,,True
+W7479,Shanxi,wind,,True
+W7480,Xinjiang,wind,,True
+W7487,Xinjiang,wind,,True
+W7492,Shanxi,wind,,True
+W7495,Xinjiang,wind,,True
+W7508,Xinjiang,wind,,True
+W7514,Shanxi,wind,,True
+W7515,Shanxi,wind,,True
+W7516,Xinjiang,wind,,True
+W7520,Shanxi,wind,,True
+W7521,Shanxi,wind,,True
+W7522,Xinjiang,wind,,True
+W7535,Shanxi,wind,,True
+W7545,Xinjiang,wind,,True
+W7546,Xinjiang,wind,,True
+W7559,Xinjiang,wind,,True
+W7560,Xinjiang,wind,,True
+W7568,Xinjiang,wind,,True
+W7578,Xinjiang,wind,,True
+W7592,Xinjiang,wind,,True
+W7600,Xinjiang,wind,,True
+W7603,Shanxi,wind,,True
+W7606,Xinjiang,wind,,True
+W7611,Shanxi,wind,,True
+W7626,Shanxi,wind,,True
+W7639,Shanxi,wind,,True
+W7661,Shanxi,wind,,True
+W7664,Xinjiang,wind,,True
+W7683,Xinjiang,wind,,True
+W7693,Shanxi,wind,,True
+W7695,Xinjiang,wind,,True
+W7700,Shanxi,wind,,True
+W7725,Xinjiang,wind,,True
+W7727,Xinjiang,wind,,True
+W7729,Xinjiang,wind,,True
+W7735,Xinjiang,wind,,True
+W7754,Shanxi,wind,,True
+W7757,Xinjiang,wind,,True
+W7776,Xinjiang,wind,,True
+W7784,Xinjiang,wind,,True
+W7787,Xinjiang,wind,,True
+W7788,Shanxi,wind,,True
+W7789,Shanxi,wind,,True
+W7793,Xinjiang,wind,,True
+W7794,Shanxi,wind,,True
+W7799,Shanxi,wind,,True
+W7804,Xinjiang,wind,,True
+W7806,Xinjiang,wind,,True
+W7812,Shanxi,wind,,True
+W7816,Xinjiang,wind,,True
+W7819,Shanxi,wind,,True
+W7828,Xinjiang,wind,,True
+W7829,Shanxi,wind,,True
+W7830,Shanxi,wind,,True
+W7838,Shanxi,wind,,True
+W7840,Xinjiang,wind,,True
+W7844,Xinjiang,wind,,True
+W7850,Shanxi,wind,,True
+W7851,Xinjiang,wind,,True
+W7852,Shanxi,wind,,True
+W7865,Xinjiang,wind,,True
+W7876,Xinjiang,wind,,True
+W7877,Shanxi,wind,,True
+W7883,Xinjiang,wind,,True
+W7884,Shanxi,wind,,True
+W7890,Xinjiang,wind,,True
+W7897,Xinjiang,wind,,True
+W7904,Xinjiang,wind,,True
+W7911,Xinjiang,wind,,True
+W7914,Xinjiang,wind,,True
+W7921,Xinjiang,wind,,True
+W7927,Xinjiang,wind,,True
+W7935,Shanxi,wind,,True
+W7941,Shanxi,wind,,True
+W7948,Shanxi,wind,,True
+W7953,Shanxi,wind,,True
+W7958,Shanxi,wind,,True
+W7978,Shanxi,wind,,True
+W8000,Xinjiang,wind,,True
+W8045,Yunnan,wind,,True
+W8050,Yunnan,wind,,True
+W8096,Yunnan,wind,,True
+W8098,Yunnan,wind,,True
+W8111,Yunnan,wind,,True
+W8153,Yunnan,wind,,True
+W8162,Yunnan,wind,,True
+W8214,Yunnan,wind,,True
+W89,Gansu,wind,,True
+W912,Gansu,wind,,True
+W922,Gansu,wind,,True
+W925,Gansu,wind,,True
+W97,Gansu,wind,,True
+W985,Gansu,wind,,True
+W994,Gansu,wind,,True

@@ -1,0 +1,17 @@
+﻿resource_branch,entry_h2_price_real_cny_per_kg,low_return_entry_count,colocated_6p5_count,independent_h2_8_count,strict_marginal_vs_6p5_count
+curtailment_only,18.0,61,2,1,59
+curtailment_only,20.0,453,19,9,434
+curtailment_only,22.0,890,285,144,605
+curtailment_only,24.0,1135,610,427,525
+curtailment_only,26.0,1347,939,774,408
+curtailment_only,28.0,1889,1148,1050,741
+curtailment_only,30.0,2645,1332,1203,1313
+curtailment_only,32.0,3280,1681,1443,1599
+full_output_upper_bound,18.0,1276,578,392,698
+full_output_upper_bound,20.0,3137,1550,1335,1587
+full_output_upper_bound,22.0,4392,3575,3158,817
+full_output_upper_bound,24.0,5452,4573,4367,879
+full_output_upper_bound,26.0,6490,5667,5425,823
+full_output_upper_bound,28.0,7385,6625,6342,760
+full_output_upper_bound,30.0,8077,7512,7406,565
+full_output_upper_bound,32.0,8763,8091,7975,672

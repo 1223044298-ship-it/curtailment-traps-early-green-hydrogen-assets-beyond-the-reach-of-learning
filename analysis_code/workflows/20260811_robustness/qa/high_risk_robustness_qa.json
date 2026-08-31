@@ -1,0 +1,21 @@
+{
+  "spatial_methods": [
+    "small_record_first",
+    "uniform_provincial_rate",
+    "large_record_first"
+  ],
+  "spatial_group_energy_closure": true,
+  "learning_start_anchors_gw": [
+    4.0,
+    20.0
+  ],
+  "resource_paths": [
+    "decline_to_50pct",
+    "decline_to_75pct",
+    "increase_to_125pct",
+    "stable_100pct"
+  ],
+  "minimum_load_common_grid": true,
+  "runtime_seconds": 26.14798903465271,
+  "passed": true
+}

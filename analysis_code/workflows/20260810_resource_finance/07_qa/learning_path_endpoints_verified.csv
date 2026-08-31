@@ -1,0 +1,9 @@
+﻿year,tech_case_id,cumulative_electrolyzer_gw,equipment_capex_factor,bop_epc_factor,energy_consumption_kwh_per_kg,stack_cost_factor,stack_life_hours
+2026,T0_no_learning,4.0,1.0,1.0,55.0,1.0,60000.0
+2060,T0_no_learning,2200.0,1.0,1.0,55.0,1.0,60000.0
+2026,T1_conservative,4.0,1.0,1.0,55.0,1.0,60000.0
+2060,T1_conservative,1000.0,0.65,0.851351315896921,52.0,0.65,80000.0
+2026,T2_base,4.0,1.0,1.0,55.0,1.0,60000.0
+2060,T2_base,2200.0,0.55,0.65,50.0,0.55,90000.0
+2026,T3_optimistic,4.0,1.0,1.0,55.0,1.0,60000.0
+2060,T3_optimistic,3500.0,0.45,0.5,48.0,0.4,100000.0

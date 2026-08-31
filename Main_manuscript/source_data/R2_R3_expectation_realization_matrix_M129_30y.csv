@@ -1,0 +1,10 @@
+﻿expectation_case,realization_case,operating_years,selected_low_return_count,selected_strict_marginal_count,retain_low_return_count,durable_6p5_count,strict_retain_low_count,strict_durable_6p5_count,durable_h2_mt_per_year,at_risk_capex_100m_cny
+static_28_no_learning,realized_flat_28,30,1809,710,1809,1011,710,3,0.25415734393635636,157.0772176533496
+static_28_no_learning,realized_22_linear,30,1809,710,1078,443,45,0,0.15638334474233448,344.860586420689
+static_28_no_learning,realized_18_linear,30,1809,710,827,274,0,0,0.10334968498959256,439.846090064532
+anticipated_22_linear,realized_flat_28,30,1282,311,1282,1118,311,147,0.23650631901468946,16.51616611104339
+anticipated_22_linear,realized_22_linear,30,1282,311,1282,684,311,0,0.19425529634274222,97.02932361902587
+anticipated_22_linear,realized_18_linear,30,1282,311,1049,331,79,0,0.11949369846105946,230.90181317715442
+anticipated_18_linear,realized_flat_28,30,1077,316,1077,1077,316,316,0.19723200948021222,0.0
+anticipated_18_linear,realized_22_linear,30,1077,316,1077,952,316,191,0.19034506610950772,13.016305480662655
+anticipated_18_linear,realized_18_linear,30,1077,316,1077,492,316,0,0.1421765306422711,98.28389873171452

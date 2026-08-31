@@ -1,0 +1,4 @@
+﻿error_scenario,aace_class,estimate_use,error_p10,error_p90,interpretation,stochastic_mapping,draw_count,calibration_scope
+AACE_Class2_control_outer,Class 2,control_or_bid_tender,-0.15,0.2,AACE 18R-97 conservative outer 80% accuracy anchor,mean-zero split-normal with stated P10 and P90,5000,external engineering-estimate benchmark; not hydrogen-specific historical calibration
+AACE_Class3_budget_control_outer,Class 3,budget_authorization_or_control,-0.2,0.3,AACE 18R-97 conservative outer 80% accuracy anchor,mean-zero split-normal with stated P10 and P90,5000,external engineering-estimate benchmark; not hydrogen-specific historical calibration
+AACE_Class4_feasibility_outer,Class 4,study_or_feasibility,-0.3,0.5,AACE 18R-97 conservative outer 80% accuracy anchor,mean-zero split-normal with stated P10 and P90,5000,external engineering-estimate benchmark; not hydrogen-specific historical calibration

@@ -1,0 +1,6 @@
+﻿uniform_plant_gate_netback_penalty_cny_per_kg,entry_net_price_cny_per_kg,reoptimized_low_return_count,reoptimized_6p5_count,reoptimized_strict_count,strict_membership_jaccard_vs_zero_penalty,xinjiang_qinghai_share_of_reoptimized_strict,locked_strict_retain_low_count,locked_strict_reach_6p5_count
+0.0,28.0,1809,1099,710,1.0,0.5535211267605634,710,3
+0.5,27.5,1683,1064,619,0.7838926174496644,0.5234248788368336,583,0
+1.0,27.0,1572,1034,538,0.6103225806451613,0.4962825278810409,422,0
+2.0,26.0,1360,892,468,0.2846237731733915,0.3055555555555556,162,0
+4.0,24.0,1046,506,540,0.0,0.05740740740740741,0,0

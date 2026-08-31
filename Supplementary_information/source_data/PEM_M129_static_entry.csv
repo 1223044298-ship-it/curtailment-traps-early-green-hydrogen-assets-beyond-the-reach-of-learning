@@ -1,0 +1,4 @@
+﻿technology,case,capacity_candidates_per_record,minimum_load_share,installed_system_capex_cny_per_kw,allin_non_electric_opex_share,explicit_replacement_share,bol_energy_kwh_per_kg,initial_stack_life_hours,degradation_per_1000h,low_return_count,six_point_five_count,strict_marginal_count,low_return_capacity_gw,accounting_note
+PEM,favourable,129,0.1,7200.0,0.035,0.0,53.0,60000.0,0.002,3498,1826,1672,15.823678744024772,World Bank all-in O&M; no separate replacement expenditure
+PEM,central,129,0.1,10800.0,0.0425,0.0,55.0,50000.0,0.0035,700,101,599,2.356689349708088,World Bank all-in O&M; no separate replacement expenditure
+PEM,adverse,129,0.1,14400.0,0.05,0.0,56.0,40000.0,0.005,2,0,2,0.0040506137687511,World Bank all-in O&M; no separate replacement expenditure

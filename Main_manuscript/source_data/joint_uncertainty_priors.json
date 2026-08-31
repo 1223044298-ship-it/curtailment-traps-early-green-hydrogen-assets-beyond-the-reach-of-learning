@@ -1,0 +1,69 @@
+{
+  "interpretation": "Assumption-weighted probabilities conditional on stated priors; not calibrated forecasts or empirical frequencies.",
+  "seed": 20260825,
+  "draws_per_prior_case": 5000,
+  "locked_cohort_count": 710,
+  "terminal_price_priors": {
+    "triangular_12_18_22": [
+      12.0,
+      18.0,
+      22.0
+    ],
+    "triangular_15_20_22": [
+      15.0,
+      20.0,
+      22.0
+    ],
+    "uniform_12_22": [
+      12.0,
+      22.0
+    ]
+  },
+  "price_timing_exponent": "Uniform(0.5, 2.0)",
+  "learning_case_probabilities": {
+    "none": 0.1,
+    "conservative": 0.25,
+    "base": 0.4,
+    "optimistic": 0.25
+  },
+  "weather": "Thirty annual draws bootstrap 2020-2025 station-specific curtailed-energy ratios with common weather-year draws across records.",
+  "delivery_exposed_netback_multiplier": "Triangular(0.5, 1.0, 1.5)",
+  "prior_cases": [
+    {
+      "name": "reference_gate",
+      "price_distribution": "triangular_12_18_22",
+      "market_boundary": "plant_gate",
+      "price_learning_latent_correlation": -0.5
+    },
+    {
+      "name": "reference_delivered",
+      "price_distribution": "triangular_12_18_22",
+      "market_boundary": "delivery_exposed",
+      "price_learning_latent_correlation": -0.5
+    },
+    {
+      "name": "upper_price_gate",
+      "price_distribution": "triangular_15_20_22",
+      "market_boundary": "plant_gate",
+      "price_learning_latent_correlation": -0.5
+    },
+    {
+      "name": "uniform_price_gate",
+      "price_distribution": "uniform_12_22",
+      "market_boundary": "plant_gate",
+      "price_learning_latent_correlation": -0.5
+    },
+    {
+      "name": "independent_price_learning",
+      "price_distribution": "triangular_12_18_22",
+      "market_boundary": "plant_gate",
+      "price_learning_latent_correlation": 0.0
+    },
+    {
+      "name": "strong_coupling",
+      "price_distribution": "triangular_12_18_22",
+      "market_boundary": "plant_gate",
+      "price_learning_latent_correlation": -0.8
+    }
+  ]
+}

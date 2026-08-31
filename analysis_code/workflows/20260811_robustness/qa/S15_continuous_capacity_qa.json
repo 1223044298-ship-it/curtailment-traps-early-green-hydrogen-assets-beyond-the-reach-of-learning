@@ -1,0 +1,6 @@
+{
+  "all_128_256_identity_changes_audited": true,
+  "adaptive_not_worse_than_256_low": true,
+  "adaptive_not_worse_than_256_high": true,
+  "passed": true
+}

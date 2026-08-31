@@ -1,0 +1,40 @@
+{
+  "weather_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "low_return_entry_count_range": [
+    2315,
+    2682
+  ],
+  "low_return_entry_count_median": 2520.5,
+  "strict_marginal_count_range": [
+    1080,
+    1321
+  ],
+  "strict_marginal_count_median": 1223.0,
+  "low_entry_intersection_all_weather_years": 2168,
+  "low_entry_union_any_year": 2884,
+  "strict_intersection_all_weather_years": 731,
+  "strict_union_any_year": 1745,
+  "terminal18_linear_combined_reach_6p5_range": [
+    0,
+    0
+  ],
+  "terminal18_linear_combined_retain_low_range": [
+    0,
+    1
+  ],
+  "fixed_capacity_retention_range_across_weather_years": [
+    2121,
+    2551
+  ],
+  "fully_adjustable_retention_range_across_weather_years": [
+    2233,
+    2584
+  ]
+}

@@ -1,0 +1,8 @@
+﻿lower_hurdle_pct,higher_hurdle_pct,lower_qualified_count,higher_qualified_count,marginal_cohort_count,central_operating_learning_upgrade_count,upgrade_share_pct,median_initial_gap_share_of_capex_pct,median_learning_gain_share_of_capex_pct,operating_years,expectation_case,realization_case
+1.4473150000000001,6.5,1809,1099,710,3,0.4225352112676056,18.536534932230413,0.0,30,static_28_no_learning,flat_28_central_operating_learning
+2.0,6.5,1688,1099,589,3,0.5093378607809848,16.40022045384,0.0,30,static_28_no_learning,flat_28_central_operating_learning
+4.0,6.5,1364,1099,265,23,8.679245283018869,8.711203262929509,0.0,30,static_28_no_learning,flat_28_central_operating_learning
+6.0,6.5,1139,1099,40,29,72.5,1.394584718322421,1.725688497977266,30,static_28_no_learning,flat_28_central_operating_learning
+6.5,8.0,1099,1036,63,8,12.698412698412698,3.282322954965053,1.3568059314359937,30,static_28_no_learning,flat_28_central_operating_learning
+6.5,10.0,1099,874,225,8,3.5555555555555554,4.590626683439636,1.0099885946972476,30,static_28_no_learning,flat_28_central_operating_learning
+8.0,10.0,1036,874,162,13,8.024691358024691,3.1919080553881125,1.0687899405144918,30,static_28_no_learning,flat_28_central_operating_learning

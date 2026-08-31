@@ -1,0 +1,21 @@
+﻿cohort,assumed_host_lifetime_years,hydrogen_project_operating_years,hydrogen_project_end_year,known_start_year_records,records_whose_existing_host_survives_full_horizon,share_of_known_records,interpretation
+low_return_entry_records,20,15,2040,1822,492,0.270032930845225,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+low_return_entry_records,20,20,2045,1822,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+low_return_entry_records,20,25,2050,1822,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+low_return_entry_records,20,30,2055,1822,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+low_return_entry_records,20,35,2060,1822,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+low_return_entry_records,25,15,2040,1822,932,0.5115257958287596,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+low_return_entry_records,25,20,2045,1822,492,0.270032930845225,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+low_return_entry_records,25,25,2050,1822,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+low_return_entry_records,25,30,2055,1822,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+low_return_entry_records,25,35,2060,1822,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+strict_marginal_records,20,15,2040,715,255,0.35664335664335667,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+strict_marginal_records,20,20,2045,715,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+strict_marginal_records,20,25,2050,715,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+strict_marginal_records,20,30,2055,715,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+strict_marginal_records,20,35,2060,715,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+strict_marginal_records,25,15,2040,715,476,0.6657342657342658,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+strict_marginal_records,25,20,2045,715,255,0.35664335664335667,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+strict_marginal_records,25,25,2050,715,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+strict_marginal_records,25,30,2055,715,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity
+strict_marginal_records,25,35,2060,715,0,0.0,strict no-repower screen; failure does not imply the location cannot contract replacement or repowered electricity

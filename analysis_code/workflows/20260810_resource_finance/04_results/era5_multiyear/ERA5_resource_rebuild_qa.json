@@ -1,0 +1,73 @@
+{
+  "status": "pass",
+  "calibration_tolerance": 1e-05,
+  "calibration_max_abs_relative_error_to_feasible_target": 2.097774312067112e-15,
+  "calibration_max_abs_relative_error_to_requested_target": 0.986561486110438,
+  "calibration_target_capped_record_count": 14,
+  "calibration_target_capped_share": 0.0013706677109849227,
+  "calibration_requested_energy_shortfall_gwh": 205.23551128520586,
+  "calibration_requested_energy_shortfall_share": 0.00018500195920533258,
+  "years_built_this_run": [
+    {
+      "year": 2020,
+      "hours": 8784,
+      "full_output_twh": 1109.164158027542,
+      "curtailed_twh": 70.77645864381951,
+      "curtailment_not_above_full": true,
+      "nonnegative_profiles": true,
+      "finite_profiles": true,
+      "source": "verified_existing_output"
+    },
+    {
+      "year": 2021,
+      "hours": 8760,
+      "full_output_twh": 1159.035990952502,
+      "curtailed_twh": 73.7644785891958,
+      "curtailment_not_above_full": true,
+      "nonnegative_profiles": true,
+      "finite_profiles": true,
+      "source": "verified_existing_output"
+    },
+    {
+      "year": 2022,
+      "hours": 8760,
+      "full_output_twh": 1127.4744621249217,
+      "curtailed_twh": 71.75090484058676,
+      "curtailment_not_above_full": true,
+      "nonnegative_profiles": true,
+      "finite_profiles": true,
+      "source": "verified_existing_output"
+    },
+    {
+      "year": 2023,
+      "hours": 8760,
+      "full_output_twh": 1164.3982704361658,
+      "curtailed_twh": 73.80254758769266,
+      "curtailment_not_above_full": true,
+      "nonnegative_profiles": true,
+      "finite_profiles": true,
+      "source": "verified_existing_output"
+    },
+    {
+      "year": 2024,
+      "hours": 8784,
+      "full_output_twh": 1121.6285643747863,
+      "curtailed_twh": 70.63522416113864,
+      "curtailment_not_above_full": true,
+      "nonnegative_profiles": true,
+      "finite_profiles": true,
+      "source": "verified_existing_output"
+    },
+    {
+      "year": 2025,
+      "hours": 8760,
+      "full_output_twh": 1166.6352679966765,
+      "curtailed_twh": 73.97142080331251,
+      "curtailment_not_above_full": true,
+      "nonnegative_profiles": true,
+      "finite_profiles": true,
+      "source": "verified_existing_output"
+    }
+  ],
+  "runtime_seconds": 15.391446352005005
+}

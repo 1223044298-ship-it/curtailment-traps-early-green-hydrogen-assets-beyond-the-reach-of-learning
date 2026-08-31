@@ -1,0 +1,8 @@
+Working-draft boundary file represented in this archive by:
+china_province_boundary.geojson
+
+Purpose: analytical visualization and internal layout only.
+Status: not verified as a Natural Resources Ministry standard-map product and has no
+review-map number in the local metadata. It must be replaced with an approved standard
+map and review number before formal publication in China. No scientific result depends
+on the boundary geometry; station coordinates and province identifiers are separate inputs.

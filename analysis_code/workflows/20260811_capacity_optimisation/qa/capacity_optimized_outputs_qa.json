@@ -1,0 +1,9 @@
+{
+  "price_sensitivity_monotonic": true,
+  "price_anchor_matches_main": true,
+  "host_rows": 20,
+  "province_strict_total": 710,
+  "capacity_search_rows": 7,
+  "continuous_capacity_qa": true,
+  "passed": true
+}

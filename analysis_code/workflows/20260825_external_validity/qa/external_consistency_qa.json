@@ -1,0 +1,11 @@
+{
+  "iea_api_url": "https://api.iea.org/hydrogen/project?unknownYear=true",
+  "iea_dataset_page": "https://www.iea.org/data-and-statistics/data-product/hydrogen-production-and-infrastructure-projects-database",
+  "iea_cost_of_capital_page": "https://www.iea.org/reports/cost-of-capital-observatory/tools-and-analysis",
+  "china_located_electrolysis_projects": 134,
+  "china_fid_construction_operational_demo_projects": 73,
+  "hurdle_rows": 5,
+  "contains_exact_4p9_context": true,
+  "interpretation_boundary": "IEA project statuses provide external project-pipeline consistency only; they do not validate station-level modeled IRR or causally identify FID.",
+  "passed": true
+}

@@ -1,0 +1,71 @@
+{
+  "status": "pass",
+  "elapsed_seconds": 28.693230628967285,
+  "station_count": 10214,
+  "weather_years": [
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "main_scenario": {
+    "scenario_id": "C563",
+    "system_capex_cny_per_kw": 7200.0,
+    "curtailed_power_price_cny_per_kwh": 0.1,
+    "opex_accounting_case": "DOE_explicit_5pct_plus_11pct",
+    "resource_realization": 1.0,
+    "debt_ratio": 0.7,
+    "loan_rate": 0.035,
+    "entry_h2_price_real_cny_per_kg": 28.0,
+    "low_hurdle_note": "20-trading-day mean five-year CGB yield",
+    "colocated_hurdle": 0.065
+  },
+  "headline": {
+    "weather_years": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "low_return_entry_count_range": [
+      2315,
+      2682
+    ],
+    "low_return_entry_count_median": 2520.5,
+    "strict_marginal_count_range": [
+      1080,
+      1321
+    ],
+    "strict_marginal_count_median": 1223.0,
+    "low_entry_intersection_all_weather_years": 2168,
+    "low_entry_union_any_year": 2884,
+    "strict_intersection_all_weather_years": 731,
+    "strict_union_any_year": 1745,
+    "terminal18_linear_combined_reach_6p5_range": [
+      0,
+      0
+    ],
+    "terminal18_linear_combined_retain_low_range": [
+      0,
+      1
+    ],
+    "fixed_capacity_retention_range_across_weather_years": [
+      2121,
+      2551
+    ],
+    "fully_adjustable_retention_range_across_weather_years": [
+      2233,
+      2584
+    ]
+  },
+  "checks": {
+    "all_station_year_blocks": true,
+    "rows_per_year_10214": true,
+    "strict_subset_of_low": true,
+    "no_nan_financial_outputs": true
+  }
+}

@@ -1,0 +1,5 @@
+Supplementary Information
+
+File title: Supplementary Information for "Early green hydrogen assets capture insufficient learning gains under price convergence"
+
+Description (40 words): Data provenance, hourly constrained-electricity reconstruction, six-year weather replay, electrolyser capacity optimisation, nominal equity cash flows, vintage-specific learning, conditional price pathways, robustness tests, numerical quality controls, supplementary tables and source data supporting the project-record analysis of green hydrogen investment in China.

@@ -1,0 +1,10 @@
+STATUS=code_and_derived_outputs_packaged_request_only_inputs_omitted
+CODE_PATHS_PORTABLE=true
+PUBLIC_AND_DERIVED_TABULAR_INPUTS_PACKAGED=true
+MANUSCRIPT_ALIGNED_RESULTS_PACKAGED=true
+FIGURE_PIPELINE_PACKAGED=true
+LABORATORY_MONTHLY_INPUTS_PACKAGED=false
+DERIVED_HOURLY_PROFILE_ARRAYS_PACKAGED=false
+ERA5_RAW_NETCDF_PACKAGED=false
+RAW_TO_RESULTS_RERUN_COMPLETED_FROM_THIS_ARCHIVE=false
+NOTE=The archive supports code inspection, result-table audit and figure regeneration from packaged outputs. The omitted laboratory and derived hourly inputs needed for a clean raw-to-results rerun are available from the corresponding author upon reasonable request subject to contributor and institutional approval; public ERA5 inputs can be redownloaded.

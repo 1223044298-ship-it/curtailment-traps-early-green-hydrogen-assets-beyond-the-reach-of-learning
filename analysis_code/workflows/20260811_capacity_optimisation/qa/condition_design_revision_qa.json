@@ -1,0 +1,9 @@
+{
+  "expectation_rows": 13,
+  "realization_rows": 9,
+  "frontier_rows": 114,
+  "return_ladder_rows": 7,
+  "all_strict_counts_nonnegative": true,
+  "low_sets_contain_6p5_sets": true,
+  "passed": true
+}

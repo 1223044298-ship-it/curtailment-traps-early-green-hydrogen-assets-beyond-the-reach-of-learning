@@ -1,0 +1,10 @@
+source,scenario,year,cumulative_electrolyser_gw,status,source_url,model_interpretation
+IEA Global Hydrogen Review 2024,announced-project installed estimate,2024,5.2,estimate,https://www.iea.org/reports/global-hydrogen-review-2024/progress-summary-dashboard,contextual announced-project estimate; not an observed installed-capacity anchor
+IEA Electrolysers 2024,announced excluding early-stage,2030,230,project pipeline,https://www.iea.org/energy-system/hydrogen/electrolysers,conditional pipeline not forecast
+IEA Electrolysers 2024,announced including early-stage,2030,520,project pipeline,https://www.iea.org/energy-system/hydrogen/electrolysers,conditional pipeline not forecast
+IEA Net Zero Roadmap 2023,NZE,2030,590,scenario requirement,https://www.iea.org/reports/hydrogen-2156,authoritative scenario path
+IEA Net Zero Roadmap 2023,NZE,2035,1340,scenario requirement,https://www.iea.org/reports/hydrogen-2156,authoritative scenario path
+IEA Net Zero Roadmap 2023,NZE,2050,3300,scenario requirement,https://www.iea.org/reports/hydrogen-2156,authoritative scenario path
+IEA Critical Minerals 2021,Sustainable Development Scenario,2050,1400,scenario requirement,https://www.iea.org/reports/the-role-of-critical-minerals-in-clean-energy-transitions/mineral-requirements-for-clean-energy-transitions,lower long-run scenario anchor
+IRENA World Energy Transitions Outlook 2023,1.5C,2030,428,scenario requirement,https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2023/Jun/IRENA_World_energy_transitions_outlook_2023.pdf,authoritative scenario path
+IRENA World Energy Transitions Outlook 2023,1.5C,2050,5722,scenario requirement,https://www.irena.org/-/media/Files/IRENA/Agency/Publication/2023/Jun/IRENA_World_energy_transitions_outlook_2023.pdf,authoritative scenario path

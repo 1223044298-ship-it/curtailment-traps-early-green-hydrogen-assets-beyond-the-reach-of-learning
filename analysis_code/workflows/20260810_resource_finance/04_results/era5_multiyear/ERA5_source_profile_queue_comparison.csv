@@ -1,0 +1,4 @@
+﻿queue,source_profile_count,era5_2020_count,intersection_count,source_only_count,era5_only_count,union_count,jaccard
+Low-return entry,1889,2315,1819,70,496,2385,0.7626834381551363
+Strict marginal,741,1080,554,187,526,1267,0.43725335438042623
+6.5% feasible,1148,1235,1117,31,118,1266,0.882306477093207

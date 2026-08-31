@@ -1,0 +1,4 @@
+﻿cohort,objectid_record_count,exact_parent_name_group_count,unique_coordinate_count_diagnostic_only,known_start_year_count,median_start_year,interpretation
+all_inventory_records,10214,9238,8590,9931,2017.0,ObjectId is the analysis unit; repeated names can be project phases. Coordinates are not used for de-duplication because tracker locations may be generalized.
+low_return_entry_records,1889,1608,1703,1822,2015.0,ObjectId is the analysis unit; repeated names can be project phases. Coordinates are not used for de-duplication because tracker locations may be generalized.
+strict_marginal_records,741,672,639,715,2016.0,ObjectId is the analysis unit; repeated names can be project phases. Coordinates are not used for de-duplication because tracker locations may be generalized.

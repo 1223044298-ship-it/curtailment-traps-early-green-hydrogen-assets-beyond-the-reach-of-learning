@@ -1,0 +1,16 @@
+{
+  "m129_set_identity": true,
+  "access_flat_central_matches_primary": true,
+  "construction_residual_zero_matches_primary": true,
+  "transport_zero_reproduces_entry": true,
+  "zero_buffer_dispatch_reproduces_absorption": true,
+  "zero_buffer_matches_primary": true,
+  "learning_rate_counts_monotone": true,
+  "weight_sensitivity_complete": true,
+  "component_incidence_scope_complete": true,
+  "component_incidence_is_bounded": true,
+  "transfer_boundary_starts_at_primary": true,
+  "transfer_counts_monotone": true,
+  "joint_incidence_boundary_complete_and_bounded": true,
+  "passed": true
+}

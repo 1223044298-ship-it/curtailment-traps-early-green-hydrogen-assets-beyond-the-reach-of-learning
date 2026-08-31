@@ -1,0 +1,24 @@
+{
+  "projection": "spherical Albers equal-area",
+  "projection_parameters_degrees": {
+    "central_longitude": 110.0,
+    "latitude_of_origin": 20.0,
+    "standard_parallel_1": 30.0,
+    "standard_parallel_2": 40.0
+  },
+  "affine_page_coordinates": [
+    2409.092935357664,
+    12.193817279918898,
+    1260.8920092658761,
+    -28.536563185926294,
+    -2450.769212215908,
+    1498.587494094964
+  ],
+  "registration_rmse_page_units": 9.766429691616342,
+  "outer_outline_initial_rmse_page_units": 18.32230958474586,
+  "fit_target_points": 3453,
+  "fit_source_points": 5000,
+  "all_boundary_source_points": 16868,
+  "all_boundary_target_points": 15109,
+  "note": "The working GeoJSON registers longitudes and latitudes to the full official linework; visible boundaries come from GS(2023)2767."
+}

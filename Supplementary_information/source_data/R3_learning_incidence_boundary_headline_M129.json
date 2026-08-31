@@ -1,0 +1,42 @@
+{
+  "cohort": {
+    "low_return": 1809,
+    "six_point_five": 1099,
+    "strict_marginal": 710
+  },
+  "access_and_pass_through": {
+    "central_full_access_flat_price_reach_6p5": 3,
+    "central_full_access_full_pass_through_reach_6p5": 0,
+    "full_pass_through_terminal_price": 16.310000000000002
+  },
+  "component_incidence": {
+    "central_2060_stack_embodied_share_of_newbuild_capital_saving": 0.18188622754491016,
+    "flat_price_no_nonstack_transfer_reach_6p5": 3,
+    "flat_price_full_nonstack_transfer_reach_6p5": 8,
+    "records_with_finite_transfer_boundary": 8,
+    "median_critical_transfer_share_among_resolved": 0.16,
+    "source_grounded_2060_stack_embodied_saving_share_range": [
+      0.1125,
+      0.4230051174548576
+    ],
+    "joint_boundary_flat_price_full_transfer_reach_6p5_range": [
+      5,
+      8
+    ],
+    "joint_boundary_positive_pass_through_max_reach_6p5": 0,
+    "joint_boundary_rows": 900
+  },
+  "unfloored_stack_learning": {
+    "fixed_60000h_counts_at_8_13_18pct": {
+      "8pct": 4,
+      "13pct": 4,
+      "18pct": 4
+    },
+    "central_life_records_resolved_by_90pct_lr": 4
+  },
+  "financial_boundary_max_reach_6p5": 6,
+  "transport_penalty_4_locked_retain_low": 0,
+  "free_buffer_max_reach_6p5": 710,
+  "costed_buffer_central_max_reach_6p5": 0,
+  "stack_scope_rows": 30
+}

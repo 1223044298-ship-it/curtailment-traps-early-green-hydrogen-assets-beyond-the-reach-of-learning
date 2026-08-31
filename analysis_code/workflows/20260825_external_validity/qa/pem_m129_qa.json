@@ -1,0 +1,12 @@
+{
+  "records": 10214,
+  "candidate_count": 129,
+  "minimum_load": 0.1,
+  "static_case_count": 3,
+  "static_counts_monotone_with_cost_case": true,
+  "allin_cases_do_not_double_count_replacement": true,
+  "dynamic_upper_bound_reported_separately": true,
+  "hourly_profile_path": "D:\\Green\\20260810_era5_2020_2025_revision\\02_inputs\\curtailment_profile_2025.float32",
+  "hourly_profile_sha256": "bc4a452c067d8ed59261d7516bf6c8ba96cfbb597f8799c86d3197c45d671ae6",
+  "passed": true
+}

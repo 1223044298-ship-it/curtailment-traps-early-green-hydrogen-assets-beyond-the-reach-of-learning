@@ -1,0 +1,5 @@
+﻿resource_branch,capacity_design,reference_capture_target,low_return_entry_count,colocated_6p5_same_configuration_count,strict_marginal_same_configuration_count,entry_capacity_gw,entry_capex_100m_cny,entry_h2_mt_per_year
+curtailment_only,fixed_capture_rule,0.9,512,178,334,6.499963331348917,467.99735985712204,0.21551912032845824
+curtailment_only,site_optimized,,1889,950,939,9.62351524830129,692.893097877693,0.3520031783745592
+full_output_upper_bound,fixed_capture_rule,1.0,433,243,190,44.585501956054685,3210.1561408359375,2.48377868994043
+full_output_upper_bound,site_optimized,,7385,6430,955,103.56723654871553,7456.841031507518,7.653643248852673

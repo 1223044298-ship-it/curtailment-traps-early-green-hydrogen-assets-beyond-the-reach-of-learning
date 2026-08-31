@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "Please cite the associated manuscript and the exact repository release used."
+type: software
+title: "Curtailment traps early green hydrogen assets beyond the reach of learning"
+version: 0.1.0
+repository-code: "https://github.com/1223044298-ship-it/curtailment-traps-early-green-hydrogen-assets-beyond-the-reach-of-learning"
+authors:
+  - family-names: Liang
+    given-names: Jinwei
+  - family-names: Guo
+    given-names: Zhiling
+    email: zhiling.guo@polyu.edu.hk
+  - family-names: Zhang
+    given-names: Haoran
+    email: h.zhang@pku.edu.cn
+keywords:
+  - green hydrogen
+  - technology learning
+  - investment returns
+  - constrained electricity
+  - capacity flexibility

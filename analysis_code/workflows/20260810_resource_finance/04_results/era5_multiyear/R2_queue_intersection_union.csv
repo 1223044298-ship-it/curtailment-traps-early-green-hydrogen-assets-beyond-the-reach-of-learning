@@ -1,0 +1,4 @@
+﻿queue,always_in_all_weather_years,weather_contingent_some_years,never_in_any_year,union_any_year,intersection_all_years
+low_return_entry,2168,716,7330,2884,2168
+strict_marginal,731,1014,8469,1745,731
+colocated_6p5,1139,331,8744,1470,1139

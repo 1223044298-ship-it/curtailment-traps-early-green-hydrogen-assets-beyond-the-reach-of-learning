@@ -1,0 +1,13 @@
+FIGURE=Figure 1a
+ACTIVE_MAP_SOURCE=OpenStreetMap administrative relations and coastline-derived land polygons
+OSM_DATA_TIMESTAMP=2026-08-28T08:59:21Z
+OSM_COUNTRY_RELATION=270056
+OSM_AUXILIARY_RELATIONS=449220,1867188
+OSM_PROVINCE_RELATION_COUNT=32
+OSM_LICENCE=ODbL 1.0; copyright OpenStreetMap contributors
+DERIVED_GEOMETRY=osm_china_boundaries/osm_china_admin_2_4_20260828.geojson
+DERIVED_GEOMETRY_SHA256=46CD7E8687452A24405C0A0E7F0635ECA124E73823A9CACB91ECF59B10D5F626
+DISPLAY_PROJECTION=China Albers equal-area; central meridian 105 E; standard parallels 25 N and 47 N
+COORDINATE_POLICY=Records, thematic hexagons, coastline, land and administrative linework use the same projection with no affine registration.
+DISPLAY_SCOPE=Contiguous China, Hainan and Taiwan; remote South China Sea polygons below the main Hainan extent are omitted.
+BOUNDARY_INTERPRETATION=Scientific cartographic context only; not legal boundary adjudication and not used in analytical classification.

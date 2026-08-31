@@ -1,0 +1,40 @@
+{
+  "primary_m129_financing_counts": [
+    1809,
+    1255,
+    1099,
+    1036,
+    874
+  ],
+  "financing_counts_nonincreasing": true,
+  "iea_located_china_project_count": 134,
+  "pem_static_low_counts": [
+    3498,
+    700,
+    2
+  ],
+  "pem_static_high_counts": [
+    1826,
+    101,
+    0
+  ],
+  "pem_learning_upper_bound_cohort": 636,
+  "pem_learning_upper_bound_upgrades": 8,
+  "transport_low_high_strict_counts": [
+    331,
+    93,
+    238
+  ],
+  "transport_strict_jaccard": 0.0,
+  "joint_prior_cases": 6,
+  "joint_draws_per_case": [
+    5000
+  ],
+  "reference_project_draw_durability_probability": 0.0003673239436619,
+  "joint_probability_bounds_valid": true,
+  "convergence_has_5000_draw_endpoint_for_all_cases": true,
+  "all_individual_qa_passed": true,
+  "publication_rows_match_analysis_outputs": true,
+  "publication_files_english_only": true,
+  "passed": true
+}

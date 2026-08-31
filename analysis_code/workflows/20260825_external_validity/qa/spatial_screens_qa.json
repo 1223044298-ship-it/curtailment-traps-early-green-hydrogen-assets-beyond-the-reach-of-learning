@@ -1,0 +1,9 @@
+{
+  "transport_rows": 1,
+  "demand_provinces": 23,
+  "water_provinces": 31,
+  "transport_reoptimization_reduces_or_preserves_entry": true,
+  "water_is_exposure_not_station_identification": true,
+  "demand_is_overlap_not_contract_validation": true,
+  "passed": true
+}

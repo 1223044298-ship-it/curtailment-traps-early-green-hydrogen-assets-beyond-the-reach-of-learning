@@ -1,0 +1,17 @@
+field,value,evidence,permitted_interpretation
+data_origin,"generated within the authors' research group",Author confirmation,Laboratory-generated model-output files
+earlier_article,"Li and Zhang, Nexus 3, 100149 (2026)",doi:10.1016/j.ynexs.2026.100149,Earlier study using the same laboratory-generated files
+source_code_repository,https://github.com/Lynn20001130/-hydrogen-blending-analysis,Public repository cited by source article,Code reads monthly files but does not regenerate underlying full-output series
+source_code_commit,43af9fef041a7c55ca154cc6a40c5d339c23c521,Git commit audited for this submission,Version used for provenance inspection
+generation_file_pattern,TotalGen_Hourly_2020MM.csv,12 monthly files,Laboratory-generated grid-delivered component
+constrained_file_pattern,TotalCurt_Hourly_2020MM.csv,12 monthly files,Laboratory-generated constrained component
+hour_count,8784,Leap year 2020,Reference shape only
+unique_ids_in_local_files,15573,January file identifier audit,Raw-file population
+records_reported_by_source_article,15470,Source article main text,Publication-level count differs from local file count by 103
+operating_inventory_ids,10214,GEM operating-record inventory,Analysis population
+matched_inventory_ids,10214,One-to-one identifier intersection,All analysis records matched to laboratory files
+source_curtailment_method,"daily peak shaving calibrated to projected 2030 provincial curtailment rates",Source article Methods,Not retained as the annual curtailment calibration in this study
+use_in_this_study,"sum laboratory-generated grid-delivered and constrained components",Equation S1,Recovers pre-allocation 2020 full-output shape only
+annual_calibration_in_this_study,"2025 province-technology utilization rates",Official annual monitoring table,Replaces source-study constrained-energy magnitude
+independent_weather_check,"ERA5 2020-2025 hourly replay",Copernicus ERA5,Independent meteorological-shape robustness rather than provenance repair
+observational_status,"model-derived reference inputs",Article body methods and public-code audit,Do not describe as observed unit-level dispatch or curtailment instructions

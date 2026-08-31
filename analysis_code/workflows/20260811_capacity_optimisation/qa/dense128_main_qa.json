@@ -1,0 +1,11 @@
+{
+  "dense_grid": 129,
+  "entry_count": 1809,
+  "six_point_five_count": 1099,
+  "strict_count": 710,
+  "identity": true,
+  "hurdle_anchor_matches_entry": true,
+  "proxy_daily_matches_main": true,
+  "runtime_seconds": 357.2194333076477,
+  "passed": true
+}

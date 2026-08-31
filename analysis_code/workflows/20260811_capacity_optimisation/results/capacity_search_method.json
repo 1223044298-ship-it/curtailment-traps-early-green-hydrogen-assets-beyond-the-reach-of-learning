@@ -1,0 +1,11 @@
+{
+  "main_capacity_search": {
+    "resource_capture_candidates": 128,
+    "engineering_boundary_candidates": [
+      1.0
+    ],
+    "total_candidates_per_record": 129,
+    "engineering_reason": "The hard 1-MW eligibility boundary must be evaluated exactly rather than approached through capture-share candidates."
+  },
+  "source_root": "D:\\Green\\github\\sector-wide-learning-does-not-guarantee-durable-returns-for-early-green-hydrogen-assets\\analysis_code\\workflows\\20260811_robustness"
+}

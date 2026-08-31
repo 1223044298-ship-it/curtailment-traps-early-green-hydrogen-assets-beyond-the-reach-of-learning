@@ -1,0 +1,2 @@
+﻿technology,test,cohort,cohort_count,retain_low_return_count,reach_6p5_count,replacement_share_of_installed_capex,stack_learning_rate,energy_2026_kwh_per_kg,energy_2055_kwh_per_kg,stack_life_2026_hours,stack_life_2055_hours,interpretation
+PEM,incumbent_learning_upper_bound_flat_28,strict_marginal_under_upper_bound_accounting,636,636,8,0.15,0.19,55.2,46.0,40000.0,80000.0,deliberately favourable falsification boundary; not a probability or forecast

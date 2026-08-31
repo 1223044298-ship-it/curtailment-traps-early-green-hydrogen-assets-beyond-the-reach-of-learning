@@ -1,0 +1,11 @@
+﻿resource_branch,minimum_electrolyzer_capacity_mw,low_return_entry_count,colocated_6p5_count,strict_marginal_vs_6p5_count
+curtailment_only,0.0,3311,1399,1912
+curtailment_only,0.1,3054,1365,1689
+curtailment_only,1.0,1889,1148,741
+curtailment_only,5.0,1013,515,498
+curtailment_only,10.0,303,159,144
+full_output_upper_bound,0.0,8839,8212,627
+full_output_upper_bound,0.1,8518,7909,609
+full_output_upper_bound,1.0,7385,6625,760
+full_output_upper_bound,5.0,5704,4889,815
+full_output_upper_bound,10.0,4546,3426,1120

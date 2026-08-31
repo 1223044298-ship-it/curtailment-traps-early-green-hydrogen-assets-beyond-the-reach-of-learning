@@ -1,0 +1,204 @@
+{
+  "r1": {
+    "modeled_station_count": 10214,
+    "modeled_capacity_gw": 629.1793,
+    "potential_twh": 1109.3693935285098,
+    "curtailed_twh_2025_calibrated": 70.78185888331993,
+    "physical_h2_mt_at_55_kwh_per_kg": 1.2869428887876349
+  },
+  "r2_main": {
+    "curtailment_only": {
+      "low_return_entry_count": 1889,
+      "colocated_6p5_independent_optimized_count": 1148,
+      "independent_h2_8_independent_optimized_count": 1050,
+      "strict_marginal_vs_6p5_count": 741,
+      "low_return_capacity_gw": 9.62351524830129,
+      "low_return_capex_100m_cny": 692.893097877693,
+      "low_return_h2_mt_per_year": 0.3520031783745592,
+      "strict_6p5_capacity_gw": 1.996362631393401,
+      "strict_6p5_capex_100m_cny": 143.7381094603249,
+      "strict_6p5_h2_mt_per_year": 0.0594282162451572
+    },
+    "full_output_upper_bound": {
+      "low_return_entry_count": 7385,
+      "colocated_6p5_independent_optimized_count": 6625,
+      "independent_h2_8_independent_optimized_count": 6342,
+      "strict_marginal_vs_6p5_count": 760,
+      "low_return_capacity_gw": 103.56723654871551,
+      "low_return_capex_100m_cny": 7456.841031507518,
+      "low_return_h2_mt_per_year": 7.653643248852673,
+      "strict_6p5_capacity_gw": 1.0850577635365433,
+      "strict_6p5_capex_100m_cny": 78.12415897463111,
+      "strict_6p5_h2_mt_per_year": 0.0894143700329588
+    }
+  },
+  "r3_main": {
+    "curtailment_only": {
+      "P22_front_loaded": {
+        "retain_low_return_count": 16,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P22_linear": {
+        "retain_low_return_count": 79,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P22_back_loaded": {
+        "retain_low_return_count": 272,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P18_front_loaded": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P18_linear": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P18_back_loaded": {
+        "retain_low_return_count": 67,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P15_front_loaded": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P15_linear": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P15_back_loaded": {
+        "retain_low_return_count": 3,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P12_front_loaded": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P12_linear": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P12_back_loaded": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "critical_terminal_price_6p5_quantiles": {
+        "0.05": 30.10189063847065,
+        "0.5": 37.46244862675667,
+        "0.95": 42.90809109807015
+      },
+      "P18_linear_low_npv_shapley": {
+        "price_100m_cny": -91.54859474960293,
+        "learning_100m_cny": 6.530525264620028,
+        "learning_offset_share": 0.07133397604279833
+      }
+    },
+    "full_output_upper_bound": {
+      "P22_front_loaded": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P22_linear": {
+        "retain_low_return_count": 55,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P22_back_loaded": {
+        "retain_low_return_count": 549,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P18_front_loaded": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P18_linear": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P18_back_loaded": {
+        "retain_low_return_count": 4,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P15_front_loaded": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P15_linear": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P15_back_loaded": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P12_front_loaded": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P12_linear": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "P12_back_loaded": {
+        "retain_low_return_count": 0,
+        "reach_colocated_6p5_count": 0,
+        "reach_independent_h2_8_count": 0
+      },
+      "critical_terminal_price_6p5_quantiles": {
+        "0.05": 25.36961079016328,
+        "0.5": 27.820405550301075,
+        "0.95": 30.413922831416127
+      },
+      "P18_linear_low_npv_shapley": {
+        "price_100m_cny": -154.96184676267097,
+        "learning_100m_cny": 39.60802280455552,
+        "learning_offset_share": 0.255598546558473
+      }
+    },
+    "curtailment_robust_grid": {
+      "pathways": 3888,
+      "max_reach_6p5_count": 0,
+      "max_reach_6p5_share": 0.0
+    }
+  },
+  "r4": {
+    "resource_75pct": {
+      "locked_retain_count": 1617,
+      "full_flex_retain_count": 1708,
+      "locked_at_risk_capex_100m_cny": 38.51174929114172,
+      "full_flex_at_risk_capex_100m_cny": 15.947456315365644,
+      "avoided_capex_100m_cny": 166.86422280231824,
+      "locked_h2_mt": 0.3195625443829037,
+      "full_flex_h2_mt": 0.2672018645154594
+    },
+    "budget_50_100m_cny": {
+      "targeted_price_full_info_count": 562,
+      "targeted_price_aace_class3_mean_count": 171.6376,
+      "targeted_price_aace_class3_p05_count": 147.0,
+      "targeted_price_aace_class3_p95_count": 198.0,
+      "uniform_price_count": 82
+    }
+  }
+}

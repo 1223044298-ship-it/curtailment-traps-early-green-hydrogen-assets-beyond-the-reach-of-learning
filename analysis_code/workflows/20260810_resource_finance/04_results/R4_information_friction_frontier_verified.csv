@@ -1,0 +1,25 @@
+﻿instrument,error_scenario,aace_class,estimate_use,error_p10,error_p90,budget_100m_cny,durable_project_count_mean,durable_project_count_p05,durable_project_count_p95,durable_h2_mt_per_year_mean,information_rent_100m_cny_mean
+targeted_15y_price_contract,AACE_Class2_control_outer,Class 2,control_or_bid_tender,-0.15,0.2,50.0,186.3686,164.0,209.0,0.01535337748111438,1.5750198753754838
+targeted_15y_price_contract,AACE_Class2_control_outer,Class 2,control_or_bid_tender,-0.15,0.2,100.0,306.5838,284.0,329.0,0.024692772546715692,3.63221394713439
+targeted_15y_price_contract,AACE_Class2_control_outer,Class 2,control_or_bid_tender,-0.15,0.2,250.0,306.5838,284.0,329.0,0.024692772546715692,3.63221394713439
+targeted_15y_price_contract,AACE_Class2_control_outer,Class 2,control_or_bid_tender,-0.15,0.2,500.0,306.5838,284.0,329.0,0.024692772546715692,3.63221394713439
+targeted_15y_price_contract,AACE_Class3_budget_control_outer,Class 3,budget_authorization_or_control,-0.2,0.3,50.0,171.6376,147.0,198.0,0.01421298959585237,1.9922905581723815
+targeted_15y_price_contract,AACE_Class3_budget_control_outer,Class 3,budget_authorization_or_control,-0.2,0.3,100.0,289.792,268.0,312.0,0.02330350220598682,5.295760983337611
+targeted_15y_price_contract,AACE_Class3_budget_control_outer,Class 3,budget_authorization_or_control,-0.2,0.3,250.0,289.792,268.0,312.0,0.02330350220598682,5.295760983337611
+targeted_15y_price_contract,AACE_Class3_budget_control_outer,Class 3,budget_authorization_or_control,-0.2,0.3,500.0,289.792,268.0,312.0,0.02330350220598682,5.295760983337611
+targeted_15y_price_contract,AACE_Class4_feasibility_outer,Class 4,study_or_feasibility,-0.3,0.5,50.0,180.4108,156.0,205.0,0.014722333516014567,3.2885996075100317
+targeted_15y_price_contract,AACE_Class4_feasibility_outer,Class 4,study_or_feasibility,-0.3,0.5,100.0,278.3152,257.0,300.0,0.022413859423505184,8.718243253845124
+targeted_15y_price_contract,AACE_Class4_feasibility_outer,Class 4,study_or_feasibility,-0.3,0.5,250.0,278.3152,257.0,300.0,0.022413859423505184,8.718243253845124
+targeted_15y_price_contract,AACE_Class4_feasibility_outer,Class 4,study_or_feasibility,-0.3,0.5,500.0,278.3152,257.0,300.0,0.022413859423505184,8.718243253845124
+targeted_capex_grant,AACE_Class2_control_outer,Class 2,control_or_bid_tender,-0.15,0.2,50.0,163.2766,143.0,184.0,0.013258117392164356,1.4511367916117464
+targeted_capex_grant,AACE_Class2_control_outer,Class 2,control_or_bid_tender,-0.15,0.2,100.0,306.5838,284.0,329.0,0.024692772546715692,3.9880772509325477
+targeted_capex_grant,AACE_Class2_control_outer,Class 2,control_or_bid_tender,-0.15,0.2,250.0,306.5838,284.0,329.0,0.024692772546715692,3.9880772509325477
+targeted_capex_grant,AACE_Class2_control_outer,Class 2,control_or_bid_tender,-0.15,0.2,500.0,306.5838,284.0,329.0,0.024692772546715692,3.9880772509325477
+targeted_capex_grant,AACE_Class3_budget_control_outer,Class 3,budget_authorization_or_control,-0.2,0.3,50.0,140.9018,119.0,164.0,0.011419546389635663,1.6352162569489384
+targeted_capex_grant,AACE_Class3_budget_control_outer,Class 3,budget_authorization_or_control,-0.2,0.3,100.0,289.792,268.0,312.0,0.02330350220598682,5.809198418928464
+targeted_capex_grant,AACE_Class3_budget_control_outer,Class 3,budget_authorization_or_control,-0.2,0.3,250.0,289.792,268.0,312.0,0.02330350220598682,5.809198418928464
+targeted_capex_grant,AACE_Class3_budget_control_outer,Class 3,budget_authorization_or_control,-0.2,0.3,500.0,289.792,268.0,312.0,0.02330350220598682,5.809198418928464
+targeted_capex_grant,AACE_Class4_feasibility_outer,Class 4,study_or_feasibility,-0.3,0.5,50.0,144.334,119.0,171.0,0.011783069210675888,2.4724016567734695
+targeted_capex_grant,AACE_Class4_feasibility_outer,Class 4,study_or_feasibility,-0.3,0.5,100.0,278.3152,257.0,300.0,0.022413859423505184,9.31857487947736
+targeted_capex_grant,AACE_Class4_feasibility_outer,Class 4,study_or_feasibility,-0.3,0.5,250.0,278.3152,257.0,300.0,0.022413859423505184,9.31857487947736
+targeted_capex_grant,AACE_Class4_feasibility_outer,Class 4,study_or_feasibility,-0.3,0.5,500.0,278.3152,257.0,300.0,0.022413859423505184,9.31857487947736

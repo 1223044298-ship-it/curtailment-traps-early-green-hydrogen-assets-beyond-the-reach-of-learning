@@ -1,0 +1,50 @@
+{
+  "flat_none": {
+    "npv_low_100m_cny": 24.985654565627364,
+    "npv_6p5_100m_cny": -31.27392909763507,
+    "pass_low_count": 896,
+    "pass_6p5_count": 0
+  },
+  "flat_combined": {
+    "npv_low_100m_cny": 31.028830544374294,
+    "npv_6p5_100m_cny": -30.07804343736275,
+    "pass_low_count": 896,
+    "pass_6p5_count": 2
+  },
+  "flat_source_optimistic": {
+    "npv_low_100m_cny": 33.30371115994089,
+    "npv_6p5_100m_cny": -29.62941514728991,
+    "pass_low_count": 896,
+    "pass_6p5_count": 3
+  },
+  "P18_none": {
+    "npv_low_100m_cny": -70.14273776971986,
+    "npv_6p5_100m_cny": -64.32263508014863,
+    "pass_low_count": 0,
+    "pass_6p5_count": 0
+  },
+  "P18_combined": {
+    "npv_low_100m_cny": -64.61394989191488,
+    "npv_6p5_100m_cny": -63.22616422039131,
+    "pass_low_count": 0,
+    "pass_6p5_count": 0
+  },
+  "P22_none": {
+    "npv_low_100m_cny": -31.812668878185033,
+    "npv_6p5_100m_cny": -51.038757858026045,
+    "pass_low_count": 29,
+    "pass_6p5_count": 0
+  },
+  "P22_combined": {
+    "npv_low_100m_cny": -26.176328005561675,
+    "npv_6p5_100m_cny": -49.920733648532966,
+    "pass_low_count": 98,
+    "pass_6p5_count": 0
+  },
+  "contrasts": {
+    "P18_price_loss_at_low_hurdle_100m_cny": -95.12839233534723,
+    "P18_operating_learning_gain_at_low_hurdle_100m_cny": 5.528787877804973,
+    "P22_price_loss_at_low_hurdle_100m_cny": -56.79832344381239,
+    "P22_operating_learning_gain_at_low_hurdle_100m_cny": 5.636340872623357
+  }
+}

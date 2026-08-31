@@ -1,0 +1,10 @@
+{
+  "low_return_count": 1809,
+  "strict_marginal_count": 710,
+  "learning_start_anchors_gw": [
+    4.0,
+    20.0
+  ],
+  "resource_path_count": 4,
+  "passed": true
+}

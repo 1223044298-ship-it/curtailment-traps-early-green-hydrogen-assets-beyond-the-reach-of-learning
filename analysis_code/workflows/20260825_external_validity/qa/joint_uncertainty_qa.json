@@ -1,0 +1,10 @@
+{
+  "locked_cohort_count": 710,
+  "expected_locked_cohort_count": 710,
+  "prior_case_count": 6,
+  "draws_per_case": 5000,
+  "all_probabilities_bounded": true,
+  "durability_never_exceeds_retention": true,
+  "convergence_rows": 24,
+  "passed": true
+}

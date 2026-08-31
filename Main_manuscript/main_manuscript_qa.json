@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "submission_ready": false,
+  "failures": [],
+  "warnings": [
+    "Submission metadata still contains 2 placeholder types.",
+    "Code and derived outputs are packaged, but the public archive is not independently raw-to-results reproducible because request-only hourly inputs are omitted."
+  ],
+  "checks": {
+    "active_clean_source": "main_manuscript_nature_article.tex",
+    "active_review_source": "main_manuscript_nature_article_review.tex",
+    "standard_article_submission_layout": true,
+    "official_sn_nature_template": false,
+    "headline_denominator": 1809,
+    "strict_marginal_denominator": 710,
+    "citations": 51,
+    "labels": 23,
+    "clean_pdf_pages": 21,
+    "review_pdf_pages": 21,
+    "compiled_pdfs_current": true,
+    "abstract_words_approx": 150,
+    "main_text_words_approx": 2936,
+    "submission_placeholder_types": 2,
+    "osm_map_source_provenance_packaged": true,
+    "analysis_code_and_derived_outputs_packaged": true,
+    "analysis_archive_structural_qa_passed": true,
+    "raw_to_results_rerun_complete_from_archive": false,
+    "english_only_source_files": true,
+    "english_only_figure_pdfs": true,
+    "r4_support_table_rows": 1420,
+    "listed_supplementary_source_files": 81,
+    "m129_identity_low_records": 1809,
+    "m129_identity_strict_records": 710,
+    "g16_identity_low_records": 1889,
+    "g16_identity_strict_records": 741,
+    "m129_station_result_rows": 10214,
+    "m129_r3_record_rows": 710,
+    "r3_counterfactual_closure": true,
+    "r3_component_incidence_central_share": 0.18188622754491016,
+    "r3_component_incidence_range": [
+      0.1125,
+      0.4230051174548576
+    ],
+    "inventory_coverage_scope_matched_2024": 0.7230865502855895,
+    "inventory_coverage_broad_context_2024": 0.5333655182937168
+  }
+}

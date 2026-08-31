@@ -1,0 +1,8 @@
+﻿fixed_stack_replacement_cadence_hours,strict_record_count,source_optimistic_multiple,records_reaching_6p5_no_learning,records_reaching_6p5_base,records_reaching_6p5_source_optimistic,records_reaching_6p5_twenty_times,records_triggering_replacement_no_learning,records_triggering_replacement_base,records_triggering_replacement_source_optimistic,records_triggering_replacement_twenty_times
+20000.0,710,1.3333333333333333,0,5,8,710,710,710,710,710
+30000.0,710,1.3333333333333333,0,5,7,710,710,710,710,710
+40000.0,710,1.3333333333333333,0,5,6,300,710,710,710,710
+50000.0,710,1.3333333333333333,0,4,5,69,710,710,710,710
+60000.0,710,1.3333333333333333,0,3,4,6,9,9,9,9
+80000.0,710,1.3333333333333333,3,3,3,3,0,0,0,0
+100000.0,710,1.3333333333333333,3,3,3,3,0,0,0,0

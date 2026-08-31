@@ -1,0 +1,3 @@
+﻿source,year_described,installed_electrolysis_capacity_gw,use_in_analysis,url
+IEA Global Hydrogen Review 2026,2025,more than 4,rounded 4-GW lower starting-anchor sensitivity,https://www.iea.org/reports/global-hydrogen-review-2026/production
+conditional model path,2026,20,conservative learning normalizer; not an observed installed base,

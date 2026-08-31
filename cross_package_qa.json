@@ -1,0 +1,31 @@
+{
+  "passed": true,
+  "submission_ready": false,
+  "failures": [],
+  "warnings": [
+    "The public archive omits request-only hourly inputs needed for an independent raw-to-results rerun.",
+    "Author-supplied acknowledgements or funding metadata still contain placeholders."
+  ],
+  "checks": {
+    "main_qa_passed": true,
+    "analysis_archive_qa_passed": true,
+    "compiled_pdfs_current": true,
+    "m129_low": 1809,
+    "m129_strict": 710,
+    "citations": 51,
+    "english_only": true,
+    "osm_map_source_packaged": true,
+    "code_and_derived_outputs_packaged": true,
+    "raw_to_results_rerun_complete": false,
+    "active_main_source": "main_manuscript_nature_article.tex",
+    "active_review_source": "main_manuscript_nature_article_review.tex",
+    "active_si_source": "supplementary_information_nature_article.tex",
+    "pdf_pages": {
+      "main_manuscript_nature_article_20260831.pdf": 21,
+      "main_manuscript_nature_article_review.pdf": 21,
+      "supplementary_information_nature_article.pdf": 35
+    },
+    "bankability_modelled": false,
+    "bankability_scope_explicitly_limited": true
+  }
+}

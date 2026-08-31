@@ -1,0 +1,62 @@
+{
+  "method": {
+    "boundary_capex_window": 0.1,
+    "adaptive_points_per_iteration_plus_incumbent": 18,
+    "adaptive_iterations": 4,
+    "physical_breakpoints_per_side": 10,
+    "reference_grid": 128,
+    "local_bracket_grid": 256
+  },
+  "records": {
+    "inventory": 10214,
+    "audited_boundary": 745,
+    "near_zero_window": 745,
+    "identity_changed_128_vs_256": 2
+  },
+  "counts": {
+    "low_128": 1791,
+    "low_256": 1792,
+    "low_adaptive": 1809,
+    "high_128": 1098,
+    "high_256": 1099,
+    "high_adaptive": 1099,
+    "strict_128": 693,
+    "strict_256": 693,
+    "strict_adaptive": 710
+  },
+  "membership_vs_128": {
+    "low_jaccard": 0.9900497512437811,
+    "high_jaccard": 0.9990900818926297,
+    "strict_jaccard": 0.9732770745428974,
+    "low_changed_count": 18,
+    "high_changed_count": 1,
+    "strict_changed_count": 19
+  },
+  "numerical_gain_relative_to_capex": {
+    "low_128_to_256_max": 1.637479829322979,
+    "high_128_to_256_max": 0.9933483578403075,
+    "low_128_to_adaptive_p50_boundary": 0.0013489578579283584,
+    "low_128_to_adaptive_p95_boundary": 0.010714827116319147,
+    "low_128_to_adaptive_max_boundary": 0.0364341014158713,
+    "high_128_to_adaptive_p50_boundary": 0.004298524286047306,
+    "high_128_to_adaptive_p95_boundary": 0.026786912372182392,
+    "high_128_to_adaptive_max_boundary": 0.16505575043126203
+  },
+  "final_bracket_relative_width": {
+    "low_median": 0.0,
+    "low_p95": 9.077772794040497e-06,
+    "high_median": 0.0,
+    "high_p95": 6.739680379744701e-06
+  },
+  "runtime_seconds": 60.3673951625824,
+  "diagnostics": {
+    "low_membership_change_share_vs_128": 0.010050251256281407,
+    "strict_membership_change_share_vs_128": 0.027417027417027416
+  },
+  "qa": {
+    "all_128_256_identity_changes_audited": true,
+    "adaptive_not_worse_than_256_low": true,
+    "adaptive_not_worse_than_256_high": true,
+    "passed": true
+  }
+}

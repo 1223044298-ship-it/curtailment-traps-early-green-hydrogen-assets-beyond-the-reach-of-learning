@@ -1,0 +1,10 @@
+{
+  "row_count": 140,
+  "case_count": 4,
+  "year_min": 2026,
+  "year_max": 2060,
+  "base_terminal_energy_kwh_per_kg": 50.0,
+  "base_terminal_stack_life_hours": 90000.0,
+  "base_stack_learning_rate": 0.13,
+  "passed": true
+}

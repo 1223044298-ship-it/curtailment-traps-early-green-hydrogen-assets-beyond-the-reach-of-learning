@@ -1,0 +1,44 @@
+{
+  "scenario_counts": {
+    "curtailment_only": 972,
+    "full_output_upper_bound": 324
+  },
+  "r2_rows": 1296,
+  "r3_main_unique_pathways": 120,
+  "npv_hurdle_pass_sets_nested": true,
+  "opex_replacement_accounting_mutually_exclusive": true,
+  "shapley_max_closure_error": 1.4210854715202004e-14,
+  "main_counts": {
+    "curtailment_only": {
+      "low_return_entry_count": 1889,
+      "colocated_6p5_independent_optimized_count": 1148,
+      "independent_h2_8_independent_optimized_count": 1050,
+      "strict_marginal_vs_6p5_count": 741
+    },
+    "full_output_upper_bound": {
+      "low_return_entry_count": 7385,
+      "colocated_6p5_independent_optimized_count": 6625,
+      "independent_h2_8_independent_optimized_count": 6342,
+      "strict_marginal_vs_6p5_count": 760
+    }
+  },
+  "low_return_hurdle_exact": 0.01447315,
+  "low_return_hurdle_reported_rounded": 1.45,
+  "colocated_renewable_hurdle": 0.065,
+  "independent_hydrogen_hurdle": 0.08,
+  "cashflow_price_basis": "real 2026 CNY inputs inflated at 2%; nominal debt and discount rates",
+  "passed": true,
+  "foundation_sensitivity_checks": {
+    "horizon_inflation_rows": 20,
+    "record_identity_rows": 3,
+    "component_learning_boundary_rows": 4,
+    "replacement_cadence_boundary_rows": 7,
+    "financing_surface_rows": 42,
+    "component_boundaries_finite_or_censored": true,
+    "cadence_boundaries_finite_or_censored": true,
+    "passed": true
+  },
+  "runtime_seconds": 1164.2945218086243,
+  "operating_years_main": 35,
+  "entry_price_real_2026_cny_per_kg": 28.0
+}
