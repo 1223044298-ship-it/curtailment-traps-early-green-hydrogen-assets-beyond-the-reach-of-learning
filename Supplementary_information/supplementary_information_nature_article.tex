@@ -92,7 +92,7 @@ The main analysis uses only electricity reconstructed as system-constrained rene
 
 \subsection{Figure 1 map preparation}
 
-Figure~1a uses a single OpenStreetMap geometry stack for its coastline, land mask and visible administrative linework\cite{osmcoast}. The land layer is the intersection of coastline-derived land polygons with OSM national administrative relations; province lines are reconstructed from OSM admin-level-4 relations. Remote South China Sea polygons below the main Hainan extent are omitted from this scientific locator map. Record longitudes and latitudes and every map layer are transformed with the same China Albers equal-area projection (central meridian 105$^\circ$ E; standard parallels 25$^\circ$ and 47$^\circ$ N), eliminating cross-source registration. OSM geometry is used as cartographic context rather than legal boundary adjudication. The Overpass queries, data timestamp, relation identifiers, processing script, simplified geometry and SHA-256 hash are packaged with the figure data; no analytical result depends on boundary placement.
+Figure~1a separates the analytical main map from a boxed South China Sea locator inset. The main-map land layer is the intersection of coastline-derived OpenStreetMap polygons with OSM national administrative relations, and province lines are reconstructed from OSM admin-level-4 relations\cite{osmcoast}. Record coordinates and all main-map layers are transformed with the same China Albers equal-area projection (central meridian 105$^\circ$ E; standard parallels 25$^\circ$ and 47$^\circ$ N), eliminating cross-source registration within the analytical map. The South China Sea locator is a cleaned display derivative of the Ministry of Natural Resources standard-map product GS(2023)2767\cite{mnrmap2023}. It retains the source island and coastline geometry while suppressing small labels for legibility; it is not projected onto the analytical map and is not used for masking, record assignment, distance measurement or any numerical result. Both sources are used as cartographic context rather than legal boundary adjudication. The OSM queries, data timestamp, relation identifiers, standard-map product number, processing scripts, derived assets and SHA-256 hashes are packaged with the figure data; no analytical result depends on boundary placement.
 
 \begin{table}[t]
 \caption{Primary data sources, transformations and interpretation boundaries.}\label{tab:data}
@@ -110,7 +110,7 @@ Installed-system CAPEX & World Bank installed-system range, converted to CNY\cit
 Electrolyser operation & US DOE and World Bank assessments\cite{doe2024,worldbank2026} & Alkaline main case; PEM as a separate technology boundary & Technology-informed scenarios, not manufacturer guarantees \\
 Return criteria & Official investment-management rules publicly disclosed by two state-controlled energy companies and ChinaBond yield observations\cite{changyuan2026,huadian2025,chinabond2026} & 20-trading-day mean for the five-year government bond anchor & Firm-level institutional anchors, not statutory national thresholds or a sector-wide standard \\
 Hydrogen price & China Hydrogen Development Report and explicit stress tests\cite{nea2025hydrogen} & 2026 evaluation scenario of 28; conditional 2060 endpoints & Source-contextualised scale and evaluation paths, not transaction forecasts or probability-weighted prices \\
-Figure 1 cartography & OpenStreetMap coastline land polygons and admin-level-2/4 relations\cite{osmcoast} & Shared China Albers projection; coastline clipping and administrative linework reconstructed from OSM & Scientific locator map, not legal boundary adjudication; no analytical result depends on boundary placement \\
+Figure 1 cartography & OpenStreetMap coastline land polygons and admin-level-2/4 relations plus standard-map product GS(2023)2767\cite{osmcoast,mnrmap2023} & OSM main map in a shared China Albers projection; cleaned South China Sea locator from the standard-map product & Cartographic context only; the locator inset is excluded from all analytical operations \\
 \bottomrule
 \end{tabularx}
 \end{table}
@@ -191,10 +191,10 @@ P_{i,t}(K)=
 \end{equation}
 The alkaline main case uses $\lambda=0.30$. Values of 0, 0.10 and 0.40 are tested in G16; PEM uses its own technology-specific minimum-load assumption. No battery or hydrogen buffer is modelled in the primary branch, so the minimum-load and oversizing results are conditional on direct hourly coupling. A separate electrical-buffer boundary re-dispatches the 710 static-reference strict-marginal profiles with zero to four equivalent storage hours and explicitly prices storage capital, fixed O\&M, round-trip loss and replacement. Candidates below 1\,MW or with zero annual production are excluded. Beginning-of-life production is
 \begin{equation}
-H_i(K)=\sum_t \frac{P_{i,t}(K)}{e_0},
+H_i(K)=1000\sum_t \frac{P_{i,t}(K)\,\Delta t}{e_0},
 \label{eq:h2}
 \end{equation}
-where $e_0=55$\,kWh\,kg$^{-1}$\,H$_2$. The dynamic cash-flow model updates stack energy use after replacement as described in Section~\ref{sec:learning}.
+where $P_{i,t}$ is expressed in MW, $\Delta t=1$\,h, the factor 1000 converts MW to kW, and $e_0=55$\,kWh\,kg$^{-1}$\,H$_2$. Thus $H_i(K)$ is annual hydrogen production in kg\,H$_2$\,yr$^{-1}$. The dynamic cash-flow model updates stack energy use after replacement as described in Section~\ref{sec:learning}.
 
 \subsection{Independent optimisation at each return criterion}
 
@@ -744,11 +744,11 @@ Does the model identify an optimal subsidy? & No. Price-premium and capital-gran
 
 \section*{Data availability}
 
-Publicly redistributable project metadata, annual utilisation inputs, processed ERA5 outputs, parameter provenance, figure source data and result tables are deposited in the accompanying versioned GitHub repository at \href{https://github.com/1223044298-ship-it/curtailment-traps-early-green-hydrogen-assets-beyond-the-reach-of-learning}{github.com/1223044298-ship-it/curtailment-traps-early-green-hydrogen-assets-beyond-the-reach-of-learning}. Access to the private review snapshot will be supplied with the submission; the repository will be made public and assigned a versioned archival DOI upon publication. Source ERA5 variables are publicly available from the Copernicus Climate Data Store under its applicable terms. The laboratory-generated 2020 monthly files and the two derived 10,214-by-8,784 hourly profile arrays are held by the authors' research group and are documented by their earlier article, public-code commit, analytical roles, dimensions and SHA-256 hashes. These files are available from the corresponding author upon reasonable request for research use, subject to contributor and institutional approval and applicable data-sharing conditions. Inputs subject to source licences are documented by provider, release date, licence and retrieval route. The present package contains the core machine-readable outputs listed in Supplementary Table~\ref{tab:files}.
+Publicly redistributable project metadata, annual utilisation inputs, processed ERA5 outputs, parameter provenance, figure source data and result tables are maintained in the accompanying GitHub repository at \href{https://github.com/1223044298-ship-it/curtailment-traps-early-green-hydrogen-assets-beyond-the-reach-of-learning}{github.com/1223044298-ship-it/curtailment-traps-early-green-hydrogen-assets-beyond-the-reach-of-learning}. The repository is private during manuscript review. At submission, the manuscript-aligned revision will be frozen as a read-only review snapshot and access will be supplied to editors and reviewers; the accepted release will be made public and archived under a versioned DOI before publication. Source ERA5 variables are publicly available from the Copernicus Climate Data Store under its applicable terms. The laboratory-generated 2020 monthly files and the two derived 10,214-by-8,784 hourly profile arrays required for a clean raw-to-results rerun are not redistributed in the repository. They are held by the authors' research group and documented by filename, analytical role, dimension and SHA-256 checksum. Requests for research access should be sent to the corresponding author at \href{mailto:h.zhang@pku.edu.cn}{h.zhang@pku.edu.cn} and should identify the intended research use; access is subject to contributor and institutional approval and applicable data-sharing conditions. Inputs subject to source licences are documented by provider, release date, licence and retrieval route. The packaged derived outputs support reproduction of all figures and numerical auditing of the reported results but do not, without the request-access inputs, constitute a complete raw-to-results archive.
 
 \section*{Code availability}
 
-Code for hourly constrained-electricity reconstruction, ERA5 replay, capacity optimisation, nominal equity cash flow, learning-flip boundaries, forward screening, capacity flexibility and figure generation is deposited in the accompanying versioned GitHub repository. The repository provides environment specifications, execution order and SHA-256 hashes for inputs and outputs; a public versioned archival DOI will be assigned upon publication.
+Custom code for hourly constrained-electricity reconstruction, ERA5 replay, capacity optimisation, nominal equity cash flow, learning-flip boundaries, forward screening, capacity flexibility and figure generation is maintained in the accompanying GitHub repository. The submission snapshot will provide environment specifications, execution order, an input inventory and SHA-256 manifests. The request-access inputs needed for a clean raw-to-results rerun are listed explicitly in \texttt{analysis\_code/INPUTS\_REQUIRED.csv}. No archival DOI has yet been assigned; the accepted public release will receive a versioned archival DOI before publication.
 
 \section*{Supplementary references}
 
@@ -762,6 +762,9 @@ National Energy Administration. \emph{National Electric Power Industry Statistic
 
 \bibitem{osmcoast}
 OpenStreetMap contributors. \emph{OpenStreetMap administrative relations and coastline-derived land polygons} (data timestamp 28 August 2026). \href{https://www.openstreetmap.org/copyright}{Copyright and ODbL licence}; \href{https://osmdata.openstreetmap.de/data/land-polygons.html}{land polygons}.
+
+\bibitem{mnrmap2023}
+Ministry of Natural Resources of the People's Republic of China. \emph{China boundary map, 1:7,400,000, standard-map product GS(2023)2767} (Standard Map Service System, 2023). \href{http://bzdt.ch.mnr.gov.cn/}{Official portal}.
 
 \bibitem{li2026}
 Li, Y. \& Zhang, H. Can renewable hydrogen blending support a nationwide pathway in China? \emph{Nexus} \textbf{3}, 100149 (2026). \href{https://doi.org/10.1016/j.ynexs.2026.100149}{doi: 10.1016/j.ynexs.2026.100149}.

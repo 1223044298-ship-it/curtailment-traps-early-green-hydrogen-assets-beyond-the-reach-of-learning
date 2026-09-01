@@ -8,7 +8,7 @@ Jinwei Liang and Haoran Zhang contributed equally to this work. Haoran Zhang is 
 
 ## Repository status
 
-This is a private, versioned submission snapshot hosted at <https://github.com/1223044298-ship-it/curtailment-traps-early-green-hydrogen-assets-beyond-the-reach-of-learning>. The current editorial manuscript uses the `_nature_article` filenames; content-matched `sn-nature` sources are retained as template-conversion alternatives. The repository also contains the current Supplementary Information and active analysis chain. Historical figure backups, rendered audit pages, compiler intermediates and Python bytecode are excluded from version control.
+This is a private, versioned submission snapshot hosted at <https://github.com/1223044298-ship-it/curtailment-traps-early-green-hydrogen-assets-beyond-the-reach-of-learning>. The current editorial manuscript uses the `_nature_article` filenames. The repository also contains the current Supplementary Information and active analysis chain. Superseded manuscript variants, historical figure backups, rendered audit pages, compiler intermediates and Python bytecode are excluded from version control.
 
 The repository does not yet have a persistent DOI. A publication release can later be archived in Zenodo without changing the computational structure documented here.
 

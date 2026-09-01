@@ -2,7 +2,7 @@
 
 ## Template
 
-This package uses the December 2024 Springer Nature LaTeX authoring template:
+The active editorial-review source uses the standard single-sided article layout. A content-matched December 2024 Springer Nature template alternative is retained as:
 
 ```latex
 \documentclass[pdflatex,sn-nature]{sn-jnl}
@@ -12,8 +12,9 @@ The package includes `sn-jnl.cls`, `sn-nature.bst` and the official `Springer_Na
 
 ## Package contents
 
-- `supplementary_information.tex`: submission-ready Supplementary Information source.
-- `supplementary_information.pdf`: compiled review copy.
+- `supplementary_information_nature_article.tex`: current Supplementary Information source.
+- `supplementary_information_nature_article.pdf`: current compiled review copy.
+- `supplementary_information.tex`: content-matched `sn-nature` alternative retained for template conversion if requested.
 - `figures/`: vector PDFs and preview images for Supplementary Figures.
 - `source_data/`: machine-readable data underlying the supplementary analyses.
 - `SIGuide.txt`: file title and a concise English description for the submission system.
@@ -32,7 +33,7 @@ All present references use complete English bibliographic records. In-text citat
 Run the following command in this directory:
 
 ```powershell
-tectonic supplementary_information.tex --keep-logs --keep-intermediates
+tectonic supplementary_information_nature_article.tex --keep-logs --keep-intermediates
 ```
 
 ## Analytical convention

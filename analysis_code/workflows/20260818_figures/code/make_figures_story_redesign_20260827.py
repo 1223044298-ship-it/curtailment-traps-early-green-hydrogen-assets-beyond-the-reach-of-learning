@@ -125,7 +125,7 @@ def figure2() -> None:
     province = pd.read_csv(RESULTS / "R2_province_exposure_dense128.csv")
     station = pd.read_csv(RESULTS / "R2_main_station_results_dense128.csv", dtype={"ObjectId": str})
 
-    fig = plt.figure(figsize=(180 * MM, 190 * MM))
+    fig = plt.figure(figsize=(180 * MM, 183 * MM))
     gs = fig.add_gridspec(
         28,
         18,
@@ -155,7 +155,9 @@ def figure2() -> None:
     x = scenarios["low_return_entry_count"].to_numpy(float)
     y = scenarios["colocated_6p5_independent_optimized_count"].to_numpy(float)
     colour = scenarios["strict_share"].to_numpy(float)
-    norm = Normalize(vmin=0, vmax=70)
+    # Preserve the full observed 5.6--100% strict-marginal range. A 70%
+    # ceiling previously collapsed 13.4% of the ensemble into one colour.
+    norm = Normalize(vmin=0, vmax=100)
     cloud = axa.scatter(
         x,
         y,
@@ -215,7 +217,7 @@ def figure2() -> None:
     axa_right.axis("off")
     cax = axa.inset_axes([0.55, 0.93, 0.37, 0.022])
     cb = fig.colorbar(cloud, cax=cax, orientation="horizontal")
-    cb.set_ticks([0, 35, 70])
+    cb.set_ticks([0, 50, 100])
     cb.ax.tick_params(labelsize=4.8, length=1.2, pad=0.5)
     cb.outline.set_visible(False)
     axa.text(0.55, 0.965, "Strict-marginal share (%)", transform=axa.transAxes,
@@ -321,6 +323,14 @@ def figure2() -> None:
         / admitted["low_selected_capacity_mw"].clip(lower=1e-12)
     )
     admitted["is_strict"] = base.as_bool(admitted["strict_marginal"])
+    positive_capacity = admitted.loc[
+        admitted["low_selected_capacity_mw"].gt(0), "low_selected_capacity_mw"
+    ]
+    capacity_bins = np.geomspace(
+        max(1.0, float(positive_capacity.min())),
+        float(positive_capacity.max()) * 1.00001,
+        8,
+    )
     for mask, colour_i, label_i, marker in (
         (~admitted["is_strict"], TEAL_DARK, "6.5%-feasible", "o"),
         (admitted["is_strict"], CORAL_DARK, "Strict marginal", "o"),
@@ -329,16 +339,31 @@ def figure2() -> None:
         axf.scatter(frame["low_selected_capacity_mw"], frame["yield"], s=6.0,
                     color=colour_i, alpha=0.18, edgecolor="none", marker=marker,
                     rasterized=True, zorder=2)
-        bins = np.geomspace(max(1, frame["low_selected_capacity_mw"].min()),
-                            frame["low_selected_capacity_mw"].max(), 9)
-        idx = np.digitize(frame["low_selected_capacity_mw"], bins)
-        med = frame.assign(bin=idx).groupby("bin").agg(
-            x=("low_selected_capacity_mw", "median"), y=("yield", "median"), n=("yield", "size")
+        # Shared logarithmic bins make the two cohorts directly comparable.
+        # Medians remain summaries, not a fitted trajectory, and bins with
+        # fewer than 20 records are omitted.
+        qbin = pd.cut(
+            frame["low_selected_capacity_mw"],
+            bins=capacity_bins,
+            labels=False,
+            include_lowest=True,
         )
-        med = med[med["n"] >= 5]
-        axf.plot(med["x"], med["y"], color=colour_i, lw=1.25, zorder=4)
-        axf.scatter(med["x"], med["y"], s=27, color=colour_i,
-                    edgecolor=WHITE, linewidth=0.5, zorder=5, label=label_i)
+        med = frame.assign(bin=qbin).groupby("bin").agg(
+            x=("low_selected_capacity_mw", "median"),
+            y=("yield", "median"),
+            q25=("yield", lambda values: values.quantile(0.25)),
+            q75=("yield", lambda values: values.quantile(0.75)),
+            n=("yield", "size"),
+        )
+        med = med[med["n"] >= 20]
+        axf.vlines(
+            med["x"], med["q25"], med["q75"], color=colour_i,
+            lw=1.15, alpha=0.92, zorder=4,
+        )
+        axf.scatter(
+            med["x"], med["y"], s=29, color=colour_i,
+            edgecolor=WHITE, linewidth=0.5, zorder=5, label=label_i,
+        )
     axf.set_xscale("log")
     axf.set_xlim(0.9, 190)
     axf.set_ylim(25.5, 51.5)
@@ -366,9 +391,9 @@ def figure3() -> None:
     ladder_surface = pd.read_csv(
         RESULTS / "R2_R3_return_ladder_surface_M129_30y.csv"
     )
-    fig = plt.figure(figsize=(180 * MM, 198 * MM))
+    fig = plt.figure(figsize=(180 * MM, 184 * MM))
     gs = fig.add_gridspec(
-        28, 20, left=0.073, right=0.985, bottom=0.058, top=0.976,
+        28, 20, left=0.088, right=0.985, bottom=0.058, top=0.976,
         wspace=1.08, hspace=1.12,
     )
     axa = fig.add_subplot(gs[0:13, 0:12])
@@ -404,8 +429,8 @@ def figure3() -> None:
     tail_percentile = percentile[tail_index]
     tail_closes = closes[order][tail_index]
     # Three records occur within 0.12 thousand operating hours. Their marker
-    # centres remain at their true coordinates. Draw the left coral record
-    # first, the central teal record second and the right coral record last.
+    # centres remain at their true coordinates and share the outcome palette
+    # used by panel c.
     # A common compact marker size keeps visual weight independent of order.
     densest = np.array([], dtype=int)
     for start in range(len(tail_hours)):
@@ -422,17 +447,17 @@ def figure3() -> None:
     axa.scatter(
         tail_hours[ordinary & ~tail_closes],
         tail_percentile[ordinary & ~tail_closes], s=16,
-        color=TEAL_DARK, edgecolor="none", linewidth=0, zorder=7,
+        color=CORAL_DARK, edgecolor="none", linewidth=0, zorder=7,
     )
     axa.scatter(
         tail_hours[ordinary & tail_closes],
         tail_percentile[ordinary & tail_closes], s=16,
-        color=CORAL_DARK, edgecolor="none", linewidth=0, zorder=8,
+        color=TEAL_DARK, edgecolor="none", linewidth=0, zorder=8,
     )
     for layer, idx in enumerate(densest):
         axa.scatter(
             [tail_hours[idx]], [tail_percentile[idx]], s=16,
-            color=CORAL_DARK if tail_closes[idx] else TEAL_DARK,
+            color=TEAL_DARK if tail_closes[idx] else CORAL_DARK,
             edgecolor="none", linewidth=0, zorder=9 + layer,
         )
     axa.vlines(hours, 0.0, 1.8, color=BLUE_DARK, alpha=0.10, lw=0.35,
@@ -449,12 +474,12 @@ def figure3() -> None:
     axa.text(
         61.0, 80.5,
         f"{triggered.sum()} access learning",
-        color=TEAL_DARK, fontsize=6.2, fontweight="bold", ha="left", va="top",
+        color=CORAL_DARK, fontsize=6.2, fontweight="bold", ha="left", va="top",
     )
     axa.text(
         61.0, 76.7,
         f"{closes.sum()} reach 6.5%",
-        color=CORAL_DARK, fontsize=6.2, fontweight="bold", ha="left", va="top",
+        color=TEAL_DARK, fontsize=6.2, fontweight="bold", ha="left", va="top",
     )
     axa.text(
         threshold + 0.22, 34.0, "60,000-h first-replacement threshold",
@@ -520,10 +545,6 @@ def figure3() -> None:
         1.0, 5.7, f"{100 * saving_parts[0]:.1f}% accessible",
         color=TEAL_DARK, fontsize=5.6, ha="center", va="center",
         fontweight="bold",
-    )
-    axb.text(
-        0.98, 0.02, f"Component boundary: {100 * incidence[incidence['year'].eq(2060)]['incumbent_stack_embodied_share_of_newbuild_capital_saving'].min() + 1e-9:.1f}–{100 * incidence[incidence['year'].eq(2060)]['incumbent_stack_embodied_share_of_newbuild_capital_saving'].max():.1f}% accessible",
-        transform=axb.transAxes, fontsize=5.0, color=MUTED, ha="right", va="bottom",
     )
     axb.set_xlim(-0.42, 1.28)
     axb.set_ylim(0, 65)
@@ -761,7 +782,7 @@ def figure4() -> None:
         np.isclose(flex_continuous["minimum_build_size_mw"], 0.0)
     ].copy()
 
-    fig = plt.figure(figsize=(180 * MM, 205 * MM))
+    fig = plt.figure(figsize=(180 * MM, 200 * MM))
     gs = fig.add_gridspec(32, 20, left=0.073, right=0.985, bottom=0.052, top=0.978,
                           wspace=1.02, hspace=1.02)
     axa = fig.add_subplot(gs[0:11, 0:13])
@@ -985,7 +1006,7 @@ def figure4() -> None:
     clean(axe, "both")
     panel(axe, "e", x=-0.18, y=1.01)
 
-    prices = np.array([12, 15, 18, 22, 25, 28], dtype=float)
+    prices = np.sort(conditional["terminal_price"].unique().astype(float))
     linear_gain = np.array([
         float(get_frontier_row(frontier, p, "conditional_forward_screen", "linear")["durable_record_count"])
         - float(get_frontier_row(frontier, p, "robust_forward_screen", "all_timings")["durable_record_count"])
@@ -997,10 +1018,14 @@ def figure4() -> None:
         for p in prices
     ])
     axf.fill_between(prices, linear_gain, back_gain, color=GOLD, alpha=0.08, zorder=0)
-    axf.plot(prices, linear_gain, color=TEAL_DARK, lw=1.15, marker="D", ms=4.0,
-             label="Linear")
-    axf.plot(prices, back_gain, color=GOLD_DARK, lw=1.15, marker="o", ms=4.2,
-             label="Back-loaded")
+    axf.plot(prices, linear_gain, color=TEAL_DARK, lw=1.15, label="Linear")
+    axf.plot(prices, back_gain, color=GOLD_DARK, lw=1.15, label="Back-loaded")
+    selected_prices = np.array([12, 15, 18, 22, 25, 28], dtype=float)
+    selected_mask = np.isin(prices, selected_prices)
+    axf.scatter(prices[selected_mask], linear_gain[selected_mask], color=TEAL_DARK,
+                marker="D", s=20, edgecolor=WHITE, linewidth=0.45, zorder=4)
+    axf.scatter(prices[selected_mask], back_gain[selected_mask], color=GOLD_DARK,
+                marker="o", s=22, edgecolor=WHITE, linewidth=0.45, zorder=4)
     for p in (18.0, 22.0):
         i = int(np.where(np.isclose(prices, p))[0][0])
         axf.text(p - 0.22, back_gain[i] + 30, f"{int(back_gain[i]):,}",
@@ -1008,12 +1033,11 @@ def figure4() -> None:
         axf.text(p + 0.25, linear_gain[i] - 18, f"{int(linear_gain[i]):,}",
                  fontsize=5.0, color=TEAL_DARK, ha="left", va="top")
     axf.axhline(0, color="#AEB8B5", lw=0.55)
-    axf.text(12.1, 18, "front-loaded = 0", color=MUTED, fontsize=5.0, va="bottom")
-    axf.set_xticks(prices)
+    axf.set_xticks(selected_prices)
     axf.set_xlim(11.5, 28.5)
     axf.set_ylim(-20, max(950, back_gain.max() * 1.12))
     axf.set_xlabel("Terminal H$_2$ price (2026 CNY kg$^{-1}$)")
-    axf.set_ylabel("Durable-record gain")
+    axf.set_ylabel("Additional durable records\nvs front-loaded screen")
     axf.legend(frameon=False, ncol=2, loc="upper right", columnspacing=0.7,
                handletextpad=0.3, borderaxespad=0.1)
     clean(axf, "y")

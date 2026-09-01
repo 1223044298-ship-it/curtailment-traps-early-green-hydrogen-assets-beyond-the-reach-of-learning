@@ -375,7 +375,9 @@ def figure2() -> None:
     )
     redraw_china_boundaries(axa)
     cax = axa.inset_axes([0.06, -0.040, 0.49, 0.026])
-    cb = fig.colorbar(hb, cax=cax, orientation="horizontal")
+    cb = fig.colorbar(
+        hb, cax=cax, orientation="horizontal", extend="max", extendfrac=0.035
+    )
     cb.set_label("Inventory low-cost H$_2$ potential (t yr$^{-1}$ per hexagon)", fontsize=5.8, labelpad=1.2)
     cb.ax.tick_params(labelsize=5.2, pad=1)
     axa.legend(
@@ -479,7 +481,9 @@ def figure2() -> None:
                      fontsize=5.0, color=GOLD_DARK, va="top")
     key_ax.axis("off")
     cbar_ax = key_ax.inset_axes([0.02, 0.42, 0.96, 0.17])
-    cbar = fig.colorbar(im, cax=cbar_ax, orientation="horizontal")
+    cbar = fig.colorbar(
+        im, cax=cbar_ax, orientation="horizontal", extend="max", extendfrac=0.05
+    )
     cbar.set_ticks([0, round(heat_vmax)])
     cbar.ax.tick_params(labelsize=5.0, length=1.2, pad=0.4)
     cbar.outline.set_visible(False)

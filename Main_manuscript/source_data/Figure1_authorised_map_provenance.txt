@@ -1,5 +1,5 @@
-FIGURE=Retired Figure 1a candidate; not used by the current manuscript
-STATUS=retired_reference_only
+FIGURE=Figure 1a South China Sea locator inset
+STATUS=active_inset_source
 VISIBLE_BOUNDARY_SOURCE=Ministry of Natural Resources Standard Map Service System, China boundary map, 1:7,400,000, 2023
 SOURCE_PRODUCT_NUMBER=GS(2023)2767
 SOURCE_PORTAL=http://bzdt.ch.mnr.gov.cn/
@@ -14,6 +14,6 @@ THEMATIC_MASK_SOURCE=OpenStreetMap simplified land polygons derived from natural
 THEMATIC_MASK_FILE=osm_coastline/osm_land_east_asia_20260825.geojson
 THEMATIC_MASK_SHA256=9F549040B10BF44717CCF32576A3B332964EFD1599C94D192F8181A6E1279B64
 THEMATIC_MASK_LICENCE=ODbL 1.0; copyright OpenStreetMap contributors
-VISIBLE_BOUNDARY_POLICY=Historical provenance only. No current figure layer is read from this source.
-FINAL_MAP_REVIEW_STATUS=not_applicable_to_retired_candidate
-FINAL_MAP_REVIEW_NOTE=The current Figure 1 uses OpenStreetMap geometry documented in Figure1_osm_map_provenance.txt.
+VISIBLE_BOUNDARY_POLICY=The source island and coastline geometry is cropped into a cleaned locator inset; it is not used for the analytical main-map mask, record assignment or numerical results.
+FINAL_MAP_REVIEW_STATUS=source_provenance_documented
+FINAL_MAP_REVIEW_NOTE=The analytical main map uses OpenStreetMap geometry documented in Figure1_osm_map_provenance.txt; only the boxed South China Sea locator derives from GS(2023)2767. Citation of the source product does not imply approval of the modified figure.

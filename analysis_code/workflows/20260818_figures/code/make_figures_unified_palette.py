@@ -1615,7 +1615,6 @@ def extended_data_robustness() -> None:
     setup()
     proxy = pd.read_csv(RESULTS / "S11_hourly_proxy_full_chain_summary_dense128.csv", encoding="utf-8-sig")
     horizon = pd.read_csv(RESULTS / "S12_horizon_full_chain_dense128.csv", encoding="utf-8-sig")
-    host = pd.read_csv(RESULTS / "S12_host_asset_continuity_screen_dense128.csv", encoding="utf-8-sig")
     grid = pd.read_csv(RESULTS / "S14_capacity_grid_convergence.csv", encoding="utf-8-sig")
     fig = plt.figure(figsize=(180 * MM, 142 * MM))
     gs = fig.add_gridspec(12, 18, left=0.070, right=0.985, bottom=0.090, top=0.965,
@@ -1689,43 +1688,12 @@ def extended_data_robustness() -> None:
              marker="o", lw=1.15, label="Strict-set Jaccard")
     axe.axhline(98, color=INK, lw=0.55, ls="--")
     axe.axvline(128, color=GOLD_DARK, lw=0.75, ls="--")
-    axe.axvspan(112, 144, color=GOLD, alpha=0.14)
-    audit = load_headline()["continuous_capacity_audit"]
-    axe.text(
-        0.53,
-        0.79,
-        "Main: 128 + exact 1 MW\nAgreement with local adaptive audit\n"
-        f"{100 * audit['membership']['low_jaccard']:.2f}% entry | "
-        f"{100 * audit['membership']['strict_jaccard']:.2f}% strict",
-        transform=axe.transAxes,
-        ha="center",
-        va="center",
-        fontsize=4.6,
-        color=GOLD_DARK,
-        bbox=dict(facecolor=WHITE, edgecolor="#D6DCD9", linewidth=0.35,
-                  boxstyle="square,pad=0.18", alpha=0.94),
-        zorder=8,
-    )
     axe.set_xscale("log", base=2)
     axe.set_xticks(levels, [str(int(value)) for value in levels])
     axe.set_ylim(72, 101.5)
     axe.set_xlabel("Nested capacity candidates per project")
     axe.set_ylabel("Membership agreement with 256-grid (%)")
     axe.legend(frameon=False, loc="lower right")
-    hax = axe.inset_axes([0.08, 0.10, 0.34, 0.29])
-    hs = host[(host["cohort"].eq("low")) & host["assumed_host_lifetime_years"].isin([20, 25])]
-    for life, color in ((20, BLUE_DARK), (25, TEAL_DARK)):
-        sub = hs[hs["assumed_host_lifetime_years"].eq(life)]
-        hax.plot(sub["operating_years"], 100 * sub["host_survives_share_of_known"],
-                 color=color, marker="o", ms=2.2, lw=0.8, label=f"{life}-yr host")
-    hax.set_xlim(14, 36)
-    hax.set_ylim(-2, 45)
-    hax.set_xticks([15, 25, 35])
-    hax.set_yticks([0, 20, 40])
-    hax.set_ylabel("Original host\nsurviving (%)", fontsize=4.5)
-    hax.tick_params(labelsize=4.3, pad=0.5, length=1.3)
-    hax.spines[["top", "right"]].set_visible(False)
-    hax.legend(frameon=False, fontsize=4.2, loc="upper right", handlelength=1.2)
     clean(axe, "y")
     panel(axe, "e", x=-0.10)
 

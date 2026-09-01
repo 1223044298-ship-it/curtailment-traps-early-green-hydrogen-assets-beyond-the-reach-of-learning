@@ -4,9 +4,8 @@
 
 - `main_manuscript_nature_article.tex`: current clean editorial submission source using a standard single-sided `article` layout.
 - `main_manuscript_nature_article_review.tex`: current line-numbered review source with otherwise identical substantive content and page geometry.
-- `main_manuscript_nature_article_20260831.pdf` and `main_manuscript_nature_article_review.pdf`: current compiled clean and line-numbered review manuscripts.
-- `main_manuscript.tex` and `main_manuscript_review.tex`: content-matched Springer Nature `sn-nature` alternatives retained for template conversion if requested by the journal.
-- `figures/`: four main figures and one Extended Data figure, supplied as vector PDFs.
+- `main_manuscript_nature_article.pdf` and `main_manuscript_nature_article_review.pdf`: current compiled clean and line-numbered review manuscripts.
+- `figures/`: four selected main figures and one selected Extended Data figure used by the manuscript, plus supporting map artwork and code-generated source files.
 - `source_data/`: machine-readable source tables underlying the principal numerical results and figures.
 - `qa_main.py` and `main_manuscript_qa.json`: automated checks of the current `_nature_article` sources, numerical consistency, citations, figures and compilation logs.
 - `sn-jnl.cls` and `sn-nature.bst`: Springer Nature template files.
@@ -29,7 +28,7 @@
 - The manuscript contains four main figures and one Extended Data figure, below the limit of eight display items.
 - The clean and review PDFs are generated from the same substantive source; the review version adds line numbering only. Page counts are verified after each release build.
 - Compilation produces no LaTeX errors, undefined references, duplicate labels or overfull boxes.
-- The main manuscript contains 48 cited bibliography entries, ordered by first appearance; none is undefined or unused.
+- The main manuscript contains 52 cited bibliography entries, ordered by first appearance; none is undefined or unused.
 - In-text citation numbers link to their bibliography entries, and every bibliography entry links to a DOI, publisher page, official disclosure, official report or source-data portal.
 - Automated checks cover the packaged manuscript, headline data, figures, map provenance, analysis-code archive and LaTeX build. The author list, affiliation, equal-contribution statement, corresponding-author details, contribution statement and competing-interest declaration are complete. The GitHub repository identifier is fixed; a persistent archival DOI remains pending, and request-only hourly inputs are not included in the public archive.
 
@@ -49,7 +48,7 @@ References are embedded in a `thebibliography` environment; no external `.bib` f
 - Complete the Funding and Acknowledgements statements.
 - Archive the publication release with a persistent DOI and add that DOI to the Data availability and Code availability statements.
 - Document a clean internal raw-to-results rerun using the request-only laboratory hourly inputs and the public ERA5 download identified in `../analysis_code/INPUTS_REQUIRED.csv`.
-- Preserve the archived official-map source product, vector extraction, coordinate registration and diagnostic in `source_data/official_china_basemap/` with the submitted Figure 1 files.
+- Preserve the OSM analytical-map provenance and the archived `GS(2023)2767` source and transformation record for the boxed South China Sea locator with the submitted Figure 1 files.
 - Add a debt-service-coverage or liquidity sensitivity if the manuscript is to make bankability claims; the present NPV screen is an enterprise return test only.
 
 ## Author guidelines

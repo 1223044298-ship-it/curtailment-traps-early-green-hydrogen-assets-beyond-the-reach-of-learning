@@ -17,11 +17,7 @@ MAIN_SOURCE = (
     if (MAIN / "main_manuscript_nature_article.tex").is_file()
     else MAIN / "main_manuscript.tex"
 )
-MAIN_PDF = (
-    MAIN / "main_manuscript_nature_article_20260831.pdf"
-    if (MAIN / "main_manuscript_nature_article_20260831.pdf").is_file()
-    else MAIN_SOURCE.with_suffix(".pdf")
-)
+MAIN_PDF = MAIN_SOURCE.with_suffix(".pdf")
 MAIN_REVIEW_SOURCE = (
     MAIN / "main_manuscript_nature_article_review.tex"
     if (MAIN / "main_manuscript_nature_article_review.tex").is_file()

@@ -12,7 +12,7 @@
     "compiled_pdfs_current": true,
     "m129_low": 1809,
     "m129_strict": 710,
-    "citations": 51,
+    "citations": 52,
     "english_only": true,
     "osm_map_source_packaged": true,
     "code_and_derived_outputs_packaged": true,
@@ -21,7 +21,7 @@
     "active_review_source": "main_manuscript_nature_article_review.tex",
     "active_si_source": "supplementary_information_nature_article.tex",
     "pdf_pages": {
-      "main_manuscript_nature_article_20260831.pdf": 21,
+      "main_manuscript_nature_article.pdf": 21,
       "main_manuscript_nature_article_review.pdf": 21,
       "supplementary_information_nature_article.pdf": 35
     },

@@ -20,11 +20,7 @@ REVIEW_TEX = (
     if (ROOT / "main_manuscript_nature_article_review.tex").is_file()
     else ROOT / "main_manuscript_review.tex"
 )
-CLEAN_PDF = (
-    ROOT / "main_manuscript_nature_article_20260831.pdf"
-    if (ROOT / "main_manuscript_nature_article_20260831.pdf").is_file()
-    else TEX.with_suffix(".pdf")
-)
+CLEAN_PDF = TEX.with_suffix(".pdf")
 HEADLINE = ROOT / "source_data" / "headline_results.json"
 R3_PATHS = ROOT / "source_data" / "R3_price_path_summary_dense128.csv"
 R4_FRONTIER = ROOT / "source_data" / "R4_durability_frontier_dense128.csv"

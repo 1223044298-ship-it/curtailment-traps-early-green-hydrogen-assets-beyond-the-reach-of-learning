@@ -1,8 +1,11 @@
-# Retired official-map registration reference
+# Official-map source and Figure 1 locator provenance
 
-These files document an earlier Figure 1 registration workflow. The current
-Figure 1 uses OpenStreetMap coastline and administrative geometry throughout;
-none of the files in this directory is read by the active plotting function.
+These files document both an earlier full-map registration workflow and the
+official source used for the boxed South China Sea locator in the current
+Figure 1. The analytical main map continues to use OpenStreetMap coastline and
+administrative geometry. Only the locator inset derives from the Ministry of
+Natural Resources standard-map product described below, and the inset is not
+used in any analytical operation.
 
 ## Preferred current boundary master
 
@@ -13,7 +16,7 @@ none of the files in this directory is read by the active plotting function.
 - Author-held source files: `MNR_China_boundary_1_7.4m_GS2023_2767.eps` and its original ZIP archive. The third-party EPS and ZIP are not redistributed in this repository; their preview, integrity hashes and cleaned analytical derivatives are included.
 - Geographic content: national and provincial boundaries, Taiwan, and a standard South China Sea inset.
 
-This was the boundary master used in an earlier Figure 1a candidate. Its labels, province fills and decorative outer halo were removed; the national and provincial linework, Taiwan and the native South China Sea representation were retained for historical comparison only.
+This was the boundary master used in an earlier full-map Figure 1a candidate. The full-map affine registration is retired. In the current figure, a crop of the native South China Sea representation is cleaned for display by suppressing small labels and is inserted as a boxed locator; it does not replace the OpenStreetMap main-map geometry.
 
 ## Secondary 2023 full-extent reference
 
@@ -32,11 +35,11 @@ This was the boundary master used in an earlier Figure 1a candidate. Its labels,
 - Original production file: `MNR_China_1_16m_GS2016_2923.eps`, 1208 x 859 pt bounding box; Adobe InDesign CS6 export.
 - Geographic content: national and provincial boundaries, Taiwan, and the standard South China Sea inset.
 
-## Historical use in Figure 1
+## Use in Figure 1
 
-The retired candidate derived visible national and provincial boundaries, Taiwan and the South China Sea representation from `GS(2023)2767`. The active Figure 1 no longer uses this affine-registration workflow; its geometry and projection are documented in `../osm_china_boundaries/README.md`.
+The retired full-map candidate derived visible national and provincial boundaries, Taiwan and the South China Sea representation from `GS(2023)2767`. The active Figure 1 no longer uses that affine-registration workflow. Its analytical main-map geometry and projection are documented in `../osm_china_boundaries/README.md`; only the boxed South China Sea locator is a cleaned display derivative of `GS(2023)2767`.
 
-Reproducibility files are `GS2023_2767_clean.svg`, `GS2023_2767_paths.json`, `GS2023_2767_registration.json` and `GS2023_2767_registration_diagnostic.png`. After the full-boundary refinement, the clipped registration root-mean-square separation is approximately 9.8 source-page units, or 0.43% of the 2,269-unit map width. Removing labels and adding thematic content changes the published map, so `GS(2023)2767` documents source provenance and must not be presented as approval of the modified figure. Current status is recorded in `../Figure1_authorised_map_provenance.txt`.
+Reproducibility files for the retired registration are `GS2023_2767_clean.svg`, `GS2023_2767_paths.json`, `GS2023_2767_registration.json` and `GS2023_2767_registration_diagnostic.png`. The active inset derivative and its extraction workflow are stored with the Figure 1 assets and code. Removing labels and adding thematic content changes the published map, so `GS(2023)2767` documents source provenance and must not be presented as approval of the modified figure. Current status is recorded in `../Figure1_authorised_map_provenance.txt`.
 
 The derived OSM mask and its source, licence, transformation and integrity hash are documented in `../osm_coastline/README.md`.
 
