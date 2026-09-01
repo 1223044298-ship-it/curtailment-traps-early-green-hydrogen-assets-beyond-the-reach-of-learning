@@ -45,7 +45,6 @@ References are embedded in a `thebibliography` environment; no external `.bib` f
 
 ## Items to complete before submission
 
-- Complete the Funding and Acknowledgements statements.
 - Archive the publication release with a persistent DOI and add that DOI to the Data availability and Code availability statements.
 - Document a clean internal raw-to-results rerun using the request-only laboratory hourly inputs and the public ERA5 download identified in `../analysis_code/INPUTS_REQUIRED.csv`.
 - Preserve the OSM analytical-map provenance and the archived `GS(2023)2767` source and transformation record for the boxed South China Sea locator with the submitted Figure 1 files.

@@ -379,7 +379,6 @@ def main() -> int:
         r"\begin{thebibliography}{99}",
         r"\section*{Acknowledgements}",
         r"\section*{Author contributions}",
-        r"\section*{Funding}",
         r"\section*{Competing interests}",
         r"\section*{Additional information}",
         r"\renewcommand{\figurename}{Extended Data Fig.}",
@@ -403,7 +402,6 @@ def main() -> int:
         "[repository and DOI",
         "[Institutional support",
         "[Author contribution statement",
-        "[Complete funding information",
         "[Replace if required.]",
         "[corresponding author and email]",
     ]

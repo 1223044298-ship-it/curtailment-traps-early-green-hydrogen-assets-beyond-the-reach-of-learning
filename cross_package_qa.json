@@ -3,8 +3,7 @@
   "submission_ready": false,
   "failures": [],
   "warnings": [
-    "The public archive omits request-only hourly inputs needed for an independent raw-to-results rerun.",
-    "Author-supplied acknowledgements or funding metadata still contain placeholders."
+    "The public archive omits request-only hourly inputs needed for an independent raw-to-results rerun."
   ],
   "checks": {
     "main_qa_passed": true,

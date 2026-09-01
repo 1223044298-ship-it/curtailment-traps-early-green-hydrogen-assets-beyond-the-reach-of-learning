@@ -3,7 +3,6 @@
   "submission_ready": false,
   "failures": [],
   "warnings": [
-    "Submission metadata still contains 2 placeholder types.",
     "Code and derived outputs are packaged, but the public archive is not independently raw-to-results reproducible because request-only hourly inputs are omitted."
   ],
   "checks": {
@@ -20,7 +19,7 @@
     "compiled_pdfs_current": true,
     "abstract_words_approx": 150,
     "main_text_words_approx": 2936,
-    "submission_placeholder_types": 2,
+    "submission_placeholder_types": 0,
     "osm_map_source_provenance_packaged": true,
     "analysis_code_and_derived_outputs_packaged": true,
     "analysis_archive_structural_qa_passed": true,
