@@ -25,7 +25,7 @@
 
 - The active PDF uses the restrained Nature-style layout for readability at initial Joule submission; it does not imitate Joule's typeset publication page.
 - The abstract contains 150 words under the package QA parser.
-- The main text contains approximately 2,936 words under the package QA parser, excluding the abstract, Methods, references and figure legends.
+- The main text contains approximately 2,972 words under the package QA parser, excluding the abstract, Methods, references and figure legends.
 - The Introduction has no heading; the four Results sections use unnumbered topical headings; the Discussion has no subheadings; and the Methods use unnumbered topical subheadings.
 - The manuscript contains four main figures and one Extended Data figure, below the limit of eight display items.
 - The clean and review PDFs are generated from the same substantive source; the review version adds line numbering only. Page counts are verified after each release build.
