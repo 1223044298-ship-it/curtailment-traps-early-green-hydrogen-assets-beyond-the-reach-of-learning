@@ -13,15 +13,23 @@ ROOT = Path(__file__).resolve().parent
 MAIN = ROOT / "Main_manuscript"
 SI = ROOT / "Supplementary_information"
 MAIN_SOURCE = (
-    MAIN / "main_manuscript_nature_article.tex"
-    if (MAIN / "main_manuscript_nature_article.tex").is_file()
-    else MAIN / "main_manuscript.tex"
+    MAIN / "main_manuscript_joule.tex"
+    if (MAIN / "main_manuscript_joule.tex").is_file()
+    else (
+        MAIN / "main_manuscript_nature_article.tex"
+        if (MAIN / "main_manuscript_nature_article.tex").is_file()
+        else MAIN / "main_manuscript.tex"
+    )
 )
 MAIN_PDF = MAIN_SOURCE.with_suffix(".pdf")
 MAIN_REVIEW_SOURCE = (
-    MAIN / "main_manuscript_nature_article_review.tex"
-    if (MAIN / "main_manuscript_nature_article_review.tex").is_file()
-    else MAIN / "main_manuscript_review.tex"
+    MAIN / "main_manuscript_joule_review.tex"
+    if (MAIN / "main_manuscript_joule_review.tex").is_file()
+    else (
+        MAIN / "main_manuscript_nature_article_review.tex"
+        if (MAIN / "main_manuscript_nature_article_review.tex").is_file()
+        else MAIN / "main_manuscript_review.tex"
+    )
 )
 MAIN_REVIEW_PDF = MAIN_REVIEW_SOURCE.with_suffix(".pdf")
 SI_SOURCE = (
@@ -49,6 +57,8 @@ def main() -> int:
     failures: list[str] = []
     warnings: list[str] = []
     main_qa = json.loads((MAIN / "main_manuscript_qa.json").read_text(encoding="utf-8"))
+    joule_qa_path = MAIN / "joule_manuscript_qa.json"
+    joule_qa = json.loads(joule_qa_path.read_text(encoding="utf-8")) if joule_qa_path.is_file() else {}
     archive_qa = json.loads((ROOT / "analysis_code" / "archive_qa.json").read_text(encoding="utf-8"))
     si_source = SI_SOURCE.read_text(encoding="utf-8")
     main_source = MAIN_SOURCE.read_text(encoding="utf-8")
@@ -67,6 +77,8 @@ def main() -> int:
 
     if not main_qa.get("passed"):
         failures.append("Main-manuscript QA failed.")
+    if MAIN_SOURCE.name == "main_manuscript_joule.tex" and not joule_qa.get("passed"):
+        failures.append("Joule front-matter and section-structure QA failed.")
     if not archive_qa.get("passed"):
         failures.append("Analysis-code archive structural QA failed.")
     if (
@@ -155,7 +167,15 @@ def main() -> int:
         warnings.append("Figure 1 OpenStreetMap geometry provenance is incomplete.")
     if "RAW_TO_RESULTS_RERUN_COMPLETED_FROM_THIS_ARCHIVE=true" not in status:
         warnings.append("The public archive omits request-only hourly inputs needed for an independent raw-to-results rerun.")
-    if not main_qa.get("checks", {}).get("compiled_pdfs_current", False):
+    compiled_pdfs_current = all(
+        pdf.is_file() and pdf.stat().st_mtime >= source.stat().st_mtime
+        for source, pdf in (
+            (MAIN_SOURCE, MAIN_PDF),
+            (MAIN_REVIEW_SOURCE, MAIN_REVIEW_PDF),
+            (SI_SOURCE, SI_PDF),
+        )
+    )
+    if not compiled_pdfs_current:
         warnings.append("The compiled main or Supplementary Information PDF is older than its TeX source.")
 
     placeholders = re.findall(r"\[[^]]*(?:insert|Replace|Complete)[^]]*\]", main_source)
@@ -177,13 +197,15 @@ def main() -> int:
         "warnings": warnings,
         "checks": {
             "main_qa_passed": bool(main_qa.get("passed")),
+            "joule_qa_passed": bool(joule_qa.get("passed")),
             "analysis_archive_qa_passed": bool(archive_qa.get("passed")),
-            "compiled_pdfs_current": bool(
-                main_qa.get("checks", {}).get("compiled_pdfs_current")
-            ),
+            "compiled_pdfs_current": compiled_pdfs_current,
             "m129_low": m129_low,
             "m129_strict": m129_strict,
             "citations": main_qa.get("checks", {}).get("citations"),
+            "summary_words": joule_qa.get("checks", {}).get("summary_words"),
+            "context_scale_characters": joule_qa.get("checks", {}).get("context_scale_characters"),
+            "highlight_characters": joule_qa.get("checks", {}).get("highlight_characters"),
             "english_only": bool(
                 main_qa.get("checks", {}).get("english_only_source_files")
                 and main_qa.get("checks", {}).get("english_only_figure_pdfs")

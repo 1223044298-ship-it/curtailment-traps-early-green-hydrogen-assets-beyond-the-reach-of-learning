@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "failures": [],
+  "checks": {
+    "summary_words": 149,
+    "context_scale_characters": 911,
+    "highlight_characters": [
+      76,
+      66,
+      72,
+      70
+    ],
+    "highlight_count": 4
+  }
+}

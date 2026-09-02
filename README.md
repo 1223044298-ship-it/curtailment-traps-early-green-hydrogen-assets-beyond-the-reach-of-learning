@@ -8,13 +8,13 @@ Jinwei Liang and Haoran Zhang contributed equally to this work. Haoran Zhang is 
 
 ## Repository status
 
-This is a private, versioned submission snapshot hosted at <https://github.com/1223044298-ship-it/curtailment-traps-early-green-hydrogen-assets-beyond-the-reach-of-learning>. The current editorial manuscript uses the `_nature_article` filenames. The repository also contains the current Supplementary Information and active analysis chain. Superseded manuscript variants, historical figure backups, rendered audit pages, compiler intermediates and Python bytecode are excluded from version control.
+This is a private, versioned submission snapshot hosted at <https://github.com/1223044298-ship-it/curtailment-traps-early-green-hydrogen-assets-beyond-the-reach-of-learning>. The current editorial manuscript is the Joule-formatted clean and line-numbered pair (`main_manuscript_joule.*`); the `_nature_article` pair is retained as a pre-conversion fallback. The repository also contains the current Supplementary Information and active analysis chain. Superseded manuscript variants, historical figure backups, rendered audit pages, compiler intermediates and Python bytecode are excluded from version control.
 
 The repository does not yet have a persistent DOI. A publication release can later be archived in Zenodo without changing the computational structure documented here.
 
 ## Repository layout
 
-- `Main_manuscript/`: current clean and line-numbered LaTeX/PDF versions, final code-generated figures and manuscript source data.
+- `Main_manuscript/`: current Joule-formatted clean and line-numbered LaTeX/PDF versions, the pre-conversion fallback, final code-generated figures and manuscript source data. `qa_joule.py` checks the Summary, Context & scale, Highlights and required section structure.
 - `Supplementary_information/`: current Supplementary Information source, compiled PDF, supplementary figures and source data.
 - `analysis_code/`: active R1-R4 analysis, robustness, capacity-optimisation, figure and quality-assurance workflows.
 - `figures/code_generated/`: immutable copies of the figures generated directly from analysis code.

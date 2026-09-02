@@ -1,7 +1,6 @@
 \documentclass[11pt,a4paper]{article}
 
-% Editorial submission layout using the standard article class.
-% A Springer Nature template-compatible variant is retained separately.
+% Editorial submission layout prepared for Joule using the standard article class.
 \usepackage{graphicx}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{booktabs}
@@ -11,7 +10,6 @@
 \usepackage{xurl}
 \usepackage[numbers,sort&compress]{natbib}
 \usepackage[font=small,labelfont=bf]{caption}
-\usepackage[switch]{lineno}
 \usepackage[hidelinks]{hyperref}
 
 \raggedbottom
@@ -48,13 +46,31 @@
 
 \maketitle
 
+\renewcommand{\abstractname}{Summary}
 \begin{abstract}
-Green hydrogen is expected to allow early electrolysis plants to inherit industry-wide cost declines through replaceable stacks. We test this channel using 10,214 Chinese wind and utility-scale solar records coupled to reconstructed hourly low-opportunity-cost electricity, six ERA5 weather-year replays and 30-year nominal equity cash flows. Two obstacles compound. Curtailment lowers electricity cost but concentrates operation, so 701 of 710 marginal records never reach the 60,000-h replacement threshold. More fundamentally, even where replacement occurs, the replaceable stack embodies only 18.2\% (range 11.3--42.3\%) of the capital saving achieved by a 2060 new build, and across a 1--10\% return frontier sector learning repairs marginal returns only where the initial shortfall is small. Price convergence deepens the loss but is not required. Replaceability is therefore neither sufficient nor decisive, and durable de-risking depends less on deployment volume than on verifiable power-supply commitment and pre-investment capacity flexibility before capital becomes irreversible.
+Green hydrogen is expected to allow early electrolysis plants to inherit industry-wide cost declines through replaceable stacks. We test this channel using 10,214 operating Chinese wind and utility-scale solar records with reconstructed hourly low-opportunity-cost electricity, six ERA5 weather-year replays and 30-year nominal equity cash flows. Two obstacles compound. Curtailment lowers electricity cost but concentrates operation, so 701 of 710 marginal records never reach the 60,000-h replacement threshold. Fundamentally, even where replacement occurs, the replaceable stack embodies only 18.2\% (range 11.3--42.3\%) of the capital saving achieved by a 2060 new build, and across a 1--10\% return frontier sector learning repairs marginal returns only where the initial shortfall is small. Price convergence deepens the loss but is not required. Replaceability is therefore neither sufficient nor decisive, and durable de-risking depends less on deployment volume than on verifiable power-supply commitment and pre-investment capacity flexibility before capital becomes irreversible.
 \end{abstract}
+
+\section*{Context \& scale}
+
+Electrolyser costs are projected to fall as deployment expands, and replaceable stacks are widely assumed to pass these gains to plants already in operation. This assumption is consequential for green hydrogen projects built around curtailed renewable power: cheap electricity can make them appear investable, yet sparse operating hours may prevent the first stack replacement. Using 10,214 Chinese wind and utility-scale solar records and six weather-year replays, we show that 701 of 710 marginal records never access stack-mediated learning and that the replaceable stack carries only 18.2\% of 2060 new-build capital savings in the central case. Deployment support alone therefore cannot repair weak incumbent returns. De-risking should occur before investment by verifying power-supply commitments and preserving capacity flexibility; transport, demand and water constraints remain project-specific limits.
+
+\section*{Highlights}
+
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\setlength{\parsep}{0pt}
+\setlength{\topsep}{2pt}
+\item Curtailment prevents 701 of 710 marginal records from replacing their stacks
+\item Replaceable stacks embody 18.2\% of 2060 new-build capital savings
+\item Sector learning repairs returns only when the initial shortfall is small
+\item Power commitments and capacity flexibility move risk before investment
+\end{itemize}
 
 \noindent\textbf{Keywords:} green hydrogen; low-opportunity-cost electricity; project finance; learning curves; vintage capital; investment flexibility
 \vspace{1em}
-\linenumbers
+
+\section*{Introduction}
 
 Green hydrogen is central to deep decarbonisation in steel, chemicals, refining and long-distance transport\cite{staffell2019,yang2022,ueckerdt2021}. The International Energy Agency's net-zero pathway requires low-emissions hydrogen production to rise from about 1\,Mt today to roughly 70\,Mt by 2030, while the 2024 project pipeline contained nearly 520\,GW of announced electrolysers but only 4\% had reached final investment decision or construction\cite{iea2023nze,iea2024}. IRENA estimates that green-hydrogen production and infrastructure require cumulative investment of about US\$3.8 trillion by 2050\cite{irena2023}. China accounted for more than 40\% of electrolysis capacity reaching final investment decision during the preceding year and 60\% of manufacturing capacity\cite{nea2024capacity,pan2021,guo2023coal,ndrc2022}.
 
@@ -64,7 +80,9 @@ Curtailment creates a conflict between entry cost and access to learning\cite{gl
 
 We test this mechanism by coupling 10,214 operating wind and utility-scale photovoltaic records with reconstructed hourly low-opportunity-cost electricity, electrolyser sizing, 30-year nominal equity cash flow and vintage-specific learning; six ERA5 years provide a meteorological replay. Two disclosed firm rules define a lower screening case and a 6.5\% comparison within a continuous 1--10\% return frontier\cite{changyuan2026,chinabond2026,huadian2025}. In the reference reconstruction, 710 records qualify only under the lower rule. Of these, 701 fail to reach the 60,000-h stack-replacement threshold, central operating learning raises only three above 6.5\% at constant hydrogen price, and favourable transfer of all contemporaneous non-stack savings raises the count to eight. The central decomposition assigns 18.2\% of a 2060 new-build capital saving to the replaceable stack, with a source-grounded boundary of 11.3--42.3\%. Utilisation, not deployment scale alone, is the gate through which later learning reaches an early asset.
 
-\section*{Low-opportunity-cost electricity, rather than total renewable output, limits developable supply}
+\section*{Results}
+
+\subsection*{Low-opportunity-cost electricity, rather than total renewable output, limits developable supply}
 
 System-constrained electricity compresses the physical hydrogen boundary within the covered inventory to about 6\% of its full-output upper bound. The inventory contains 4,149 operating wind records and 6,065 operating utility-scale photovoltaic records, totalling approximately 629\,GW. It represents 72\% of June 2024 official all-wind-plus-centralised-photovoltaic capacity, or 53\% when distributed photovoltaics are included. Under the reference resource profile, the inventory produces about 1,109\,TWh, whereas the 2025-calibrated system-constrained quantity is 70.8\,TWh. At 55\,kWh\,kg$^{-1}$\,H$_2$, these mutually exclusive branches correspond to 20.2 and 1.29\,Mt\,H$_2$\,yr$^{-1}$. The latter is therefore an inventory-conditioned physical boundary, not an estimate of national green-hydrogen potential.
 
@@ -74,7 +92,7 @@ Maximising nominal energy capture can over-size electrolysers. With a 30\% minim
 
 Economic screening retains only part of this physical boundary. In the static 28~\cnykg{} reference, the lower firm rule qualifies 1,809 records over the 30-year primary horizon, corresponding to 8.4\,GW of electrolysers and 0.32\,Mt\,H$_2$\,yr$^{-1}$, or about one quarter of the constrained-electricity potential. Provincial physical potential is concentrated in Inner Mongolia, Xinjiang, Hebei, Gansu and Qinghai, but qualified supply does not scale proportionally with that potential (Fig.~\ref{fig:resource}a). Holding annual constrained energy fixed while changing only its hourly allocation moves qualified hydrogen supply from 0.12 to 0.81\,Mt\,yr$^{-1}$. Annual resource totals bound the opportunity; hourly concentration, minimum load and cash-flow conditions determine how much of it passes an economic screen.
 
-\section*{Return criteria create a marginal band whose size depends on information at commitment}
+\subsection*{Return criteria create a marginal band whose size depends on information at commitment}
 
 Static price and technology expectations expose a continuous return frontier. At a producer-side price of 28~\cnykg{} with no future operating improvement credited at commitment, the lower rule qualifies 1,809 records and independent optimisation at 6.5\% qualifies 1,099. The remaining 710 records, 39\% of the lower-rule set, are \emph{strict-marginal}: some capacity has non-negative equity net present value (NPV) under the lower rule, but none reaches 6.5\%. Across 972 deterministic configurations, the qualified sets remain separated (Fig.~\ref{fig:admission}a). At the IEA's 2021 China utility-solar cost-of-capital estimate (4.9\% nominal), exact revaluation qualifies 1,255 records, compared with 1,036 at 8\% and 874 at 10\%\cite{ieacapital}. This is financing context rather than a green-hydrogen WACC; the cohort flow and full 1--10\% curve show that the band is not created by comparing only two thresholds (Fig.~\ref{fig:admission}b,c).
 
@@ -84,7 +102,7 @@ Expected market conditions narrow the qualified set before investment, but do no
 
 Physical and temporal assumptions alter exact membership more than the separation. Daily peak-shaving, annual peak-shaving and proportional allocation yield 1,809, 475 and 5,544 lower-rule records and 710, 329 and 390 strict-marginal records, respectively (Extended Data Fig.~1a--c). A separate six-weather-year replay yields 2,315--2,682 lower-rule and 1,080--1,321 strict-marginal records on a common grid; none of its strict cohorts reaches 6.5\% under the linear 18~\cnykg{} path. Adding the exact 1-MW boundary and adaptive local search reproduces the final 1,809, 1,099 and 710 memberships (Extended Data Fig.~1e). Exact counts are reconstruction-dependent; persistence of the return separation is the cross-reconstruction result.
 
-\section*{Replacement access is insufficient to convert sector learning into durable incumbent returns}
+\subsection*{Replacement access is insufficient to convert sector learning into durable incumbent returns}
 
 Low-cost operation delays access to later learning. Across 710 strict-marginal records, the median 6.5\% NPV shortfall is 18.5\% of initial capital and 30-year operation is 54,800 hours. With a 60,000-hour initial stack life, 701 never replace; only nine do so in 2052--2055 (Fig.~\ref{fig:learning}a). Positive learning gain and replacement coincide because cost, efficiency and life improvements enter only then. Among these nine, the median gain is 2.0\% of initial capital and closes 39\% of the initial gap; only three cross 6.5\% at a flat 28~\cnykg{} (Fig.~\ref{fig:learning}c). Sparse use blocks access, and the payoff usually remains insufficient.
 
@@ -94,7 +112,7 @@ Component incidence further limits how much sector learning can enter an existin
 
 Price convergence dominates post-entry survival. At a 2060 endpoint of 22~\cnykg{}, front-loaded, linear and back-loaded paths leave 4, 45 and 298 strict-marginal records above the lower criterion; none reaches 6.5\%. At 18~\cnykg{}, the corresponding counts are 0, 0 and 102. The linear-path terminal price required for a strict-marginal record to reach 6.5\% has a median of 38.2~\cnykg{} and a 5th--95th percentile range of 33.1--42.2~\cnykg{} (Fig.~\ref{fig:learning}d). Relative to the flat-price, no-learning counterfactual, a linear path to 18~\cnykg{} removes 5.31\,billion CNY from cohort NPV at the lower criterion, whereas operating learning restores only 4.7\,million CNY, or 0.09\% of that loss (Supplementary Note 5). Vintage incidence explains why incumbents cannot capture enough compensation even at constant price; conditional price convergence determines the magnitude of subsequent loss. Under declared priors, joint propagation leaves approximately 0.04\% of project--draw pairs above 6.5\% (0.02--0.09\% across tests), an assumption-weighted rather than empirical probability (Supplementary Note 11).
 
-\section*{Price-informed screening and capacity flexibility move risk before capital lock-in}
+\subsection*{Price-informed screening and capacity flexibility move risk before capital lock-in}
 
 Separating expectations at commitment from conditions realised afterwards changes the apparent value of a lower return rule. If the static 28~\cnykg{} lower-rule capacities are committed and the producer price subsequently follows a linear path to 18~\cnykg{}, only 274 of 1,809 records remain above 6.5\%; 44.0 of 60.7\,billion CNY falls below that criterion and durable output is 0.103\,Mt\,H$_2$\,yr$^{-1}$. If the same price and operating-learning path is anticipated at commitment, the lower rule qualifies 1,077 records rather than 1,809. Requiring 6.5\% under that anticipated path retains 761 records, 18.4\,billion CNY and 0.120\,Mt\,yr$^{-1}$ (Fig.~\ref{fig:screening}b). Relative to static lower-rule entry, this screen commits 70\% less capital while retaining 16\% more output that remains above 6.5\% under the realised path.
 
@@ -304,11 +322,23 @@ J(A,B)=\frac{|A\cap B|}{|A\cup B|}.
 \end{equation}
 All figures and reported values are generated from record-level output tables. Automated checks cover annual energy conservation, cohort denominators, criterion nesting, nominal cash-flow reconstruction, capacity-search convergence and figure--text consistency. Provincial water price and constrained-electricity settlement are retained as transparent boundaries where evidence is insufficient for causal or implementation claims.
 
-\section*{Data availability}
+\section*{Resource availability}
+
+\subsection*{Lead contact}
+
+Further information and requests for resources should be directed to the lead contact, Haoran Zhang (\href{mailto:h.zhang@pku.edu.cn}{h.zhang@pku.edu.cn}).
+
+\subsection*{Materials availability}
+
+This study did not generate new physical materials.
+
+\subsection*{Data and code availability}
+
+\noindent\textbf{Data.}
 
 Redistributable project-inventory fields, annual utilisation inputs, processed ERA5 outputs, parameter-source registers, figure source data and result tables are maintained in the accompanying GitHub repository at \href{https://github.com/1223044298-ship-it/curtailment-traps-early-green-hydrogen-assets-beyond-the-reach-of-learning}{github.com/1223044298-ship-it/curtailment-traps-early-green-hydrogen-assets-beyond-the-reach-of-learning}. The repository is private during manuscript review. The manuscript-aligned revision is identified by a fixed Git commit, and repository access will be supplied to editors and reviewers; the accepted release will be made public and archived under a versioned DOI before publication. Source ERA5 variables are publicly available from the Copernicus Climate Data Store under its applicable terms. The 2020 monthly model-output files were generated within the authors' research group, previously used and documented by Li and Zhang\cite{li2026}, and reused here rather than generated specifically for the present study. Their provenance is fixed to that article and its \href{https://github.com/Lynn20001130/-hydrogen-blending-analysis/tree/43af9fef041a7c55ca154cc6a40c5d339c23c521}{public source-code repository at commit 43af9fe}. That source-study code reads, but does not distribute or regenerate, the underlying monthly files. The two 10,214-by-8,784 hourly profile arrays used here are deterministic derivatives of those files. The monthly files and derived arrays required for a clean raw-to-results rerun are not redistributed in the repository; they are held by the authors' research group and documented by filename, dimension, SHA-256 checksum, identifier matching, analytical role and transformation code. Requests for research access should be sent to the corresponding author at \href{mailto:h.zhang@pku.edu.cn}{h.zhang@pku.edu.cn} and should identify the intended research use; access is subject to contributor and institutional approval and applicable data-sharing conditions. These files are model outputs and are not represented as independently observed station dispatch.
 
-\section*{Code availability}
+\noindent\textbf{Code.}
 
 Custom code for constrained-electricity reconstruction, ERA5 replay, electrolyser dispatch and capacity optimisation, nominal equity cash flow, learning-flip boundaries, forward screening, capacity flexibility and figure generation is maintained in the accompanying GitHub repository. The submission snapshot includes the software environment, execution order, input inventory and SHA-256 manifests. Packaged derived outputs support regeneration of all figures and numerical auditing of the reported results; a clean raw-to-results rerun additionally requires the request-access hourly inputs identified in \texttt{analysis\_code/INPUTS\_REQUIRED.csv}. No archival DOI has yet been assigned; the accepted public release will receive a versioned archival DOI before publication.
 
@@ -472,7 +502,7 @@ National People's Congress \& State Council of the People's Republic of China. \
 
 \end{thebibliography}
 
-\section*{Acknowledgements}
+\section*{Acknowledgments}
 
 This work was supported by the National Natural Science Foundation of China (Grant Nos. 52472316, 52341203 and 52461160297); the Science and Technology Strategic Consulting Project of the Chinese Academy of Engineering (Project No. 2025-HZ-31); the Guangdong Basic and Applied Basic Research Foundation (Grant No. 2025A1515010251); the Shenzhen Natural Science Foundation in Basic Research Fund (Grant No. JCYJ20250604175822030); and the Research Project of the State-owned Assets Supervision and Administration Commission of the State Council (SASAC) (Project No. SASAC-RC2026-10). Computational resources were provided by the High-performance Computing Platform of Peking University.
 
@@ -480,11 +510,11 @@ This work was supported by the National Natural Science Foundation of China (Gra
 
 Jinwei Liang: Conceptualization, Methodology, Visualization, Writing -- original draft. Zhiling Guo: Writing -- review \& editing. Haoran Zhang: Conceptualization, Methodology, Writing -- review \& editing, Supervision.
 
-\section*{Competing interests}
+\section*{Declaration of interests}
 
 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.
 
-\section*{Additional information}
+\section*{Supplemental information}
 
 Supplementary information accompanies this manuscript. Correspondence and requests for materials should be addressed to Haoran Zhang (h.zhang@pku.edu.cn).
 
