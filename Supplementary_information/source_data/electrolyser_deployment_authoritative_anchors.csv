@@ -1,4 +1,5 @@
 source,scenario,year,cumulative_electrolyser_gw,status,source_url,model_interpretation
+IEA Global Hydrogen Review 2026,global installed electrolysis,2025,4.0,observed lower bound,https://www.iea.org/reports/global-hydrogen-review-2026,rounded observed starting point used as Q_2026
 IEA Global Hydrogen Review 2024,announced-project installed estimate,2024,5.2,estimate,https://www.iea.org/reports/global-hydrogen-review-2024/progress-summary-dashboard,contextual announced-project estimate; not an observed installed-capacity anchor
 IEA Electrolysers 2024,announced excluding early-stage,2030,230,project pipeline,https://www.iea.org/energy-system/hydrogen/electrolysers,conditional pipeline not forecast
 IEA Electrolysers 2024,announced including early-stage,2030,520,project pipeline,https://www.iea.org/energy-system/hydrogen/electrolysers,conditional pipeline not forecast

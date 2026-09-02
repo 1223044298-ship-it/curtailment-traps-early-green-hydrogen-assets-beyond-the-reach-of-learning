@@ -72,7 +72,7 @@ Curtailment traps early green hydrogen assets beyond the reach of learning}
 
 \section*{Guide to this Supplementary Information}
 
-This file is organised as Supplementary Methods S1--S10, Supplementary Notes 1--12, Supplementary Tables S1--S11 and Supplementary Figures S1--S4. The primary analysis specification is denoted \textbf{M129}: 128 nested resource-capture candidates plus the exact 1-MW engineering boundary for each of 10,214 project records. Broad deterministic grids using 16 capacity candidates are denoted \textbf{G16} and are used only for directional sensitivity ranges. Results from M129 and G16 are never pooled and always retain their own denominator. Supplementary Note 12 and Supplementary Table S11 provide a reviewer-facing audit that distinguishes questions answered by the present evidence from boundaries that require new observations or a larger system model.
+This file is organised as Supplementary Methods S1--S10, Supplementary Notes 1--12, Supplementary Tables S1--S12 and Supplementary Figures S1--S4. The primary analysis specification is denoted \textbf{M129}: 128 nested resource-capture candidates plus the exact 1-MW engineering boundary for each of 10,214 project records. Broad deterministic grids using 16 capacity candidates are denoted \textbf{G16} and are used only for directional sensitivity ranges. Results from M129 and G16 are never pooled and always retain their own denominator. Supplementary Note 12 and Supplementary Table S12 provide a reviewer-facing audit that distinguishes questions answered by the present evidence from boundaries that require new observations or a larger system model.
 
 The primary numerical source is \path{source_data/headline_results.json}. Supporting machine-readable files accompany this document in the \texttt{source\_data} directory. Values in the prose are rounded to precision commensurate with model uncertainty; the source files retain full numerical precision for reproducibility.
 
@@ -297,13 +297,51 @@ f_t=\left(\frac{Q_t}{Q_{2026}}\right)^{-b}, \qquad
 b=-\frac{\ln(1-\mathrm{LR})}{\ln 2},
 \label{eq:learningcurve}
 \end{equation}
-where LR is the fractional learning rate for one doubling. The primary paths begin at 4\,GW in 2026, rounding the IEA observation that global installed electrolysis exceeded 4\,GW by the end of 2025\cite{iea2026}. Slow, central and fast paths reach 1,000, 2,200 and 3,500\,GW by 2060. Only the starting point is treated as an observation; all subsequent values are author-defined conditional scenario anchors contextualised by published deployment ranges rather than forecasts. A 20-GW starting normaliser is tested separately and is not represented as observed installed capacity. Explicit author-defined bridge values are used in 2027--2029, after which annual deployment is linearly interpolated between the 2030, 2040, 2050 and 2060 anchors in Supplementary Table~\ref{tab:deployment}. Component factors are evaluated from the resulting annual cumulative deployment. These paths provide calendar labels for conditional cases; their frequencies and likelihoods are not used to identify the mechanism.
+where LR is the fractional learning rate for one doubling. The primary paths begin at 4\,GW in 2026, rounding the IEA observation that global installed electrolysis exceeded 4\,GW by the end of 2025\cite{iea2026}. Slow, central and fast paths reach 1,000, 2,200 and 3,500\,GW by 2060. Only the starting point is treated as an observation. The subsequent nodes are an author-constructed envelope informed by, but not copied from, published benchmarks: the IEA reports a 230-GW 2030 announced-project pipeline excluding early-stage projects, 590/1,340/3,300\,GW in 2030/2035/2050 in its Net Zero Emissions pathway and 1,400\,GW in 2050 in its Sustainable Development Scenario; the executive-summary tracking table in IRENA's 2023 outlook reports 428\,GW in 2030 and 5,722\,GW in 2050 for its 1.5\,$^\circ$C pathway\cite{ieaelectrolysers2024,iea2023nze,iea2021minerals,irena2023}. The lower paths represent implementation-constrained deviations motivated by the documented project ambition--implementation gap\cite{odenweller2025}. Exact intermediate and 2060 values remain conditional scenario choices, not forecasts. A 20-GW starting normaliser is tested separately and is not represented as observed installed capacity. Explicit author-defined bridge values are used in 2027--2029, after which annual deployment is linearly interpolated between the 2030, 2040, 2050 and 2060 anchors in Supplementary Table~\ref{tab:deployment}. Component factors are evaluated from the resulting annual cumulative deployment. These paths provide calendar labels for conditional cases; their frequencies and likelihoods are not used to identify the mechanism.
 
-Learning is split by asset vintage. Equipment-manufacturing and balance-of-plant/EPC factors apply only to future new-build equipment. They do not reduce the 2026 sunk initial CAPEX or become a generic annual O\&M decline. Existing 2026 assets can receive only three operating improvements when a replacement stack is installed: lower electricity use, lower replacement-stack cost and longer stack life. This timing rule prevents future new-build cost reductions from being retroactively credited to incumbents. The model records cumulative operating hours, replacement count and first replacement year for every record so that access to learning can be audited separately from the size of its financial payoff. Equipment, BOP/EPC and stack-cost experience rates are author-selected scenario anchors rather than estimated constants. The 13\% central rate lies within published system-level global evidence, but transferring that evidence to replacement-stack cost is a modelling assumption rather than an IEA stack-specific estimate. Electricity use and stack life are bounded engineering trajectories interpolated in log-deployment progress, not separately fitted learning rates\cite{glenk2023,doe2024,worldbank2026,iea2025}.
+Learning is split by asset vintage. Equipment-manufacturing and balance-of-plant/EPC factors apply only to future new-build equipment. They do not reduce the 2026 sunk initial CAPEX or become a generic annual O\&M decline. Existing 2026 assets can receive only three operating improvements when a replacement stack is installed: lower electricity use, lower replacement-stack cost and longer stack life. This timing rule prevents future new-build cost reductions from being retroactively credited to incumbents. The model records cumulative operating hours, replacement count and first replacement year for every record so that access to learning can be audited separately from the size of its financial payoff. Equipment, BOP/EPC and stack-cost experience rates are author-selected scenario anchors rather than estimated constants. The 13\% central rate is deliberately slightly below the 14--17\% system-price learning rates estimated from global power-to-gas observations by Glenk \emph{et al.}\cite{glenk2023}; applying it to equipment and replacement-stack cost is a conservative transfer assumption, not a stack-specific estimate. Component-specific learning follows the component-learning principle rather than asserting one empirically fitted rate for every cost category\cite{ferioli2009,zeyen2023}. Electricity use and stack life are bounded engineering trajectories interpolated in log-deployment progress, not separately fitted learning rates\cite{doe2024,worldbank2026,iea2025}.
 
-The identification hierarchy is therefore explicit. The 4-GW starting point is externally observed and ERA5 weather is externally sourced; low-cost electricity allocation and the resulting record-level operating hours are reconstructed or calibrated quantities; stack shares and lifetime ranges are source-bounded engineering quantities; deployment, learning and producer-price paths are conditional scenarios; and 0--90\% learning rates, 20,000--100,000-h replacement cadences and $\beta=0$--1 are falsification boundaries. No posterior distribution is estimated. The headline replacement-access result is computed before future learning enters, and the sufficiency result is retained only where it survives the conditional and falsification layers rather than because any analyst-designed case occurs frequently.
+The identification hierarchy is therefore explicit. The 4-GW starting point is externally observed and ERA5 weather is externally sourced; low-cost electricity allocation and the resulting record-level operating hours are reconstructed or calibrated quantities; stack shares and lifetime ranges are source-bounded engineering quantities; deployment, learning and producer-price paths are conditional scenarios; and 0--90\% learning rates, 20,000--100,000-h replacement cadences and $\beta=0$--1 are falsification boundaries. No posterior distribution is estimated. The headline replacement-access result is computed before future learning enters, and the sufficiency result is retained only where it survives the conditional and falsification layers rather than because any analyst-designed case occurs frequently. Supplementary Table~\ref{tab:dynamicprovenance} records the evidence and construction rule for every dynamic parameter family; a citation supports only the observation or range stated in its row and does not convert an author-constructed node into an empirical estimate.
 
-\begin{table}[t]
+\FloatBarrier
+\begingroup
+\footnotesize
+\setlength{\LTleft}{0pt}
+\setlength{\LTright}{0pt}
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.15\textwidth}>{\raggedright\arraybackslash}p{0.18\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}>{\raggedright\arraybackslash}p{0.28\textwidth}}
+\multicolumn{4}{l}{\label{tab:dynamicprovenance}\textbf{Table S4.} Provenance, construction and inferential status of dynamic scenario parameters.}\\[0.4em]
+\toprule
+Parameter family & Values used & External evidence & Construction and permitted interpretation \\
+\midrule
+\endfirsthead
+\multicolumn{4}{l}{\textbf{Supplementary Table S4 continued}}\\
+\toprule
+Parameter family & Values used & External evidence & Construction and permitted interpretation \\
+\midrule
+\endhead
+\midrule
+\multicolumn{4}{r}{Continued on next page}\\
+\endfoot
+\bottomrule
+\endlastfoot
+Deployment start & $Q_{2026}=4$\,GW & Global installed electrolysis exceeded 4\,GW at the end of 2025\cite{iea2026}. & Rounded external observation and the denominator of the primary experience curve. The 20-GW alternative is only a normalisation stress. \\
+Deployment paths & Slow/central/fast nodes in Supplementary Table~\ref{tab:deployment} & External context comprises a 230-GW 2030 announced pipeline excluding early-stage projects, IEA pathway values of 590/1,340/3,300\,GW in 2030/2035/2050, a 1,400-GW 2050 lower pathway and IRENA executive-summary values of 428/5,722\,GW in 2030/2050\cite{ieaelectrolysers2024,iea2023nze,iea2021minerals,irena2023}. The implementation gap is independently documented\cite{odenweller2025}. & Exact nodes, bridges and interpolation are author-constructed. The fast 2030 node approximates the non-early-stage pipeline; slower nodes represent delivery shortfall. No path is assigned a probability or described as a forecast. \\
+Experience-curve form & One-factor progress ratio for each component & Experience curves and component-wise learning are established modelling representations\cite{ferioli2009,zeyen2023}. & The equation is standard; assigning separate equipment, BOP/EPC and stack factors is the study's vintage-incidence decomposition. \\
+Equipment and stack-cost LR & 0, 8, 13 and 18\% per doubling & Global observations imply 14--17\% system-price learning per doubling; they do not identify a replacement-stack rate\cite{glenk2023}. & 13\% is selected just below the observed system-level band; 8 and 18\% bracket it. Applying these values to replacement stacks is a conditional transfer assumption, not a measured stack coefficient. \\
+BOP/EPC LR & 0, 2, 5 and 8\% per doubling & Component-learning research supports separating components with different learning potential, but does not supply these exact BOP/EPC values\cite{ferioli2009}. & Author-selected lower rates represent slower site-specific engineering and construction learning. They affect future new builds only. \\
+Electricity use & 55 initially; 52, 50 and 48\,kWh\,kg$^{-1}$ endpoints & DOE Table A-2 reports liquid-alkaline beginning-of-life system values of 55, 52 and 48\,kWh\,kg$^{-1}$; global evidence estimates roughly 2\% efficiency learning per doubling\cite{doe2024,glenk2023}. & 55, 52 and 48 are source-bounded; 50 is an interior central endpoint. Paths are log-deployment interpolation, not fitted efficiency learning curves. \\
+Stack life & 60,000 initially; 80,000, 90,000 and 100,000\,h endpoints & DOE Table A-2 uses 60,000\,h as current liquid-alkaline life and 80,000\,h as a target; World Bank Table ES1 reports a 60,000--90,000-h alkaline range\cite{doe2024,worldbank2026}. & 60,000--90,000\,h is source-bounded. The 100,000-h endpoint is deliberately optimistic. Replacement occurs only after accumulated operating hours reach the contemporaneous life. \\
+Replacement-stack cost floors and event scope & Cost factors 0.65, 0.55 and 0.40; 11\% of installed CAPEX per event & Published assessments support substantial electrolyser cost-reduction potential, and DOE Table A-2 reports replacement cost equal to 11\% of total installed cost\cite{irena2020,doe2024}. & The three cost floors are author-imposed extrapolation guards, not reported forecasts. Event shares of 6--45\% and removal of the floor are deterministic sensitivity and falsification tests. \\
+Capital-component shares & Direct CAPEX 50--70\%; stack 20--50\% of direct CAPEX & World Bank Fig. 2.3 reports a 65:35--70:30 direct-to-indirect range for large greenfield projects, and its direct-CAPEX review reports a 20--50\% stack share; IRENA supplies an additional component-cost boundary\cite{worldbank2026,irena2020}. & Central 67.5\% direct and 25\% stack-of-direct are transparent interior choices; the complete cited range is crossed in the component-incidence boundary. \\
+Hydrogen-price anchor & 28\,CNY\,kg$^{-1}$ & The China Hydrogen Development Report gives a December 2024 producer-side mixed-route index of 28.0\,CNY\,kg$^{-1}$\cite{nea2025hydrogen}. & Rounded evaluation anchor only; it is not identified as a renewable-hydrogen contract or a 2026 observation. \\
+Terminal price and timing & 2060 endpoints 22, 18, 15 and 12\,CNY\,kg$^{-1}$; front-, linear and back-loaded paths & No external dataset identifies these future producer-price paths. Published cost and deployment studies provide context but not a defensible price mapping\cite{glenk2023,iea2025}. & Author-defined stress envelope. Exact endpoints and timing functions receive no probability weight; the flat-28 case isolates learning from price convergence. \\
+Transfer and pass-through boundaries & $\lambda=0$--1; $\beta=0$--1; $\alpha=0$--1 & No observed market-clearing or retrofit dataset identifies these coefficients. & Dimensionless falsification axes. No central $\lambda$ or $\beta$ is estimated; neither enters the headline replacement-access count. \\
+Learning-rate and cadence flip tests & LR 0--90\%; fixed cadence 20,000--100,000\,h & The 60,000--90,000-h engineering region is source-bounded\cite{doe2024,worldbank2026}; more extreme values are not asserted as expected performance. & Adversarial boundary search used to locate reversal, with unresolved records right-censored at 90\% LR. \\
+Declared-prior audit & Price, learning-path, resource, dependence and delivery-netback distributions in Supplementary Methods S9 & Probabilistic hydrogen studies estimate or calibrate distributions when claiming feasibility probabilities\cite{odenweller2022}. & Here the distributions and weights are declared analyst priors over already stated scenarios. Outputs are labelled assumption-weighted and are not empirical FID probabilities. \\
+\end{longtable}
+\endgroup
+
+\begin{table}[!ht]
 \caption{Cumulative electrolyser-deployment anchors used to construct annual learning paths.}\label{tab:deployment}
 \centering
 \footnotesize
@@ -317,11 +355,11 @@ Fast & 4 & 220 & 1,200 & 2,500 & 3,500 \\
 \bottomrule
 \end{tabular}
 \begin{flushleft}\footnotesize
-Values are cumulative GW and define author-specified conditional deployment paths rather than forecasts. The explicit 2026--2030 annual bridge values are 4/35/50/65/80\,GW (slow), 4/50/80/110/140\,GW (central) and 4/70/120/170/220\,GW (fast). Values after 2030 are linearly interpolated between the displayed decadal anchors.
+Values are cumulative GW and define author-specified conditional deployment paths rather than forecasts. Published IEA and IRENA pathways and project-pipeline values constrain the broad comparison envelope but do not report these exact sequences\cite{ieaelectrolysers2024,iea2023nze,iea2021minerals,irena2023}. The explicit 2026--2030 annual bridge values are 4/35/50/65/80\,GW (slow), 4/50/80/110/140\,GW (central) and 4/70/120/170/220\,GW (fast). Values after 2030 are linearly interpolated between the displayed decadal anchors.
 \end{flushleft}
 \end{table}
 
-\begin{table}[t]
+\begin{table}[!ht]
 \caption{Learning cases and their 2060 endpoints.}\label{tab:learning}
 \centering
 \footnotesize
@@ -347,9 +385,10 @@ Optimistic & 48.0 & 0.40 & 100,000 \\
 \bottomrule
 \end{tabular}
 \begin{flushleft}\footnotesize
-LR, learning rate. Equipment and BOP/EPC columns describe future new-build cost factors. Electricity-use and stack-life endpoints are bounded trajectories rather than LR estimates. Only electricity use, replacement-stack cost and stack life enter the cash flow of a 2026 incumbent, and only after replacement.
+LR, learning rate. The 13\% equipment and stack-cost anchor is selected just below the 14--17\% observed system-price learning range, whereas BOP/EPC rates are deliberately lower author-defined component cases\cite{glenk2023,ferioli2009}. Equipment and BOP/EPC columns describe future new-build cost factors. Electricity-use and stack-life endpoints are bounded trajectories rather than LR estimates\cite{doe2024,worldbank2026}. Only electricity use, replacement-stack cost and stack life enter the cash flow of a 2026 incumbent, and only after replacement. Supplementary Table~\ref{tab:dynamicprovenance} distinguishes every sourced boundary from each author-selected node.
 \end{flushleft}
 \end{table}
+\FloatBarrier
 
 \subsection{Learning-incidence and falsification boundaries}
 
@@ -376,7 +415,7 @@ The earlier joint-intensity test that scales electricity use, life and replaceme
 
 \section{Hydrogen-price paths and durability screens}\label{sec:price}
 
-The evaluation-price anchor is a rounded scenario of 28\,CNY\,kg$^{-1}$ in constant 2026 CNY. The official 2025 China Hydrogen Development Report records a December 2024 producer-side index of 28.0\,CNY\,kg$^{-1}$ across electrolysis, industrial by-product hydrogen and methanol-cracking samples; it is not treated as an inflation-updated 2026 observation, a renewable-hydrogen contract price or a forecast\cite{nea2025hydrogen}. Static-price sensitivity uses 18, 20, 22, 24, 26, 28, 30 and 32\,CNY\,kg$^{-1}$. Conditional paths begin at 28 and use 2060 endpoint $P_T$ of 22, 18, 15 or 12\,CNY\,kg$^{-1}$. Let $\tau_t=(t-2026)/(2060-2026)$. Then
+The evaluation-price anchor is a rounded scenario of 28\,CNY\,kg$^{-1}$ in constant 2026 CNY. The official 2025 China Hydrogen Development Report records a December 2024 producer-side index of 28.0\,CNY\,kg$^{-1}$ across electrolysis, industrial by-product hydrogen and methanol-cracking samples; it is not treated as an inflation-updated 2026 observation, a renewable-hydrogen contract price or a forecast\cite{nea2025hydrogen}. Static-price sensitivity uses 18, 20, 22, 24, 26, 28, 30 and 32\,CNY\,kg$^{-1}$. Conditional paths begin at 28 and use 2060 endpoint $P_T$ of 22, 18, 15 or 12\,CNY\,kg$^{-1}$. No market dataset identifies these endpoints: they are an author-defined stress envelope and remain unweighted. Let $\tau_t=(t-2026)/(2060-2026)$. Then
 \begin{equation}
 P_t=28+(P_T-28)g(\tau_t), \quad
 g(\tau)=\sqrt{\tau},\;\tau,\;\tau^2
@@ -413,7 +452,7 @@ For the 710 static-reference strict-marginal records, initial capacity is locked
 
 The curtailed-electricity G16 grid contains $3\times4\times3\times3\times3\times3=972$ combinations: three installed-system CAPEX values, four constrained-electricity prices, three mutually exclusive OPEX conventions, three resource-realisation values, three debt shares and three loan rates. The full-output G16 branch contains $3\times3\times3\times3\times3=324$ combinations because feed-in opportunity cost replaces the constrained-electricity-price dimension. These grids map directional sensitivity and extrema; they are not a Monte Carlo sample and their pass shares are not success probabilities. They remain unweighted because equal frequency across an analyst-designed factorial grid has no probabilistic meaning.
 
-A separate prior-sensitivity audit is applied only to the locked 710-record M129 strict-marginal cohort; it is not a probabilistic validation of the model. Each of six prior cases contains 5,000 draws. The reference terminal-price prior is triangular on 12--22,CNY,kg$^{-1}$ with mode 18; alternatives use a 15--22 triangular prior with mode 20 and a uniform 12--22 prior. The price-path exponent is uniform on 0.5--2.0. No, conservative, central and optimistic operating-learning paths receive declared weights of 0.10, 0.25, 0.40 and 0.25. Annual resource factors bootstrap the six observed 2020--2025 station-specific constrained-energy ratios, using one common weather-year draw across all records in each simulated year to retain spatial covariance. The reference latent correlation between terminal price and learning strength is $-0.5$, with 0 and $-0.8$ alternatives. A delivery-exposed case applies the province-specific storage-and-transport deduction below with a triangular 0.5--1.5 multiplier. These distributions are declared scenario priors rather than historically estimated joint laws; resulting values are therefore labelled assumption-weighted and are accompanied by prior and Monte Carlo convergence tests.
+A separate prior-sensitivity audit is applied only to the locked 710-record M129 strict-marginal cohort; it is not a probabilistic validation of the model. Each of six prior cases contains 5,000 draws. The reference terminal-price prior is triangular on 12--22\,CNY\,kg$^{-1}$ with mode 18; alternatives use a 15--22 triangular prior with mode 20 and a uniform 12--22 prior. The price-path exponent is uniform on 0.5--2.0. No, conservative, central and optimistic operating-learning paths receive declared weights of 0.10, 0.25, 0.40 and 0.25. Annual resource factors bootstrap the six observed 2020--2025 station-specific constrained-energy ratios, using one common weather-year draw across all records in each simulated year to retain spatial covariance. The reference latent correlation between terminal price and learning strength is $-0.5$, with 0 and $-0.8$ alternatives. A delivery-exposed case applies the province-specific storage-and-transport deduction below with a triangular 0.5--1.5 multiplier. These distributions and dependence values are declared scenario priors rather than historically estimated joint laws; no citation is claimed as their numerical source. This is intentionally different from a probabilistic feasibility model whose input distributions are empirically estimated or calibrated\cite{odenweller2022}. Resulting values are therefore labelled assumption-weighted and are accompanied by prior and Monte Carlo convergence tests.
 
 \subsection{PEM and full-output branches}
 
@@ -663,7 +702,7 @@ File & Contents \\
 \path{hourly_input_provenance.csv}; \path{hourly_input_hashes.csv} & Laboratory origin, earlier article and code commit, dimensions, identifier matching and SHA-256 hashes for hourly inputs \\
 \path{station_inventory_coverage_benchmark.csv}; \path{chinabond_government_5y_20260604_20260702.csv} & Official-capacity coverage calculation and the 20 daily observations underlying the nominal low-return anchor \\
 \path{provincial_utilization_2021_2025_harmonized.csv}; \path{monthly_utilization_validation_*} & Harmonised annual panel, 42 monthly comparisons and validation metrics \\
-\path{timestamp_timezone_diagnostic.csv}; \path{electrolyser_deployment_authoritative_anchors.csv} & Timestamp interpretation check and external deployment anchors used to contextualise learning scenarios \\
+\path{timestamp_timezone_diagnostic.csv}; \path{electrolyser_deployment_authoritative_anchors.csv}; \path{dynamic_parameter_provenance.csv} & Timestamp interpretation check, external deployment benchmarks and a parameter-by-parameter record of citations, construction rules and inferential status \\
 \path{provincial_water_price_input.csv} & Complete province and market-region water-price table reused from the earlier Supplementary Table 3 \\
 \path{learning_paths_2026_2060.csv} & Annual deployment, cost, efficiency and stack-life trajectories read by the financial model \\
 \path{R1_capture_frontier_verified.csv} & Physical capture, capacity and hydrogen-production frontier \\
@@ -720,7 +759,7 @@ Production-side results are an optimistic revenue boundary. & Every modelled kil
 Question & Answer supported by the present analysis & Remaining boundary or required evidence \\
 \midrule
 \endfirsthead
-\multicolumn{3}{l}{\emph{Table S11 continued}}\\
+\multicolumn{3}{l}{\emph{Table \thetable\ continued}}\\
 \toprule
 Question & Answer supported by the present analysis & Remaining boundary or required evidence \\
 \midrule
@@ -823,8 +862,32 @@ National People's Congress \& State Council of the People's Republic of China. \
 \bibitem{iea2026}
 International Energy Agency. \emph{Global Hydrogen Review 2026} (IEA, Paris, 2026). \href{https://www.iea.org/reports/global-hydrogen-review-2026}{Official report}.
 
+\bibitem{ieaelectrolysers2024}
+International Energy Agency. \emph{Electrolysers} (IEA, Paris, 2024). \href{https://www.iea.org/energy-system/hydrogen/electrolysers}{Official analysis and project-pipeline data}.
+
+\bibitem{iea2023nze}
+International Energy Agency. \emph{Hydrogen: Tracking Clean Energy Progress} (IEA, Paris, 2023). \href{https://www.iea.org/reports/hydrogen-2156}{Official Net Zero Emissions pathway milestones}.
+
+\bibitem{iea2021minerals}
+International Energy Agency. \emph{The Role of Critical Minerals in Clean Energy Transitions} (IEA, Paris, 2021). \href{https://www.iea.org/reports/the-role-of-critical-minerals-in-clean-energy-transitions/mineral-requirements-for-clean-energy-transitions}{Official Sustainable Development Scenario analysis}.
+
+\bibitem{irena2023}
+International Renewable Energy Agency. \emph{World Energy Transitions Outlook 2023: 1.5$^{\circ}$C Pathway} (IRENA, Abu Dhabi, 2023). \href{https://www.irena.org/Publications/2023/Jun/World-Energy-Transitions-Outlook-2023}{Official report}.
+
+\bibitem{odenweller2025}
+Odenweller, A. \& Ueckerdt, F. The green hydrogen ambition and implementation gap. \emph{Nat. Energy} \textbf{10}, 110--123 (2025). \href{https://doi.org/10.1038/s41560-024-01684-7}{doi: 10.1038/s41560-024-01684-7}.
+
 \bibitem{glenk2023}
 Glenk, G., Holler, P. \& Reichelstein, S. Advances in power-to-gas technologies: cost and conversion efficiency. \emph{Energy Environ. Sci.} \textbf{16}, 6058--6070 (2023). \href{https://doi.org/10.1039/D3EE01208E}{doi: 10.1039/D3EE01208E}.
+
+\bibitem{ferioli2009}
+Ferioli, F., Schoots, K. \& van der Zwaan, B. C. C. Use and limitations of learning curves for energy technology policy: a component-learning hypothesis. \emph{Energy Policy} \textbf{37}, 2525--2535 (2009). \href{https://doi.org/10.1016/j.enpol.2008.10.043}{doi: 10.1016/j.enpol.2008.10.043}.
+
+\bibitem{zeyen2023}
+Zeyen, E., Victoria, M. \& Brown, T. Endogenous learning for green hydrogen in a sector-coupled energy model for Europe. \emph{Nat. Commun.} \textbf{14}, 3743 (2023). \href{https://doi.org/10.1038/s41467-023-39397-2}{doi: 10.1038/s41467-023-39397-2}.
+
+\bibitem{odenweller2022}
+Odenweller, A., Ueckerdt, F., Nemet, G. F., Jensterle, M. \& Luderer, G. Probabilistic feasibility space of scaling up green hydrogen supply. \emph{Nat. Energy} \textbf{7}, 854--865 (2022). \href{https://doi.org/10.1038/s41560-022-01097-4}{doi: 10.1038/s41560-022-01097-4}.
 
 \bibitem{irenatransport2022}
 International Renewable Energy Agency. \emph{Global Hydrogen Trade to Meet the 1.5\,$^\circ$C Climate Goal: Part II---Technology Review of Hydrogen Carriers} (IRENA, Abu Dhabi, 2022). \href{https://www.irena.org/publications/2022/Apr/Global-hydrogen-trade-Part-II}{Official report}.
