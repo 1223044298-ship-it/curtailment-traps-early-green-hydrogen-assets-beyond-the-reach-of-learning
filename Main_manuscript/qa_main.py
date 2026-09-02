@@ -633,7 +633,7 @@ def main() -> int:
     combined_text = tex + "\n" + si_tex
     high_risk_required = {
         "complete-system CAPEX bounds": "3,600 and 10,800",
-        "observed learning anchor": "rounded end-2025 global installed-capacity anchor",
+        "observed learning starting point": "rounded end-2025 global installed-capacity observation",
         "long-run resource persistence": "rise linearly to 125\\%",
     }
     for label, value in high_risk_required.items():
