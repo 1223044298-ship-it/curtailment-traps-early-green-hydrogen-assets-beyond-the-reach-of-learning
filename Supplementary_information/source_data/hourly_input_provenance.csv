@@ -1,6 +1,7 @@
 field,value,evidence,permitted_interpretation
 data_origin,"generated within the authors' research group",Author confirmation,Laboratory-generated model-output files
 earlier_article,"Li and Zhang, Nexus 3, 100149 (2026)",doi:10.1016/j.ynexs.2026.100149,Earlier study using the same laboratory-generated files
+reuse_status,"previously used and documented by Li and Zhang (2026), and reused here; not generated specifically for the present study",Methods and author confirmation,The prior article establishes provenance but does not by itself make the files publicly redistributable
 source_code_repository,https://github.com/Lynn20001130/-hydrogen-blending-analysis,Public repository cited by source article,Code reads monthly files but does not regenerate underlying full-output series
 source_code_commit,43af9fef041a7c55ca154cc6a40c5d339c23c521,Git commit audited for this submission,Version used for provenance inspection
 generation_file_pattern,TotalGen_Hourly_2020MM.csv,12 monthly files,Laboratory-generated grid-delivered component

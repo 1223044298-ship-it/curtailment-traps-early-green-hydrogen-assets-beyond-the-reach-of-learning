@@ -7,4 +7,6 @@ LABORATORY_MONTHLY_INPUTS_PACKAGED=false
 DERIVED_HOURLY_PROFILE_ARRAYS_PACKAGED=false
 ERA5_RAW_NETCDF_PACKAGED=false
 RAW_TO_RESULTS_RERUN_COMPLETED_FROM_THIS_ARCHIVE=false
-NOTE=The archive supports code inspection, result-table audit and figure regeneration from packaged outputs. The omitted laboratory and derived hourly inputs needed for a clean raw-to-results rerun are available from the corresponding author upon reasonable request subject to contributor and institutional approval; public ERA5 inputs can be redownloaded.
+HOURLY_SOURCE_ARTICLE=Li and Zhang, Nexus 3, 100149 (2026), DOI 10.1016/j.ynexs.2026.100149
+HOURLY_SOURCE_CODE_COMMIT=43af9fef041a7c55ca154cc6a40c5d339c23c521
+NOTE=The archive supports code inspection, result-table audit and figure regeneration from packaged outputs. The omitted research-group monthly model outputs were previously used and documented by the published source study identified above and are reused here; its public code reads but does not distribute or regenerate those files. The monthly inputs and derived hourly arrays needed for a clean raw-to-results rerun are available from the corresponding author upon reasonable request subject to contributor and institutional approval; public ERA5 inputs can be redownloaded.

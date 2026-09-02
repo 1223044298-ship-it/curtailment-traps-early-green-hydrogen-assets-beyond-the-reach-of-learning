@@ -11,7 +11,7 @@ This directory contains the exact headline outputs, provenance records and deter
 ## Provenance and parameters
 
 - `parameter_provenance_registry.csv` records every consequential main value, sensitivity range, evidence class and interpretation limit.
-- `hourly_input_provenance.csv` records the laboratory origin, earlier article, audited public-code commit, dimensions, identifier matching and interpretation limits of the 2020 hourly files.
+- `hourly_input_provenance.csv` records the laboratory origin, prior use and documentation by Li and Zhang (2026; DOI 10.1016/j.ynexs.2026.100149), reuse in the present study, audited public-code commit, dimensions, identifier matching and interpretation limits of the 2020 hourly files.
 - `hourly_input_hashes.csv` records file names, sizes and SHA-256 hashes for the 24 laboratory-generated monthly inputs.
 - `station_inventory_coverage_benchmark.csv` reproduces wind and centralized-photovoltaic benchmarks and separately reports the broader all-photovoltaic denominator for context.
 - `chinabond_government_5y_20260604_20260702.csv` contains the 20 daily nominal five-year yields whose arithmetic mean is the low-return anchor.
