@@ -25,12 +25,12 @@
     "osm_map_source_packaged": true,
     "code_and_derived_outputs_packaged": true,
     "raw_to_results_rerun_complete": false,
-    "active_main_source": "main_manuscript_joule.tex",
-    "active_review_source": "main_manuscript_joule_review.tex",
+    "active_main_source": "main_manuscript_nature_article.tex",
+    "active_review_source": "main_manuscript_nature_article_review.tex",
     "active_si_source": "supplementary_information_nature_article.tex",
     "pdf_pages": {
-      "main_manuscript_joule.pdf": 22,
-      "main_manuscript_joule_review.pdf": 22,
+      "main_manuscript_nature_article.pdf": 21,
+      "main_manuscript_nature_article_review.pdf": 21,
       "supplementary_information_nature_article.pdf": 35
     },
     "bankability_modelled": false,

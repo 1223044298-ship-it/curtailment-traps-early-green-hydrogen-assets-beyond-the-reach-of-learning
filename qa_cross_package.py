@@ -13,21 +13,21 @@ ROOT = Path(__file__).resolve().parent
 MAIN = ROOT / "Main_manuscript"
 SI = ROOT / "Supplementary_information"
 MAIN_SOURCE = (
-    MAIN / "main_manuscript_joule.tex"
-    if (MAIN / "main_manuscript_joule.tex").is_file()
+    MAIN / "main_manuscript_nature_article.tex"
+    if (MAIN / "main_manuscript_nature_article.tex").is_file()
     else (
-        MAIN / "main_manuscript_nature_article.tex"
-        if (MAIN / "main_manuscript_nature_article.tex").is_file()
+        MAIN / "main_manuscript_joule.tex"
+        if (MAIN / "main_manuscript_joule.tex").is_file()
         else MAIN / "main_manuscript.tex"
     )
 )
 MAIN_PDF = MAIN_SOURCE.with_suffix(".pdf")
 MAIN_REVIEW_SOURCE = (
-    MAIN / "main_manuscript_joule_review.tex"
-    if (MAIN / "main_manuscript_joule_review.tex").is_file()
+    MAIN / "main_manuscript_nature_article_review.tex"
+    if (MAIN / "main_manuscript_nature_article_review.tex").is_file()
     else (
-        MAIN / "main_manuscript_nature_article_review.tex"
-        if (MAIN / "main_manuscript_nature_article_review.tex").is_file()
+        MAIN / "main_manuscript_joule_review.tex"
+        if (MAIN / "main_manuscript_joule_review.tex").is_file()
         else MAIN / "main_manuscript_review.tex"
     )
 )

@@ -1,10 +1,11 @@
-# Nature Energy Main-Manuscript LaTeX Package
+# Main-Manuscript LaTeX Package
 
 ## Package contents
 
 - `main_manuscript_nature_article.tex`: current clean editorial submission source using a standard single-sided `article` layout.
 - `main_manuscript_nature_article_review.tex`: current line-numbered review source with otherwise identical substantive content and page geometry.
 - `main_manuscript_nature_article.pdf` and `main_manuscript_nature_article_review.pdf`: current compiled clean and line-numbered review manuscripts.
+- `main_manuscript_joule.tex` and `main_manuscript_joule_review.tex`: retained Joule-structured versions containing the separate Summary, Context & scale and Highlights items; these are metadata/production fallbacks rather than the active review PDFs.
 - `figures/`: four selected main figures and one selected Extended Data figure used by the manuscript, plus supporting map artwork and code-generated source files.
 - `source_data/`: machine-readable source tables underlying the principal numerical results and figures.
 - `qa_main.py` and `main_manuscript_qa.json`: automated checks of the current `_nature_article` sources, numerical consistency, citations, figures and compilation logs.
@@ -20,10 +21,11 @@
 - Physical prices and costs are specified in constant 2026 CNY and then converted consistently into nominal cash flows. Nominal financing costs and nominal return criteria are applied only to nominal cash flows.
 - Terminal producer prices of 22, 18, 15 and 12 CNY kg$^{-1}$ in 2060 are unweighted conditional scenarios, not probabilistic price forecasts.
 
-## Journal-format and quality checks
+## Review format and quality checks
 
-- The abstract contains 150 words under the package QA parser, at the 150-word limit for a Nature Energy Article.
-- The main text contains approximately 2,992 words under the package QA parser, excluding the abstract, Methods, references and figure legends, within the 3,000-word limit.
+- The active PDF uses the restrained Nature-style layout for readability at initial Joule submission; it does not imitate Joule's typeset publication page.
+- The abstract contains 150 words under the package QA parser.
+- The main text contains approximately 2,936 words under the package QA parser, excluding the abstract, Methods, references and figure legends.
 - The Introduction has no heading; the four Results sections use unnumbered topical headings; the Discussion has no subheadings; and the Methods use unnumbered topical subheadings.
 - The manuscript contains four main figures and one Extended Data figure, below the limit of eight display items.
 - The clean and review PDFs are generated from the same substantive source; the review version adds line numbering only. Page counts are verified after each release build.
@@ -55,3 +57,5 @@ References are embedded in a `thebibliography` environment; no external `.bib` f
 - Nature Energy content and formatting requirements: https://www.nature.com/nenergy/content
 - Nature manuscript organisation: https://www.nature.com/nature/for-authors/formatting-guide
 - Springer Nature LaTeX support: https://www.springernature.com/gp/authors/campaigns/latex-author-support
+- Cell Press initial submission guidance: https://crosstalk.cell.com/blog/first-steps-on-the-road-to-publication
+- Cell Press Highlights guidance: https://crosstalk.cell.com/blog/two-oft-forgotten-items-every-paper-needs
