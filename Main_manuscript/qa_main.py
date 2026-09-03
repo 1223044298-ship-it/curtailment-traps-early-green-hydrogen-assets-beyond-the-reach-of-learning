@@ -286,14 +286,14 @@ def main() -> int:
         )
         require(
             review_tex.startswith(r"\documentclass[11pt,a4paper]{article}")
-            and r"\usepackage[switch]{lineno}" in review_tex
+            and r"\usepackage[left]{lineno}" in review_tex
             and r"\linenumbers" in review_tex,
             "Review manuscript does not apply line numbering to the current layout.",
             failures,
         )
         clean_body = tex
         review_body = review_tex.replace(
-            "\\usepackage[switch]{lineno}\n", "", 1
+            "\\usepackage[left]{lineno}\n", "", 1
         ).replace("\\linenumbers\n", "", 1)
     else:
         require(
