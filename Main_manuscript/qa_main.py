@@ -88,7 +88,7 @@ def latex_word_count(block: str) -> int:
     block = re.sub(r"\\begin\{(?:equation|align)\}.*?\\end\{(?:equation|align)\}", " ", block, flags=re.S)
     block = re.sub(r"\\cite\{[^}]*\}", " ", block)
     block = re.sub(
-        r"\(?\s*(?:Extended Data )?Fig\.~(?:\\ref\{[^}]+\}|\d+)[a-z]?(?:(?:--|,)[a-z])*\s*\)?",
+        r"\(?\s*(?:(?:Extended Data|Supplementary) )?Fig\.~(?:\\ref\{[^}]+\}|(?:S|ED)?\d+)[a-z]?(?:(?:--|,)[a-z])*\s*\)?",
         " ",
         block,
     )
@@ -364,8 +364,8 @@ def main() -> int:
         failures,
     )
     require(
-        r"\renewcommand{\figurename}{Extended Data Fig.}" in tex,
-        "Extended Data figure naming is not Nature-compatible.",
+        "Supplementary Fig.~S1a--c" in tex and "Supplementary Fig.~S1e" in tex,
+        "Supplementary robustness-figure callouts are missing.",
         failures,
     )
     require(
@@ -385,9 +385,8 @@ def main() -> int:
         r"\begin{thebibliography}{99}",
         r"\section*{Acknowledgements}",
         r"\section*{Author contributions}",
-        r"\section*{Competing interests}",
+        r"\section*{Declaration of interests}",
         r"\section*{Additional information}",
-        r"\renewcommand{\figurename}{Extended Data Fig.}",
     ]
     end_positions = [tex.index(token) for token in end_matter]
     require(
@@ -904,7 +903,7 @@ def main() -> int:
     refs = set(re.findall(r"\\ref\{([^}]+)\}", tex))
     require(refs <= labels, f"Undefined LaTeX labels: {sorted(refs - labels)}", failures)
 
-    for name in ["Figure1.pdf", "Figure2.pdf", "Figure3.pdf", "Figure4.pdf", "ExtendedDataFigure1.pdf"]:
+    for name in ["Figure1.pdf", "Figure2.pdf", "Figure3.pdf", "Figure4.pdf"]:
         require((ROOT / "figures" / name).exists(), f"Missing figure: {name}", failures)
 
     page_counts: dict[str, int] = {}

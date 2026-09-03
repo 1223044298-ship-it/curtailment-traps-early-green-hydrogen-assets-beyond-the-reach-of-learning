@@ -6,7 +6,7 @@
 - `main_manuscript_nature_article_review.tex`: current line-numbered review source with otherwise identical substantive content and page geometry.
 - `main_manuscript_nature_article.pdf` and `main_manuscript_nature_article_review.pdf`: current compiled clean and line-numbered review manuscripts.
 - `main_manuscript_joule.tex` and `main_manuscript_joule_review.tex`: retained Joule-structured versions containing the separate Summary, Context & scale and Highlights items; these are metadata/production fallbacks rather than the active review PDFs.
-- `figures/`: four selected main figures and one selected Extended Data figure used by the manuscript, plus supporting map artwork and code-generated source files.
+- `figures/`: four selected main figures used by the manuscript, plus supporting map artwork and code-generated source files; the robustness figure is retained in the Supplementary Information as Figure S1.
 - `source_data/`: machine-readable source tables underlying the principal numerical results and figures.
 - `qa_main.py` and `main_manuscript_qa.json`: automated checks of the current `_nature_article` sources, numerical consistency, citations, figures and compilation logs.
 - `sn-jnl.cls` and `sn-nature.bst`: Springer Nature template files.
@@ -27,12 +27,12 @@
 - The abstract contains 150 words under the package QA parser.
 - The main text contains approximately 2,972 words under the package QA parser, excluding the abstract, Methods, references and figure legends.
 - The Introduction has no heading; the four Results sections use unnumbered topical headings; the Discussion has no subheadings; and the Methods use unnumbered topical subheadings.
-- The manuscript contains four main figures and one Extended Data figure, below the limit of eight display items.
+- The manuscript contains four main figures; the reconstruction and search-grid robustness figure is supplied as Supplementary Figure S1.
 - The clean and review PDFs are generated from the same substantive source; the review version adds line numbering only. Page counts are verified after each release build.
 - Compilation produces no LaTeX errors, undefined references, duplicate labels or overfull boxes.
 - The main manuscript contains 52 cited bibliography entries, ordered by first appearance; none is undefined or unused.
 - In-text citation numbers link to their bibliography entries, and every bibliography entry links to a DOI, publisher page, official disclosure, official report or source-data portal.
-- Automated checks cover the packaged manuscript, headline data, figures, map provenance, analysis-code archive and LaTeX build. The author list, affiliation, equal-contribution statement, corresponding-author details, contribution statement and competing-interest declaration are complete. The GitHub repository identifier is fixed; a persistent archival DOI remains pending, and the two analysis-ready hourly inputs are public checksum-verified Release assets.
+- Automated checks cover the packaged manuscript, headline data, figures, map provenance, analysis-code archive and LaTeX build. The author list, affiliation, equal-contribution statement, corresponding-author details, contribution statement and declaration-of-interests statement are complete. The GitHub repository identifier is fixed; a persistent archival DOI remains pending, and the two analysis-ready hourly inputs are public checksum-verified Release assets.
 
 ## Compilation
 
