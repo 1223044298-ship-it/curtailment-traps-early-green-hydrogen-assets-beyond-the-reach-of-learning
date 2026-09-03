@@ -1,4 +1,5 @@
 STATUS=code_and_derived_outputs_packaged_request_only_inputs_omitted
+PUBLIC_REPOSITORY=true
 CODE_PATHS_PORTABLE=true
 PUBLIC_AND_DERIVED_TABULAR_INPUTS_PACKAGED=true
 MANUSCRIPT_ALIGNED_RESULTS_PACKAGED=true
