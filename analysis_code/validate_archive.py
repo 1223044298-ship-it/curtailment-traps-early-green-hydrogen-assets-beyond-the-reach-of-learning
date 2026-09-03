@@ -42,7 +42,9 @@ def main() -> int:
     required = [
         ROOT / "requirements.txt",
         ROOT / "INPUTS_REQUIRED.csv",
+        ROOT / "HOURLY_INPUTS_SHA256.csv",
         ROOT / "REPRODUCIBILITY_STATUS.txt",
+        ROOT / "download_hourly_inputs.py",
         ROOT / "workflows" / "20260810_resource_finance" / "03_code" / "corrected_financial_core.py",
         ROOT / "workflows" / "20260811_robustness" / "code" / "run_dense_main_revision.py",
         ROOT / "workflows" / "20260811_capacity_optimisation" / "code" / "prepare_capacity_optimized_outputs.py",
@@ -64,13 +66,50 @@ def main() -> int:
         if "D:\\Green" in path.read_text(encoding="utf-8-sig", errors="replace"):
             failures.append(f"Machine-specific path remains in {path.relative_to(ROOT)}")
 
+    hourly_manifest_valid = False
+    hourly_manifest = ROOT / "HOURLY_INPUTS_SHA256.csv"
+    if hourly_manifest.is_file():
+        with hourly_manifest.open(encoding="utf-8", newline="") as handle:
+            hourly_rows = list(csv.DictReader(handle))
+        expected = {
+            "curtailment_profile_2025.float32": (
+                "358879104",
+                "bc4a452c067d8ed59261d7516bf6c8ba96cfbb597f8799c86d3197c45d671ae6",
+            ),
+            "full_potential_profile_2020.float32": (
+                "358879104",
+                "a4736d46d166dab91cfd4507aeca27921b5fea4e44c3bf12f4f50d14c628c960",
+            ),
+        }
+        observed = {
+            row.get("filename", ""): (
+                row.get("bytes", ""),
+                row.get("sha256", "").lower(),
+            )
+            for row in hourly_rows
+        }
+        hourly_manifest_valid = observed == expected and all(
+            row.get("download_url", "").startswith("https://github.com/")
+            for row in hourly_rows
+        )
+        if not hourly_manifest_valid:
+            failures.append("The public hourly-input manifest is incomplete or inconsistent.")
+
+    status_text = (ROOT / "REPRODUCIBILITY_STATUS.txt").read_text(encoding="utf-8")
+    analysis_ready_rerun_enabled = (
+        "ANALYSIS_READY_TO_RESULTS_RERUN_ENABLED=true" in status_text
+        and "DERIVED_HOURLY_PROFILE_ARRAYS_PUBLIC=true" in status_text
+        and hourly_manifest_valid
+    )
+
     files = packaged_files()
     report = {
         "passed": not failures,
         "python_files": len(python_files),
         "manifest_files": len(files),
         "failures": failures,
-        "raw_to_results_rerun_claimed": False,
+        "analysis_ready_to_results_rerun_enabled": analysis_ready_rerun_enabled,
+        "upstream_monthly_to_results_rerun_claimed": False,
     }
     (ROOT / "archive_qa.json").write_text(json.dumps(report, indent=2), encoding="utf-8")
 

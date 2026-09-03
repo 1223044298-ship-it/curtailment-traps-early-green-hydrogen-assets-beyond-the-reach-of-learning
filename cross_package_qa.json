@@ -1,10 +1,8 @@
 {
   "passed": true,
-  "submission_ready": false,
+  "submission_ready": true,
   "failures": [],
-  "warnings": [
-    "The public archive omits request-only hourly inputs needed for an independent raw-to-results rerun."
-  ],
+  "warnings": [],
   "checks": {
     "main_qa_passed": true,
     "joule_qa_passed": true,
@@ -24,6 +22,7 @@
     "english_only": true,
     "osm_map_source_packaged": true,
     "code_and_derived_outputs_packaged": true,
+    "analysis_ready_to_results_rerun_enabled": true,
     "raw_to_results_rerun_complete": false,
     "active_main_source": "main_manuscript_nature_article.tex",
     "active_review_source": "main_manuscript_nature_article_review.tex",

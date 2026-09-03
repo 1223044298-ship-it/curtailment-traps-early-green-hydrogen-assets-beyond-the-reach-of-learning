@@ -43,17 +43,18 @@ Python 3.12 or 3.13 is recommended.
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 python -m pip install -r analysis_code\requirements.txt
+python analysis_code\download_hourly_inputs.py
 python analysis_code\validate_archive.py
 python qa_cross_package.py
 ```
 
-The ordered raw-to-results workflow and optional environment variables are documented in `analysis_code/README.md`. Packaged result tables support numerical audit and figure regeneration. A complete raw-to-results rerun additionally requires the omitted inputs listed in `analysis_code/INPUTS_REQUIRED.csv`. The research-group monthly model outputs were previously used and documented by Li and Zhang (2026; DOI: [10.1016/j.ynexs.2026.100149](https://doi.org/10.1016/j.ynexs.2026.100149)) and are reused here; the source-study code is public at audited commit [`43af9fe`](https://github.com/Lynn20001130/-hydrogen-blending-analysis/tree/43af9fef041a7c55ca154cc6a40c5d339c23c521), but it reads rather than distributes or regenerates the monthly files. Those monthly inputs and their derived hourly arrays are available from the corresponding author upon reasonable request, subject to contributor and institutional approval, and ERA5 can be publicly redownloaded.
+The ordered workflow and optional environment variables are documented in `analysis_code/README.md`. The download command retrieves the two versioned hourly arrays from the [`hourly-inputs-v1.0.0` release](https://github.com/1223044298-ship-it/curtailment-traps-early-green-hydrogen-assets-beyond-the-reach-of-learning/releases/tag/hourly-inputs-v1.0.0), places them at the paths expected by the code and verifies their byte counts and SHA-256 digests. Together with the packaged inputs, these arrays enable a clean analysis-ready-input-to-results rerun. The least-processed research-group monthly model outputs remain outside the public archive, so independent regeneration of the two arrays from those upstream files is not claimed.
 
 ## Data availability
 
-Redistributable tabular inputs, parameter provenance, figure source data, capacity grids and derived outputs are included. ERA5 inputs can be downloaded from the Copernicus Climate Data Store under its applicable terms. The restricted 2020 monthly research-group model outputs were previously used and documented by Li and Zhang (2026) and are reused here; they were not generated specifically for this manuscript. They and the two deterministic 10,214-by-8,784 derivative arrays require contributor and institutional permission before redistribution. Their article and code provenance, dimensions, hashes, analytical roles and expected locations are documented in `analysis_code/INPUTS_REQUIRED.csv` and the packaged provenance tables.
+Redistributable tabular inputs, parameter provenance, figure source data, capacity grids and derived outputs are included. The two deterministic 10,214-by-8,784 `float32` hourly arrays are openly distributed as GitHub Release assets; dimensions, storage order, exact sizes, SHA-256 digests and direct URLs are recorded in `analysis_code/HOURLY_INPUTS_SHA256.csv`. The restricted upstream 2020 monthly research-group model outputs were previously used and documented by Li and Zhang (2026; DOI: [10.1016/j.ynexs.2026.100149](https://doi.org/10.1016/j.ynexs.2026.100149)) and are reused here. The audited [source-study code at commit `43af9fe`](https://github.com/Lynn20001130/-hydrogen-blending-analysis/tree/43af9fef041a7c55ca154cc6a40c5d339c23c521) reads but does not distribute or regenerate those upstream files. They remain available from the corresponding author upon reasonable request, subject to contributor and institutional approval. ERA5 inputs can be downloaded from the Copernicus Climate Data Store under its applicable terms.
 
-The original large ERA5 files and two 358.9-MB hourly arrays are not tracked in Git. No API keys, CDS credentials, personal access tokens or machine-specific credentials are included.
+The original large ERA5 files and the two 358.9-MB arrays are not tracked in Git; the arrays are release assets to keep them out of Git history. No API keys, CDS credentials, personal access tokens or machine-specific credentials are included.
 
 ## Figure integrity
 
@@ -65,4 +66,4 @@ Until an article DOI and repository DOI are available, cite the manuscript and i
 
 ## Licence status
 
-No blanket licence is asserted for third-party data. A code licence must be selected by the authors before public release and will apply only to author-created code and documentation unless a file states otherwise. See `LICENSE_STATUS.md`.
+No blanket licence is asserted for third-party data. A code licence should be selected before the archival publication release and will apply only to author-created code and documentation unless a file states otherwise. Public redistribution of the two processed hourly arrays is documented separately in `LICENSE_STATUS.md`.

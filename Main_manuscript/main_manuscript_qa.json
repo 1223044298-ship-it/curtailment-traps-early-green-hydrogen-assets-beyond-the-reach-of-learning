@@ -1,10 +1,8 @@
 {
   "passed": true,
-  "submission_ready": false,
+  "submission_ready": true,
   "failures": [],
-  "warnings": [
-    "Code and derived outputs are packaged, but the public archive is not independently raw-to-results reproducible because request-only hourly inputs are omitted."
-  ],
+  "warnings": [],
   "checks": {
     "active_clean_source": "main_manuscript_nature_article.tex",
     "active_review_source": "main_manuscript_nature_article_review.tex",
@@ -23,6 +21,7 @@
     "osm_map_source_provenance_packaged": true,
     "analysis_code_and_derived_outputs_packaged": true,
     "analysis_archive_structural_qa_passed": true,
+    "analysis_ready_to_results_rerun_enabled": true,
     "raw_to_results_rerun_complete_from_archive": false,
     "english_only_source_files": true,
     "english_only_figure_pdfs": true,

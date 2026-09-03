@@ -1,7 +1,8 @@
 {
   "passed": true,
-  "python_files": 54,
+  "python_files": 55,
   "manifest_files": 342,
   "failures": [],
-  "raw_to_results_rerun_claimed": false
+  "analysis_ready_to_results_rerun_enabled": true,
+  "upstream_monthly_to_results_rerun_claimed": false
 }

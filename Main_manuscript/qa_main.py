@@ -423,6 +423,7 @@ def main() -> int:
             "Figure 1 OpenStreetMap geometry or its timestamped provenance is incomplete."
         )
     raw_rerun_complete = False
+    analysis_ready_rerun = False
     analysis_archive_passed = False
     if not ANALYSIS_CODE.is_dir() or not ANALYSIS_STATUS.is_file():
         warnings.append(
@@ -431,15 +432,19 @@ def main() -> int:
     else:
         status_text = ANALYSIS_STATUS.read_text(encoding="utf-8")
         raw_rerun_complete = "RAW_TO_RESULTS_RERUN_COMPLETED_FROM_THIS_ARCHIVE=true" in status_text
+        analysis_ready_rerun = (
+            "ANALYSIS_READY_TO_RESULTS_RERUN_ENABLED=true" in status_text
+            and "DERIVED_HOURLY_PROFILE_ARRAYS_PUBLIC=true" in status_text
+        )
         if ANALYSIS_QA.is_file():
             analysis_archive_passed = bool(
                 json.loads(ANALYSIS_QA.read_text(encoding="utf-8")).get("passed")
             )
         if not analysis_archive_passed:
             warnings.append("The packaged analysis-code archive has not passed its structural QA.")
-        if not raw_rerun_complete:
+        if not analysis_ready_rerun:
             warnings.append(
-                "Code and derived outputs are packaged, but the public archive is not independently raw-to-results reproducible because request-only hourly inputs are omitted."
+                "The public archive does not provide the hourly inputs needed for an analysis-ready-input-to-results rerun."
             )
 
     require(
@@ -966,6 +971,7 @@ def main() -> int:
             "osm_map_source_provenance_packaged": map_provenance_complete,
             "analysis_code_and_derived_outputs_packaged": ANALYSIS_CODE.is_dir(),
             "analysis_archive_structural_qa_passed": analysis_archive_passed,
+            "analysis_ready_to_results_rerun_enabled": analysis_ready_rerun,
             "raw_to_results_rerun_complete_from_archive": raw_rerun_complete,
             "english_only_source_files": not files_with_han,
             "english_only_figure_pdfs": not figures_with_han,

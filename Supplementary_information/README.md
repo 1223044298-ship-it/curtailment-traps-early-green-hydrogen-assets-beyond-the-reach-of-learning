@@ -23,7 +23,7 @@ The package includes `sn-jnl.cls`, `sn-nature.bst` and the official `Springer_Na
 
 1. Archive the publication release with a persistent DOI and add that DOI to the Data availability and Code availability statements.
 2. Reconcile reference numbering with the main manuscript if the journal requests a single continuous sequence at revision.
-3. Document a clean internal raw-to-results rerun of the frozen `../analysis_code/` archive using the request-only laboratory hourly inputs and public ERA5 download listed in its input manifest.
+3. Document a clean public analysis-ready-input-to-results rerun of the frozen `../analysis_code/` archive using the checksum-verified Release arrays, and separately document any internal regeneration from the request-access upstream monthly outputs.
 4. Preserve the official Figure 1 source product and transformation provenance archived with the main manuscript in the final submission record.
 
 All present references use complete English bibliographic records. In-text citation numbers link to the Supplementary references, and bibliography entries link to DOI records or official source pages.

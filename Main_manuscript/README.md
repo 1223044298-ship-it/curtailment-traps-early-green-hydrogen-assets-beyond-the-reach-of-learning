@@ -32,7 +32,7 @@
 - Compilation produces no LaTeX errors, undefined references, duplicate labels or overfull boxes.
 - The main manuscript contains 52 cited bibliography entries, ordered by first appearance; none is undefined or unused.
 - In-text citation numbers link to their bibliography entries, and every bibliography entry links to a DOI, publisher page, official disclosure, official report or source-data portal.
-- Automated checks cover the packaged manuscript, headline data, figures, map provenance, analysis-code archive and LaTeX build. The author list, affiliation, equal-contribution statement, corresponding-author details, contribution statement and competing-interest declaration are complete. The GitHub repository identifier is fixed; a persistent archival DOI remains pending, and request-only hourly inputs are not included in the public archive.
+- Automated checks cover the packaged manuscript, headline data, figures, map provenance, analysis-code archive and LaTeX build. The author list, affiliation, equal-contribution statement, corresponding-author details, contribution statement and competing-interest declaration are complete. The GitHub repository identifier is fixed; a persistent archival DOI remains pending, and the two analysis-ready hourly inputs are public checksum-verified Release assets.
 
 ## Compilation
 
@@ -48,7 +48,7 @@ References are embedded in a `thebibliography` environment; no external `.bib` f
 ## Items to complete before submission
 
 - Archive the publication release with a persistent DOI and add that DOI to the Data availability and Code availability statements.
-- Document a clean internal raw-to-results rerun using the request-only laboratory hourly inputs and the public ERA5 download identified in `../analysis_code/INPUTS_REQUIRED.csv`.
+- Record a clean public analysis-ready-input-to-results rerun using the Release arrays and separately document any internal regeneration from the request-access upstream monthly outputs.
 - Preserve the OSM analytical-map provenance and the archived `GS(2023)2767` source and transformation record for the boxed South China Sea locator with the submitted Figure 1 files.
 - Add a debt-service-coverage or liquidity sensitivity if the manuscript is to make bankability claims; the present NPV screen is an enterprise return test only.
 

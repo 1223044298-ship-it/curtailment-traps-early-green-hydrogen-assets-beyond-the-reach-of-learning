@@ -28,9 +28,17 @@ This directory is the manuscript-aligned code and derived-output snapshot. It se
 3. exact 1-MW boundary and local continuous-search correction;
 4. final figures, map registration and manuscript QA.
 
-The code, public/derived tabular inputs, capacity grid and manuscript-aligned result tables are packaged. Two 358.9-MB hourly profile arrays, the 4.3-GB ERA5 download and the upstream laboratory monthly files are not duplicated here. Their expected locations and sharing status are recorded in `INPUTS_REQUIRED.csv`. The laboratory and derived hourly inputs are available from the corresponding author upon reasonable request, subject to contributor and institutional approval, and ERA5 can be redownloaded from the Copernicus Climate Data Store. This snapshot can reproduce figures and audit published tables from packaged derived outputs; a clean raw-to-results rerun requires the omitted inputs. See `REPRODUCIBILITY_STATUS.txt` for the machine-readable status.
+The code, public/derived tabular inputs, capacity grid and manuscript-aligned result tables are packaged. The two 358.9-MB hourly profile arrays are openly distributed as versioned GitHub Release assets rather than stored in Git history. Their expected locations, direct URLs, byte counts and SHA-256 digests are recorded in `INPUTS_REQUIRED.csv` and `HOURLY_INPUTS_SHA256.csv`. The 4.3-GB ERA5 download can be retrieved from the Copernicus Climate Data Store. The upstream research-group monthly model outputs are not redistributed and remain available from the corresponding author upon reasonable request, subject to contributor and institutional approval. The public arrays enable a clean analysis-ready-input-to-results rerun; regeneration of those arrays from the least-processed monthly files is a separate, request-access layer. See `REPRODUCIBILITY_STATUS.txt` for the machine-readable status.
 
 No API keys, CDS credentials or personal access tokens are included. Credentials must never be committed to this repository.
+
+Download and verify the public hourly inputs at their default workflow location with:
+
+```powershell
+python download_hourly_inputs.py
+```
+
+Use `--output-dir` to store them elsewhere and set `GREEN_H2_PROFILE_ROOT` to the same directory. `--verify-only` checks existing files without network access.
 
 ## Environment
 
@@ -79,7 +87,7 @@ Run from the directory containing the target script.
 23. `workflows/20260810_resource_finance/03_code/sync_submission_package.py`
 24. `Main_manuscript/qa_main.py`, `Supplementary_information/qa_pdf_text.py` and `qa_cross_package.py` after LaTeX compilation.
 
-The authoritative primary financial horizon is the 30-year 2026--2055 M129 chain produced by steps 8--16. The 35-year output from step 4 is retained only as a sensitivity and must not replace the release headline tables. The resource and finance steps are computationally intensive and should be run only after the required input manifest is satisfied. The full Figure 1 rebuild also requires the omitted hourly profile arrays. Figures 2--4 and the numerical QA checks can be regenerated or inspected from packaged derived outputs. The submission-sync step creates the line-numbered review manuscript from the clean manuscript, copies only verified workflow outputs, checks the 972/324 G16 branches and CAPEX levels, removes Chinese-only helper columns from reader-facing learning tables, and keeps duplicated Main/SI files byte-identical. The external-validity workflow runs the full M129 PEM replay, financing and public-project-status checks, province-level delivery/demand/water screens, six declared-prior uncertainty cases, publication-facing English conversion and an aggregate QA audit. Final artwork hashes and any editorial-only changes are recorded in `../figures/edit_log.csv`. Spreadsheet parsing requires the `openpyxl` dependency declared in `requirements.txt`.
+The authoritative primary financial horizon is the 30-year 2026--2055 M129 chain produced by steps 8--16. The 35-year output from step 4 is retained only as a sensitivity and must not replace the release headline tables. The resource and finance steps are computationally intensive and should be run only after the input manifest is satisfied. The full Figure 1 rebuild uses the public hourly profile arrays. Figures 2--4 and the numerical QA checks can also be regenerated or inspected from packaged derived outputs. The submission-sync step creates the line-numbered review manuscript from the clean manuscript, copies only verified workflow outputs, checks the 972/324 G16 branches and CAPEX levels, removes Chinese-only helper columns from reader-facing learning tables, and keeps duplicated Main/SI files byte-identical. The external-validity workflow runs the full M129 PEM replay, financing and public-project-status checks, province-level delivery/demand/water screens, six declared-prior uncertainty cases, publication-facing English conversion and an aggregate QA audit. Final artwork hashes and any editorial-only changes are recorded in `../figures/edit_log.csv`. Spreadsheet parsing requires the `openpyxl` dependency declared in `requirements.txt`.
 
 ## Directory conventions
 
@@ -101,17 +109,17 @@ Run:
 python validate_archive.py
 ```
 
-This checks Python syntax, required files, absence of machine-specific `D:\Green` paths and SHA-256 integrity. It does not claim a raw-data rerun when request-only inputs are absent.
+This checks Python syntax, required files, absence of machine-specific `D:\Green` paths, the public hourly-input manifest and SHA-256 integrity. It distinguishes a public analysis-ready-input rerun from regeneration of those inputs from the restricted upstream monthly outputs.
 
 ## Data availability
 
-The repository includes redistributable project-inventory fields, annual renewable-utilisation inputs, parameter-provenance records, figure source data, capacity grids and derived record-level outputs. The original ERA5 variables can be downloaded from the Copernicus Climate Data Store under its applicable terms of use. The restricted 2020 monthly research-group model outputs were previously used and documented by Li and Zhang (2026; DOI: [10.1016/j.ynexs.2026.100149](https://doi.org/10.1016/j.ynexs.2026.100149)) and are reused here. The audited [source-study code at commit `43af9fe`](https://github.com/Lynn20001130/-hydrogen-blending-analysis/tree/43af9fef041a7c55ca154cc6a40c5d339c23c521) reads but does not distribute or regenerate those files. The monthly files and the two deterministic 10,214-by-8,784 derivative arrays are available from the corresponding author upon reasonable request for research use, subject to contributor and institutional approval and applicable data-sharing conditions. Their source lineage, dimensions, hashes, expected locations and analytical roles are documented in `INPUTS_REQUIRED.csv` and the packaged provenance tables.
+The repository includes redistributable project-inventory fields, annual renewable-utilisation inputs, parameter-provenance records, figure source data, capacity grids and derived record-level outputs. The two deterministic 10,214-by-8,784 `float32` arrays used by the analysis are openly available in the [`hourly-inputs-v1.0.0` GitHub Release](https://github.com/1223044298-ship-it/curtailment-traps-early-green-hydrogen-assets-beyond-the-reach-of-learning/releases/tag/hourly-inputs-v1.0.0). `download_hourly_inputs.py` retrieves and verifies them against `HOURLY_INPUTS_SHA256.csv`. The restricted upstream 2020 monthly research-group model outputs were previously used and documented by Li and Zhang (2026; DOI: [10.1016/j.ynexs.2026.100149](https://doi.org/10.1016/j.ynexs.2026.100149)) and are reused here. The audited [source-study code at commit `43af9fe`](https://github.com/Lynn20001130/-hydrogen-blending-analysis/tree/43af9fef041a7c55ca154cc6a40c5d339c23c521) reads but does not distribute or regenerate those upstream files. They remain available from the corresponding author upon reasonable request for research use, subject to contributor and institutional approval. The original ERA5 variables can be downloaded from the Copernicus Climate Data Store under its applicable terms of use.
 
 These laboratory files are model outputs and are not observed unit-level curtailment or dispatch records. Third-party data remain subject to their original licences and should not be redistributed from this repository unless the relevant terms permit it.
 
 ## Code availability
 
-All custom code needed for constrained-electricity reconstruction, ERA5 weather replay, electrolyser dispatch, capacity optimisation, nominal equity cash-flow analysis, learning counterfactuals, forward screening, capacity flexibility and figure generation is organised under `workflows/`. The exact execution order and environment are documented above. Packaged derived outputs permit figure reproduction and numerical audit without the request-only hourly inputs; a complete raw-to-results rerun requires every item marked as not packaged in `INPUTS_REQUIRED.csv`.
+All custom code needed for constrained-electricity reconstruction, ERA5 weather replay, electrolyser dispatch, capacity optimisation, nominal equity cash-flow analysis, learning counterfactuals, forward screening, capacity flexibility and figure generation is organised under `workflows/`. The exact execution order and environment are documented above. Packaged inputs plus the public, checksum-verified hourly arrays permit a clean rerun from analysis-ready inputs through results and figures. Rebuilding the two arrays from the upstream monthly model outputs requires the separate request-access files identified in `INPUTS_REQUIRED.csv`.
 
 ## Citation
 
@@ -119,4 +127,4 @@ Until a repository DOI and article citation are available, please cite the manus
 
 ## Licence
 
-No blanket licence is asserted for third-party data. A code licence should be selected before the repository is made public; any selected licence will apply only to author-created code and documentation unless a file states otherwise.
+No blanket licence is asserted for third-party data. A code licence should be selected before the archival publication release; any selected licence will apply only to author-created code and documentation unless a file states otherwise. The public redistribution authorisation for the two processed arrays is recorded in `../LICENSE_STATUS.md`.

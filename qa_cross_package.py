@@ -165,8 +165,12 @@ def main() -> int:
     )
     if not osm_map_complete:
         warnings.append("Figure 1 OpenStreetMap geometry provenance is incomplete.")
-    if "RAW_TO_RESULTS_RERUN_COMPLETED_FROM_THIS_ARCHIVE=true" not in status:
-        warnings.append("The public archive omits request-only hourly inputs needed for an independent raw-to-results rerun.")
+    analysis_ready_rerun = (
+        "ANALYSIS_READY_TO_RESULTS_RERUN_ENABLED=true" in status
+        and "DERIVED_HOURLY_PROFILE_ARRAYS_PUBLIC=true" in status
+    )
+    if not analysis_ready_rerun:
+        warnings.append("The public archive lacks the hourly inputs needed for an analysis-ready-input-to-results rerun.")
     compiled_pdfs_current = all(
         pdf.is_file() and pdf.stat().st_mtime >= source.stat().st_mtime
         for source, pdf in (
@@ -212,6 +216,7 @@ def main() -> int:
             ),
             "osm_map_source_packaged": osm_map_complete,
             "code_and_derived_outputs_packaged": True,
+            "analysis_ready_to_results_rerun_enabled": analysis_ready_rerun,
             "raw_to_results_rerun_complete": "RAW_TO_RESULTS_RERUN_COMPLETED_FROM_THIS_ARCHIVE=true" in status,
             "active_main_source": MAIN_SOURCE.name,
             "active_review_source": MAIN_REVIEW_SOURCE.name,
