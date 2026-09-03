@@ -17,6 +17,7 @@ HAN_PATTERN = re.compile(r"[\u3400-\u9fff]")
 
 reader = PdfReader(str(PDF))
 pdf_text = "\n".join(page.extract_text() or "" for page in reader.pages)
+tex_source = TEX.read_text(encoding="utf-8")
 
 
 def normalise_pdf_text(text: str) -> str:
@@ -49,6 +50,12 @@ checks = {
     "has_primary_1099": "1,099" in pdf_text,
     "has_primary_710": "710" in pdf_text,
     "has_30_year_primary_label": "30-year" in normalised_pdf_text,
+    "left_side_line_numbers": r"\usepackage[left]{lineno}" in tex_source,
+    "line_numbers_start_after_contents": (
+        tex_source.index(r"\tableofcontents")
+        < tex_source.index(r"\linenumbers")
+        < tex_source.index(r"\section{Data sources")
+    ),
     "unqualified_old_1889_lines": [
         line.strip()
         for line in TEX.read_text(encoding="utf-8").splitlines()
@@ -81,6 +88,10 @@ if checks["unqualified_old_1889_lines"]:
     )
 if checks["has_unresolved_markers"]:
     failures.append("The compiled Supplementary Information contains unresolved references.")
+if not checks["left_side_line_numbers"]:
+    failures.append("Supplementary Information line numbers are not fixed on the left.")
+if not checks["line_numbers_start_after_contents"]:
+    failures.append("Supplementary Information line numbering does not begin after the contents.")
 if checks["pdf_contains_chinese"] or files_with_han or figures_with_han:
     failures.append("Chinese characters remain in the English-only submission package.")
 

@@ -13,7 +13,7 @@ The package includes `sn-jnl.cls`, `sn-nature.bst` and the official `Springer_Na
 ## Package contents
 
 - `supplementary_information_nature_article.tex`: current Supplementary Information source.
-- `supplementary_information_nature_article.pdf`: current compiled review copy.
+- `supplementary_information_nature_article.pdf`: current compiled review copy with continuous left-side line numbers after the contents.
 - `supplementary_information.tex`: content-matched `sn-nature` alternative retained for template conversion if requested.
 - `figures/`: vector PDFs and preview images for Supplementary Figures.
 - `source_data/`: machine-readable data underlying the supplementary analyses.
