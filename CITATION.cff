@@ -7,12 +7,15 @@ repository-code: "https://github.com/1223044298-ship-it/curtailment-traps-early-
 authors:
   - family-names: Liang
     given-names: Jinwei
+    affiliation: "School of Urban Planning and Design, Peking University, Shenzhen, China; Guangdong Provincial Key Laboratory of Risk Perception and Sustainable Governance in Energy Transition, Shenzhen, China"
   - family-names: Guo
     given-names: Zhiling
     email: zhiling.guo@polyu.edu.hk
+    affiliation: "Department of Building Environment and Energy Engineering, The Hong Kong Polytechnic University, Hong Kong, China"
   - family-names: Zhang
     given-names: Haoran
     email: h.zhang@pku.edu.cn
+    affiliation: "School of Urban Planning and Design, Peking University, Shenzhen, China; Guangdong Provincial Key Laboratory of Risk Perception and Sustainable Governance in Energy Transition, Shenzhen, China"
 keywords:
   - green hydrogen
   - technology learning

@@ -4,7 +4,7 @@ This repository contains the manuscript-aligned code, derived data, source data 
 
 > Jinwei Liang, Zhiling Guo and Haoran Zhang, *Curtailment traps early green hydrogen assets beyond the reach of learning*.
 
-Jinwei Liang and Haoran Zhang contributed equally to this work. Haoran Zhang is the corresponding author (`h.zhang@pku.edu.cn`). Jinwei Liang and Haoran Zhang are affiliated with the School of Urban Planning and Design, Peking University Shenzhen Graduate School, Shenzhen, Guangdong, China. Zhiling Guo is affiliated with the Department of Building Environment and Energy Engineering, The Hong Kong Polytechnic University, Hong Kong, China.
+Jinwei Liang and Haoran Zhang contributed equally to this work. Haoran Zhang is the corresponding author (`h.zhang@pku.edu.cn`). Jinwei Liang and Haoran Zhang are affiliated with the School of Urban Planning and Design, Peking University, Shenzhen, China, and the Guangdong Provincial Key Laboratory of Risk Perception and Sustainable Governance in Energy Transition, Shenzhen, China. Zhiling Guo is affiliated with the Department of Building Environment and Energy Engineering, The Hong Kong Polytechnic University, Hong Kong, China.
 
 ## Repository status
 
