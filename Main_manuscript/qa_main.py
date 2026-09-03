@@ -291,6 +291,12 @@ def main() -> int:
             "Review manuscript does not apply line numbering to the current layout.",
             failures,
         )
+        require(
+            review_tex.index(r"\linenumbers")
+            < review_tex.index(r"\begin{abstract}"),
+            "Review manuscript line numbering must begin before the abstract.",
+            failures,
+        )
         clean_body = tex
         review_body = review_tex.replace(
             "\\usepackage[left]{lineno}\n", "", 1
